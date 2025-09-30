@@ -7,19 +7,29 @@ switch ($uri) {
         $controller->index();
         break;
     
+    case '/presentation':
+        $controller = new App\Controllers\HomeController();
+        $controller->presentation();
+        break;
+    
+    case '/expertises':
+        $controller = new App\Controllers\ProjetController();
+        $controller->expertises();
+        break;
+        
+        
+    case '/projets':
+        $controller = new App\Controllers\ProjetController();
+        $controller->projets();
+        break;
+
     case '/contact':
         $controller = new App\Controllers\ContactController();
         $controller->index();
         break;
-
-    case '/projets':
-        $controller = new App\Controllers\ProjetController();
-        $controller->index();
-        echo "Liste des projets";
-        break;
-
-    default:
-        header("HTTP/1.0 404 Not Found");
-        echo "404 - Page non trouvée";
-        break;
+            
+        default:
+    header("HTTP/1.0 404 Not Found");
+    echo "404 - Page non trouvée";
+    break;
 }

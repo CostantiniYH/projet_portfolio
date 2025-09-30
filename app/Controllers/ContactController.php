@@ -8,6 +8,10 @@ class ContactController {
             ["title" => "blog", "desc" => "Mini blog avec MySql"]
         ];
 
+        $titre = "Contact";
+        ob_start();
         require_once __DIR__ . '/../Views/contact.php';
+        $content = ob_get_clean();
+        require __DIR__ . '/../Views/partials/layout.php';
     }
 }
