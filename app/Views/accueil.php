@@ -6,10 +6,11 @@
             <h2>Fruits</h2>
             <div class="card-title">
                 <?= $apple->get_name(); ?>
-                <div class="card-text">
+                <div class="card-text"><p class="">
                     <?=
-                        $apple->get_form() . '</br>' . $apple->get_color();
+                        $apple->get_forme() . '</br>' . $apple->get_color();
                     ?>
+                    </p>
                 </div>
             </div>
         </div>

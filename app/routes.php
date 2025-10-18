@@ -23,6 +23,16 @@ switch ($uri) {
         $controller->projets();
         break;
 
+    case '/portfolio':
+        $controller = new App\Controllers\PortfolioController();
+        $controller->index();
+        break;
+
+    case '/politique':
+        $controller = new App\Controllers\HomeController();
+        $controller->politique();
+        break;
+    
     case '/contact':
         $controller = new App\Controllers\ContactController();
         $controller->index();
