@@ -8,7 +8,7 @@ if (!defined('BASE_URL')) {
     if ($host === 'localhost' || $host === '127.0.0.1') {
         define('BASE_URL', $protocol . '://' . $host . '/projet_portfolio/public/');
     } else {
-        define('BASE_URL', $protocol . '://domaine_');
+        define('BASE_URL', $protocol . '://83.159.94.100:83');
     }
 }
 use PDO;
