@@ -19,7 +19,7 @@ class Database {
         $host = 'localhost';
         $db = 'portfolio_db';
         $user = 'YHC';
-        $pass = 'Yaacov2790.';
+        $pass = '';
         $charset = 'utf8mb4';
         $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
         $options = [
