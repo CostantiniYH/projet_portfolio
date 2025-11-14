@@ -1,5 +1,5 @@
 <?php
-namespace App\Classes;
+namespace App\Models;
 
 class Etat_nation {
     public $nom;

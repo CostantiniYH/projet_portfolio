@@ -9,28 +9,54 @@ switch ($uri) {
     
     case '/presentation':
         $controller = new App\Controllers\HomeController();
-        $controller->presentation();
-        break;
-    
-    case '/expertises':
-        $controller = new App\Controllers\ProjetController();
-        $controller->expertises();
+        $controller->index();
         break;
         
-        
-    case '/projets':
-        $controller = new App\Controllers\ProjetController();
-        $controller->projets();
-        break;
-
     case '/portfolio':
         $controller = new App\Controllers\PortfolioController();
         $controller->index();
         break;
+    
+    case '/realisations':
+        $controller = new App\Controllers\RealisationController();
+        $controller->index();
+        break;
+    
+    case '/activites':
+        $controller = new App\Controllers\ActiviteController();
+        $controller->index();
+        break;
+    
+    case '/projets':
+        $controller = new App\Controllers\ProjetController();
+        $controller->index();
+    break;
+
+    case '/cybersecurite':
+        $controller = new App\Controllers\ProjetController();
+        $controller->index();
+        break;
+
+    case '/veille-technologique':
+        $controller = new App\Controllers\ProjetController();
+        $controller->index();
+        break;
+        
+    case '/expertises':
+        $controller = new App\Controllers\ProjetController();
+        $controller->expertises();
+        break;
+            
+    case '/annexes':
+        $controller = new App\Controllers\AnnexeController();
+        $controller->index();
+        break;
+        
+
 
     case '/politique':
         $controller = new App\Controllers\HomeController();
-        $controller->politique();
+        //$controller->politique();
         break;
     
     case '/contact':

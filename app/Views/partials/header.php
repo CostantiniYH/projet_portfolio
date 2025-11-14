@@ -1,8 +1,6 @@
-<header class="py-4 mb-5 z-index-1" data-aos="fade-down" data-aos-duration="1000">
-    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
-      <a href="#" class=" text-white position-fixed ms-2" data-bs-toggle="tooltip"
-         data-bs-placement="right" title="Ne pas inclure dans l'intégration"></a>
-      <div class="container">
+<header class="fixed-top " data-aos="fade-down" data-aos-duration="1000">
+    <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
+      <div class="container-fluid">
         <a class="p-3 rounded navbar-brand text-uppercase fw-bold hvr-shutter-out-vertical"
          href="<?= BASE_URL ?>">Portfolio YHC</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -18,16 +16,38 @@
               <a class="nav-link hvr-underline-reveal" href="presentation">Présentation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hvr-underline-reveal" href="expertises">Expertises</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link hvr-underline-reveal" href="portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hvr-underline-reveal" href="politique">Politique</a>
+              <a class="nav-link hvr-underline-reveal" href="activites">Activités</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hvr-underline-reveal" href="contact">Contact</a>
+              <a class="nav-link hvr-underline-reveal" href="projets">Projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hvr-underline-reveal" href="realisations">Réalisations Pros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Voir plus
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="cybersecurite">Cybersécurité</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="veille-technologique">Veille Technologique</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="annexes">Annexes</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="expertises">Expertises</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contact">Contact</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>

@@ -1,5 +1,5 @@
 <?php
-namespace App\Classes;
+namespace App\Models;
 
 class Justice {
     public $tribunal_administratif;

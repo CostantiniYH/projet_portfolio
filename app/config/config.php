@@ -8,7 +8,7 @@ if (!defined('BASE_URL')) {
     if ($host === 'localhost' || $host === '127.0.0.1') {
         define('BASE_URL', $protocol . '://' . $host . '/projet_portfolio/public/');
     } else {
-        define('BASE_URL', $protocol . '://83.159.94.100:83');
+        define('BASE_URL', $protocol . '://' . $host . '/');
     }
 }
 use PDO;
@@ -18,8 +18,8 @@ class Database {
     public static function connect() {
         $host = 'localhost';
         $db = 'portfolio_db';
-        $user = 'YHC';
-        $pass = 'Yaacov2790.';
+        $user = 'root';
+        $pass = '';
         $charset = 'utf8mb4';
         $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
         $options = [
