@@ -2,6 +2,7 @@
 namespace App\Controllers;
 
 class RealisationController {
+    
     public function index() {
         // Code pour afficher la liste des réalisations
         $titre = "Réalisations Professionnelles";

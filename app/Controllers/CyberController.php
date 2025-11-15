@@ -2,6 +2,7 @@
 namespace App\Controllers;
 
 class CyberController {
+    
     public function index() {
         // Code pour afficher la liste des veilles
         $titre = "Cybersécurité";

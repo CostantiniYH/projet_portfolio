@@ -2,6 +2,7 @@
 namespace App\Controllers;
 
 class ActiviteController {
+    
     public function index() {
         // Code pour afficher la liste des activités
         $titre = "Activités";

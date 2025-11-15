@@ -16,9 +16,6 @@
               <a class="nav-link hvr-underline-reveal" href="presentation">Présentation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hvr-underline-reveal" href="portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link hvr-underline-reveal" href="activites">Activités</a>
             </li>
             <li class="nav-item">
@@ -40,9 +37,6 @@
                 </li>
                 <li>
                   <a class="dropdown-item" href="annexes">Annexes</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="expertises">Expertises</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="contact">Contact</a>

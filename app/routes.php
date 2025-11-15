@@ -11,11 +11,6 @@ switch ($uri) {
         $controller = new App\Controllers\HomeController();
         $controller->index();
         break;
-        
-    case '/portfolio':
-        $controller = new App\Controllers\PortfolioController();
-        $controller->index();
-        break;
     
     case '/realisations':
         $controller = new App\Controllers\RealisationController();
@@ -41,22 +36,10 @@ switch ($uri) {
         $controller = new App\Controllers\ProjetController();
         $controller->index();
         break;
-        
-    case '/expertises':
-        $controller = new App\Controllers\ProjetController();
-        $controller->expertises();
-        break;
             
     case '/annexes':
         $controller = new App\Controllers\AnnexeController();
         $controller->index();
-        break;
-        
-
-
-    case '/politique':
-        $controller = new App\Controllers\HomeController();
-        //$controller->politique();
         break;
     
     case '/contact':

@@ -1,8 +1,7 @@
 <?php
 namespace App\Controllers;
 
-use App\Models\Fruit;
-use App\Models\Etat_nation;
+use App\Models\Classes\Fruit;
 
 class AnnexeController {
 

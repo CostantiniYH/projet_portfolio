@@ -2,6 +2,7 @@
 namespace App\Controllers;
 
 class VeilleController {
+    
     public function index() {
         // Code pour afficher la liste des veilles
         $titre = "Veille technologique";
