@@ -1,8 +1,11 @@
 <header class="fixed-top " data-aos="fade-down" data-aos-duration="1000">
     <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
       <div class="container-fluid">
-        <a class="p-3 rounded navbar-brand text-uppercase fw-bold hvr-shutter-out-vertical"
-         href="<?= BASE_URL ?>">Portfolio YHC</a>
+        <a class="p-3 rounded navbar-brand  fw-bold hvr-shutter-out-vertical"
+        href="/">Yaacov
+        <img src="<?= BASE_URL ?>uploads/icons/portfolio_13.jpg" alt="image_portfolio"
+        class="image-fluid rounded-3" style="background-image: none;height:40px; width:40px;">
+          Costantini</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -10,7 +13,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link bi bi-house-fill" href="<?= BASE_URL?>"></a>
+              <a class="nav-link bi bi-house-fill" href="/"></a>
             </li>
             <li class="nav-item">
               <a class="nav-link hvr-underline-reveal" href="presentation">Présentation</a>
