@@ -10,7 +10,7 @@
                         } else {
                             $bg = "bg-danger";
                         }?>
-                        <button class="badge <?= $bg ?> btn border-0 position-absolute checked"><?= $fruit->get_quantite(); ?></button>
+                        <button class="badge $bg btn border-0 position-absolute checked"><?= $fruit->get_quantite(); ?></button>
                         <img class="card-img" style="height:200px;" src="<?= BASE_URL . $fruit->get_image();?>" alt="">
                         <h5 class="card-title">
                             <?= $fruit->get_name(); ?>

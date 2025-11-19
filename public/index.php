@@ -4,6 +4,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+session_start();
 
 require_once __DIR__ . '/../app/init.php';
 
@@ -15,5 +16,8 @@ if ($base !== '' && strpos($uri, $base) === 0) {
 }
 $uri = $uri ?: '/';
 
+require_once __DIR__ . '/../app/routes/web.php';
+require_once __DIR__ . '/../app/routes/auth.php';
 
-require_once __DIR__ . '/../app/routes.php';
+$router = new App\Core\Router();
+$router->run();

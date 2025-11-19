@@ -54,8 +54,9 @@ if ($currentPage === 'accueil' || $currentPage === 'presentation') {?>
       <?php endif; ?>
     </p>
 
-    
-    <?= $content ?>
+    <div class="container">
+      <?= $content ?>
+    </div>
 
   </div>
 

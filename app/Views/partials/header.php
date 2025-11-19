@@ -39,6 +39,9 @@
                   <a class="dropdown-item" href="veille-technologique">Veille Technologique</a>
                 </li>
                 <li>
+                  <a class="dropdown-item" href="ajout-ressource">Ajout de ressource</a>
+                </li>
+                <li>
                   <a class="dropdown-item" href="annexes">Annexes</a>
                 </li>
                 <li>
@@ -51,7 +54,7 @@
         <div class="collapse navbar-collapse justify-content-end">
           <ul class="navbar-nav">
             <li class="navbar-item">
-              <a class="navbar-link bi bi-person-circle fs-2" href=""></a>
+              <a class="navbar-link bi bi-person-circle fs-2" href="login"></a>
             </li>
           </ul>
         </div>

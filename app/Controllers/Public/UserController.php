@@ -1,5 +1,5 @@
 <?php
-namespace App\Controllers;
+namespace App\Controllers\Public;
 use App\Models\Classes\User;
 
 class UserController {
@@ -7,9 +7,9 @@ class UserController {
     public function index() {
         $titre = "Users";
         ob_start();
-        require_once __DIR__ . '/../Views/users.php';
+        require_once __DIR__ . '/../../Views/public/users.php';
         $content = ob_get_clean();
-        require __DIR__ . '/../Views/partials/layout.php';
+        require __DIR__ . '/../../Views/partials/layout.php';
     }
 }
 
