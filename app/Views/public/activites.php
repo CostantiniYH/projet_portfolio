@@ -1,7 +1,7 @@
 <div>
-    <?php foreach ($activites as $activite): ?>
+    <?php //foreach ($activites as $activite): ?>
         <div>
             <?php require __DIR__ . '/../components/card_activite.php'; ?>
         </div>
-    <?php endforeach; ?>
+    <?php //endforeach; ?>
 </div>

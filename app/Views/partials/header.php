@@ -1,7 +1,7 @@
 <?php 
-    if ($_SESSION['user']['role'] === 'admin') {
+    if ($_SESSION['user'] === 'admin') {
         require_once __DIR__ . '/navbar_admin.php';       
-    } elseif ($_SESSION['user']['role'] === 'etudiant') {
+    } elseif ($_SESSION['user'] === 'etudiant') {
         require_once __DIR__ . '/navbar_user.php';
     } else {
         require_once __DIR__ . '/navbar.php';
