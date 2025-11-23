@@ -1,63 +1,60 @@
-<header class="fixed-top " data-aos="fade-down" data-aos-duration="1000">
-    <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
-      <div class="container-fluid">
-        <a class="p-3 rounded navbar-brand  fw-bold hvr-shutter-out-vertical"
-        href="/">Yaacov
-        <img src="<?= BASE_URL ?>uploads/icons/portfolio_13.jpg" alt="image_portfolio"
-        class="image-fluid rounded-3" style="background-image: none;height:40px; width:40px;">
-          Costantini</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link bi bi-house-fill" href="/"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link hvr-underline-reveal" href="presentation">Présentation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link hvr-underline-reveal" href="activites">Activités</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link hvr-underline-reveal" href="projets">Projets</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link hvr-underline-reveal" href="realisations">Réalisations Pros</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Voir plus
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="cybersecurite">Cybersécurité</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="veille-technologique">Veille Technologique</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="ajout-ressource">Ajout de ressource</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="annexes">Annexes</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="contact">Contact</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+<?php 
+    if ($_SESSION['user']['role'] === 'admin') {
+        require_once __DIR__ . '/navbar_admin.php';       
+    } elseif ($_SESSION['user']['role'] === 'etudiant') {
+        require_once __DIR__ . '/navbar_user.php';
+    } else {
+        require_once __DIR__ . '/navbar.php';
+    };
+?>
+
+<div class="mb-5" style="margin-top: 90px;" data-aos="fade-up" data-aos-duration="1000">
+
+
+    <?php
+        // URL complète
+        $currentUrl = $_SERVER['REQUEST_URI'];
+
+        // On retire les éventuels paramètres GET
+        $currentPath = parse_url($currentUrl, PHP_URL_PATH);
+
+        // On enlève BASE_URL si présent
+        $relativePath = str_replace(BASE_URL, '', $currentPath);
+
+        // On retire un éventuel slash final
+        $relativePath = trim($relativePath, '/');
+
+        // Si la page s'appelle "expertises", "services", etc.
+        $currentPage = $relativePath ?: 'accueil';
+
+        // Mise en forme pour affichage
+        $currentPageLabel = ucfirst(str_replace('-', ' ', $currentPage)); 
+
+        if ($currentPage === 'accueil' || $currentPage === 'presentation') {?>
+
+        <div class="text-center position-relative mt-5">
+            <img style="height: 300px;" src="<?= BASE_URL ?>uploads/futuriste.jpg" alt="photo futuriste" 
+            class="mb-4 w-100  rounded-5 rounded-top-0">
+            <h1 style="top: 150px; height: 300px; padding-top: 100px;" class=" mb-4 position-absolute  start-50 translate-middle w-100 bg-dark bg-opacity-50 text-white rounded-5 rounded-top-0">
+                Présentation YHC</h1>
         </div>
-        <div class="collapse navbar-collapse justify-content-end">
-          <ul class="navbar-nav">
-            <li class="navbar-item">
-              <a class="navbar-link bi bi-person-circle fs-2" href="login"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-</header>
+
+    <?php } ?>
+
+    <?php if (isset($_SESSION['flash'])) {
+        foreach ($_SESSION['flash'] as $type => $message) { ?>
+            <div class="alert alert-<?= $type ?>">
+                <?= $message; ?>
+            </div>
+        <?php }
+        unset($_SESSION['flash']);
+    }?>
+
+    <p class="container p-5">
+        <a class="text-dark" href="<?= BASE_URL ?>">Accueil</a>
+        <?php if ($currentPage !== 'accueil') : ?>
+        / <?= $currentPageLabel ?>
+        <?php endif; ?>
+    </p>
+
+</div>

@@ -5,11 +5,11 @@ spl_autoload_register(function ($class) {
     $prefix = 'App\\';
     $base_dir = __DIR__ . '/';
     $len = strlen($prefix);
-
+    
     if (strncmp($prefix, $class, $len) !== 0) {
         return ;
     }
-
+    
     $relative_class = substr($class, $len);
     $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
     
@@ -18,7 +18,9 @@ spl_autoload_register(function ($class) {
     }
 });
 
-$configFile = __DIR__ . '/config/config.php';
+$configFile = __DIR__ . '/Config/Database.php';
 if (file_exists($configFile)) {
     require $configFile;
 }
+
+?>

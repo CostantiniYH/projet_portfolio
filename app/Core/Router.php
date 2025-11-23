@@ -4,6 +4,12 @@ use App\Core;
 
 class Router
 {
+    private $pdo;
+
+    public function __construct($pdo) {
+        $this->pdo = $pdo;
+
+    }
     public function run()
     {
         $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
@@ -30,7 +36,7 @@ class Router
         if (is_string($handler) && str_contains($handler, '@')) {
             list($controllerPath, $method) = explode('@', $handler);
             $controllerClass = 'App\\Controllers\\' . str_replace('/', '\\', $controllerPath);
-            $controllerObj = new $controllerClass();
+            $controllerObj = new $controllerClass($this->pdo);
             $controllerObj->$method();
         }
 

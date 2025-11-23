@@ -1,5 +1,11 @@
 <?php
+namespace App\Routes;
+use App\Core\Route;
 
-use App\Controllers\Public\IndexController;
+Route::get('/register', 'Auth/RegisterController@formRegister');
+Route::post('/register', 'Auth/RegisterController@register');
 
-//Route::get('/', 'IndexController@index()');
+Route::get('/login', 'Auth/LoginController@formLogin');
+Route::post('/login', 'Auth/LoginController@login');
+
+

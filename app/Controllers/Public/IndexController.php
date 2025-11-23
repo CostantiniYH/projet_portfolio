@@ -1,25 +1,16 @@
 <?php
 namespace App\Controllers\Public;
-use App\Models\Classes\Etudiant;
-use App\Models\Classes\Fruit;
+use App\Models\Entites\Etudiant;
+use App\Models\Entites\Fruit;
 
 class IndexController {
+    private $pdo;
+    public function __construct($pdo)
+    {
+        $this->pdo = $pdo;
+    }
     
     public function index() {
-        $yhc = new Etudiant('Yaacov', 'Informatique', 'BTS SIO 2ème année', '',
-         'Costantini', '', '20/02/2000', 'Ozar Formation', 'uploads/users/yaacov.jpg');
-        
-        $ilanK = new Etudiant('Ilan', 'Commerce internationnal', 'BTS NDRC 2ème année', '',
-         'Krief', '', '15/05/2005', 'Ozar Formation', 'uploads/domes.jpg');
-        
-        $samuel = new Etudiant('Samuel', 'Informatique', 'BTS SIO 1ère année', '',
-         'Dupont', '', '10/10/2003', 'Ozar Formation', 'uploads/pomme.jpg');
-        
-        $stephane = new Etudiant('Stéphane', 'Réseau et télécoms', 'BTS SIO 2ème année', '',
-         'Martin', '', '05/03/1999', 'Ozar Formation', 'uploads/banane.jpg');
-
-        $etudiants = [$yhc, $ilanK, $samuel, $stephane];
-
         $titre = "Présentation";
         ob_start();
         require_once __DIR__ . '/../../Views/public/presentation.php';
@@ -29,6 +20,8 @@ class IndexController {
 
     public function activite() {
         // Code pour afficher la liste des activités
+        $activites = "";
+
         $titre = "Activités";
         ob_start();
         require_once __DIR__ . '/../../Views/public/activites.php';

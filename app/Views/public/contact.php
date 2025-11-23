@@ -1,5 +1,5 @@
  <h1 class="text-center mb-5 z-index-3">Contactez-nous</h1> 
- <div class="card shadow col-md-6 p-4 mx-auto">
+ <div class="card shadow-sm col-md-6 p-4 mx-auto">
     <form action="">
             <div class="mb-3">
             <label for="name" class="form-label">Nom</label>
@@ -16,3 +16,4 @@
             <button type="submit" class="btn btn-primary">Envoyer</button>
     </form>
 </div>
+<hr>

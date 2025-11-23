@@ -18,6 +18,15 @@ $uri = $uri ?: '/';
 
 require_once __DIR__ . '/../app/routes/web.php';
 require_once __DIR__ . '/../app/routes/auth.php';
+require_once __DIR__ . '/../app/routes/admin.php';
+require_once __DIR__ . '/../app/routes/users.php';
 
-$router = new App\Core\Router();
+
+use App\Config\Database;
+
+$pdo = Database::connect();
+
+$router = new App\Core\Router($pdo);
 $router->run();
+
+?>

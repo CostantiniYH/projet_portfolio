@@ -1,5 +1,5 @@
 <?php
-namespace App\Models\Classes;
+namespace App\Models\Entites;
 class Fruit {
     public $name;
     public $color;
