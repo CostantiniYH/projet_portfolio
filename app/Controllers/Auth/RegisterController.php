@@ -4,8 +4,8 @@ use App\Models\Requetes\UserModel;
 use App\Models\Services\UserService;
 use App\Models\Validations\UserValidator;
 
-class RegisterController {
-    
+class RegisterController 
+{    
     private $service;
 
     public function __construct($pdo) {

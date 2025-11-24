@@ -3,8 +3,10 @@ namespace App\Controllers\Public;
 use App\Models\Entites\Etudiant;
 use App\Models\Entites\Fruit;
 
-class IndexController {
+class IndexController 
+{
     private $pdo;
+    
     public function __construct($pdo)
     {
         $this->pdo = $pdo;

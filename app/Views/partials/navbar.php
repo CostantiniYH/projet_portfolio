@@ -2,10 +2,10 @@
     <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
       <div class="container-fluid">
         <a class="p-3 rounded navbar-brand  fw-bold hvr-shutter-out-vertical"
-        href="/">Yaacov
+        href="/">
         <img src="<?= BASE_URL ?>uploads/icons/portfolio_13.jpg" alt="image_portfolio"
         class="image-fluid rounded-3" style="background-image: none;height:40px; width:40px;">
-          Costantini</a>
+          Yaacov HC</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -40,6 +40,9 @@
                 </li>
                 <li>
                   <a class="dropdown-item" href="ajout-ressource">Ajout de ressource</a>
+                </li>                
+                <li>
+                  <a class="dropdown-item" href="users">Liste utilisateurs</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="annexes">Annexes</a>

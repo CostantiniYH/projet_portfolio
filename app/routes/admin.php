@@ -1,5 +1,6 @@
 <?php
-namespace App\Routes;
 use App\Core\Route;
 
-Route::get('/ajout-ressource', 'Admin/RessourceController@index');
+Route::get('/users', 'Admin/AdminController@liste');
+
+Route::get('/ajout-ressource', 'Admin/AdminController@addFile');

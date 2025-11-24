@@ -1,9 +1,6 @@
 <?php
 declare (strict_types=1);
-namespace App\Routes;
 use App\Core\Route;
-
-
 
 Route::get('/', 'Public/IndexController@index');
 Route::get('/presentation', 'Public/IndexController@index');

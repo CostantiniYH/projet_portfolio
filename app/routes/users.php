@@ -1,4 +1,5 @@
 <?php
 use App\Core\Route;
 
-Route::get('/users', 'User/UserController@liste');
+
+Route::get('/dashboard', 'User/UserController@dashboard');

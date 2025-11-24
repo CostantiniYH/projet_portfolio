@@ -14,16 +14,20 @@ class UserController
         $this->service = new UserService($model, $validator);
     }
     
-    public function liste() 
+   
+
+    public function profil()
     {
-        $users = $this->service->getAllUsers();
+        $id = $_GET['id'];
 
-        $titre = "Liste users";
-
-        ob_start();
-        require_once __DIR__ . '/../../Views/admin/users.php';
-        $content = ob_get_clean();
-        require __DIR__ . '/../../Views/partials/layout.php';
     }
+
+    public function dashboard() 
+    {
+        $id = $_GET('id');
+
+    }
+
+
 }
 

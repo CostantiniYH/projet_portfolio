@@ -1,5 +1,4 @@
 <?php
-namespace App\Routes;
 use App\Core\Route;
 
 Route::get('/register', 'Auth/RegisterController@formRegister');
