@@ -1,7 +1,5 @@
 <?php
 namespace App\Models\Services;
-use App\Models\Requetes\UserModel;
-use App\Models\Validations\UserValidator;
 
 class LoginService 
 {

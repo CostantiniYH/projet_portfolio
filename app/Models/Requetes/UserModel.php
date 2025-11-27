@@ -1,6 +1,5 @@
 <?php
 namespace App\Models\Requetes;
-use App\Models\Entite\UserEntite;
 use PDO;
 
 // (3) Cette classe UserModel() gère l'accès à la BDD

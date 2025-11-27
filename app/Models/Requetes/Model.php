@@ -1,7 +1,5 @@
 <?php
 namespace App\Models\Requetes;
-use PDO;
-use PDOException;
 
 class Model {
     protected $pdo;
