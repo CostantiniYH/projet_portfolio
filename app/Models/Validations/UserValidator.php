@@ -1,7 +1,7 @@
 <?php
 namespace App\Models\Validations;
 
-// (2) La classe UserValidator() valide les données selon des conditions et vérifications, et retourne les erreurs,
+// II - La classe UserValidator() valide les données selon des conditions et vérifications, et retourne les erreurs,
 // pas d'impact sur la classe UserEntite(), ni de hachage du mot de passe (Indépendante).
 
 class UserValidator {
@@ -27,7 +27,7 @@ class UserValidator {
         }
 
         if (empty($data['role'])) {
-            $errors['role'] = "Le rôle est obligatoire, veuillez choisir un rôle dans la sélection.";
+            $errors['role'] = "Le rôle est obligatoire, veuillez sélectioner un rôle.";
         }
 
         return $errors;

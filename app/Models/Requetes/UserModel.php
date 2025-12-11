@@ -2,7 +2,8 @@
 namespace App\Models\Requetes;
 use PDO;
 
-// (3) Cette classe UserModel() gère l'accès à la BDD
+// III - Cette classe UserModel() gère l'accès et les requêtes vers la BDD pour la table t_users.
+//  
 
 class UserModel extends Model 
 {

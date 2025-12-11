@@ -33,7 +33,7 @@
         if ($currentPage === 'accueil' || $currentPage === 'presentation') {?>
 
         <div class="text-center position-relative mt-5">
-            <img style="height: 300px;" src="<?= BASE_URL ?>uploads/futuriste.jpg" alt="photo futuriste" 
+            <img style="height: 300px;" src="<?= BASE_URL ?>assets/divers/futuriste.jpg" alt="photo futuriste" 
             class="mb-4 w-100  rounded-5 rounded-top-0">
             <h1 style="top: 150px; height: 300px; padding-top: 100px;" class=" mb-4 position-absolute  start-50 translate-middle w-100 bg-dark bg-opacity-50 text-white rounded-5 rounded-top-0">
                 Présentation YHC</h1>
@@ -55,6 +55,11 @@
         <?php if ($currentPage !== 'accueil') : ?>
         / <?= $currentPageLabel ?>
         <?php endif; ?>
+
+       <!-- $handler = Route::get()->handler();
+        <?php if (strpos($handler, 'Admin/AdminController@') === 0) : ?>
+        / <a class="text-dark" href="<?= BASE_URL ?>admin/dashboard">Admin / <?= $currentPageLabel ?></a>
+        <?php endif; ?>-->
     </p>
 
 </div>

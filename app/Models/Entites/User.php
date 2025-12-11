@@ -1,10 +1,10 @@
 <?php
 namespace App\Models\Entites;
 
-// (1) La classe UserEntite() crée l'objet user, c'est une simple représentation de l'utilisateur, et gère
+// I - La classe UserEntite() crée l'objet user, c'est une simple représentation de l'utilisateur, et gère
 // uniquement les getters et les setters, pas de règles métier, ni de validations.
 
-class UserEntite {
+class User {
     private $id;
     Private $name;
     Private $email;

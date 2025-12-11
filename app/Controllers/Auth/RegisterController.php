@@ -13,6 +13,7 @@ class RegisterController
         $validator = new UserValidator();
         $this->service = new UserService($model, $validator);
     }
+
     public function formRegister() {        
         $titre = "Inscription";
         ob_start();
@@ -25,7 +26,7 @@ class RegisterController
         
         $data = $_POST;
        
-        $errors = $this->service->register($data);
+        $errors = $this->service->registerUser($data);
 
         if (!empty($errors)) {
             $_SESSION['flash']['error'] = implode('<br>', $errors);

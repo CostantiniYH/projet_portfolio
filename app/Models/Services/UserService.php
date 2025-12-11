@@ -1,12 +1,17 @@
 <?php
 namespace App\Models\Services;
-use App\Models\Entites\UserEntite;
+use App\Models\Entites\User;
 
-// (4) Cette classe UserService gère toute la logique métier y compris la validation côté client du formulaire
+// IV - Cette classe UserService gère toute la logique métier y compris la validation côté client du formulaire
 // que nous avons écrit dans UserValidator.
-// Logique métier de UserService :
-// 1. Validation formulaire via UserValidator. 2. Création de l'objet via UserEntite
-// 3. Hachage du password. 4. insertion BDD via UserModel.
+
+// ==========Logique métier de UserService===========
+
+// 1. Validation formulaire via UserValidator
+// 2. Vérification unicité email via UserModel
+// 3. Création de l'objet via UserEntite
+// 4. Hachage du mot de passe
+// 5. insertion BDD via UserModel
 
 class UserService {
     private $model;
@@ -18,7 +23,7 @@ class UserService {
 
     }
 
-    public function register($data) {
+    public function registerUser($data) {
 
         // (1)
         $errors = $this->validator->validateRegistration($data);
@@ -26,22 +31,23 @@ class UserService {
             return $errors;
         }
 
+        // (2) Vérification unicité email
         if ($this->model->findByEmail($data['email'])) {
             return ['email' => 'Cet emeil existe déjà dans la BDD.'];
         }
 
-        // (2)
-        $user = new UserEntite();
+        // (3)
+        $user = new User();
 
         $user->set_name($data['nom']);
         $user->set_email($data['email']);
 
-        // (3)
+        // (4)
         $user->set_password(password_hash($data['password'], PASSWORD_ARGON2ID));
 
         $user->set_role($data['role']);
 
-        // (4)
+        // (5)
         $this->model->insert($user);
 
         return [];

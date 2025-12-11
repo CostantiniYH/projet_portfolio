@@ -25,7 +25,7 @@ class LoginController
 
     public function login()
     {
-        $result = $this->service->login($_POST);
+        $result = $this->service->loginUser($_POST);
 
         if (!empty($result['errors'])) {
             $_SESSION['flash']['error'] = $result['errors'];

@@ -11,7 +11,7 @@ class LoginService
         $this->validator = $validator;
     }
 
-    public function login($data)
+    public function loginUser($data)
     {
         $errors = $this->validator->validateLogin($data);
         if (!empty($errors)) {

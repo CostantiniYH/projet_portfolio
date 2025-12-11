@@ -17,7 +17,7 @@ use PDOException;
 class Database {
     public static function connect() {
         $host = 'localhost';
-        $db = 'portfolio_db';
+        $db = 'db_portfolio';
         $user = 'root';
         $pass = '';
         $charset = 'utf8mb4';
