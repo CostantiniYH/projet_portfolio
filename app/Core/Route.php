@@ -3,11 +3,11 @@ namespace App\Core;
 
 class Route 
 {
-    protected static array $routes = [];
+    protected static $routes = [];
 
-    protected static array $methods = ['GET', 'POST', 'PUT', 'DELETE'];
+    protected static $methods = ['GET', 'POST', 'PUT', 'DELETE'];
 
-    protected static array $currentMiddleware = [];
+    protected static $currentMiddleware = [];
 
     public static function get($path, $handler)
     { self::addRoute('GET', $path, $handler); }
@@ -24,7 +24,7 @@ class Route
         return new static;
     }
 
-    protected static function addRoute(string $method, string $path, $handler)
+    protected static function addRoute($method, $path, $handler)
     {
         self::$routes[] = [
             'method' => $method,

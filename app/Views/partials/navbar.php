@@ -53,24 +53,9 @@
                 </li>
                 <li>
                   <a class="dropdown-item" href="veille-technologique">Veille Technologique</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="ajout-ressource">Ajout de ressource</a>
-                </li>                
-                <li>
-                  <a class="dropdown-item" href="users">Liste utilisateurs</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="annexes">Annexes</a>
-                </li>
+                </li>    
                 <li>
                   <a class="dropdown-item" href="contact">Contact</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="form-home">Home form</a>
-                </li>
-                 <li>
-                  <a class="dropdown-item" href="form-competences">Compétences form</a>
                 </li>
               </ul>
             </li>
