@@ -1,11 +1,5 @@
 <?php 
-    /*if ($_SESSION['user'] === 'admin') {
-        require_once __DIR__ . '/navbar_admin.php';       
-    } elseif ($_SESSION['user'] === 'etudiant') {
-        require_once __DIR__ . '/navbar_user.php';
-    } else {*/
-        require_once __DIR__ . '/navbar.php';
-    #};
+    require_once __DIR__ . '/navbar.php';
 ?>
 
 <div class="mb-5" style="margin-top: 90px;" data-aos="fade-up" data-aos-duration="1000">
@@ -55,11 +49,6 @@
         <?php if ($currentPage !== 'accueil') : ?>
         / <?= $currentPageLabel ?>
         <?php endif; ?>
-
-       <!-- $handler = Route::get()->handler();
-        <?php if (strpos($handler, 'Admin/AdminController@') === 0) : ?>
-        / <a class="text-dark" href="<?= BASE_URL ?>admin/dashboard">Admin / <?= $currentPageLabel ?></a>
-        <?php endif; ?>-->
     </p>
 
 </div>

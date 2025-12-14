@@ -2,4 +2,4 @@
 use App\Core\Route;
 
 
-Route::get('/dashboard', 'User/UserController@dashboard');
+Route::get('/dashboard', 'UserController@dashboard');

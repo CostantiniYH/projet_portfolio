@@ -1,5 +1,5 @@
 <?php
-namespace App\Controllers\User;
+namespace App\Controllers;
 use App\Models\Requetes\UserModel;
 use App\Models\Services\UserService;
 use App\Models\Validations\UserValidator;
