@@ -1,14 +1,16 @@
 <?php
 namespace App\Controllers;
-use App\Models\Entites\Etudiant;
+use App\Models\Entites\Veille;
 
 class IndexController 
 {
     private $pdo;
+    private $veilleModel;
     
     public function __construct($pdo)
     {
         $this->pdo = $pdo;
+        $this->veilleModel = new Veille();
     }
     
     public function index() {
@@ -58,6 +60,7 @@ class IndexController
 
     public function veille() {
         // Code pour afficher la liste des veilles
+        $feed = $this->veilleModel->getListNews();
         $titre = "Veille technologique";
         ob_start();
         require_once __DIR__ . '/../Views/public/veille.php';

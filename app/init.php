@@ -17,9 +17,17 @@ spl_autoload_register(function ($class) {
     }
 });
 
-$configFile = __DIR__ . '/Config/Database.php';
-if (file_exists($configFile)) {
-    require $configFile;
-}
+
+require_once __DIR__ . '/../app/routes/web.php';
+require_once __DIR__ . '/../app/routes/auth.php';
+require_once __DIR__ . '/../app/routes/users.php';
+
+
+use App\Config\Database;
+
+$pdo = Database::connect();
+
+$router = new App\Core\Router($pdo);
+$router->run();
 
 ?>
