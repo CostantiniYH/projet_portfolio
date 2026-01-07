@@ -24,13 +24,13 @@
         // Mise en forme pour affichage
         $currentPageLabel = ucfirst(str_replace('-', ' ', $currentPage)); 
 
-        if ($currentPage === 'accueil' || $currentPage === 'presentation') {?>
+        if ($currentPage) {?>
 
         <div class="text-center position-relative mt-5">
             <img style="height: 300px;" src="<?= BASE_URL ?>assets/divers/futuriste.jpg" alt="photo futuriste" 
             class="mb-4 w-100  rounded-5 rounded-top-0">
             <h1 style="top: 150px; height: 300px; padding-top: 100px;" class=" mb-4 position-absolute  start-50 translate-middle w-100 bg-dark bg-opacity-50 text-white rounded-5 rounded-top-0">
-                Présentation YHC</h1>
+                <?= ucwords($currentPage) ?></h1>
         </div>
 
     <?php } ?>
