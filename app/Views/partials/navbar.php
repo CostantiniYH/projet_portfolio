@@ -33,10 +33,10 @@
               <a class="nav-link dropdown-toggle hvr-underline-reveal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Parcours Pro</a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="projets">Projets 1</a>
+                  <a class="dropdown-item" href="projet_1">Projets 1</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="projets">Projets 2</a>
+                  <a class="dropdown-item" href="projet_2">Projets 2</a>
                 </li>
               </ul>
             </li>
