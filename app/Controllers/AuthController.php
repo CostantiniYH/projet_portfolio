@@ -1,12 +1,12 @@
 <?php
-namespace App\Controllers\Auth;
+namespace App\Controllers;
 use App\Models\Requetes\UserModel;
 use App\Models\Validations\UserValidator;
 use App\Models\Services\UserService;
 use App\Models\Services\LoginService;
 
 
-class RegisterController 
+class AuthController 
 {    
     private $serviceRegister;
     private $serviceLogin;
@@ -22,9 +22,9 @@ class RegisterController
     public function formRegister() {        
         $titre = "Inscription";
         ob_start();
-        require_once __DIR__ . '/../../Views/auth/register.php';
+        require_once __DIR__ . '/../Views/auth/register.php';
         $content = ob_get_clean();
-        require __DIR__ . '/../../Views/partials/layout.php';
+        require __DIR__ . '/../Views/partials/layout.php';
     }
     
     public function register() {
@@ -52,9 +52,9 @@ class RegisterController
      public function formLogin() {
         $titre = "Connexion";
         ob_start();
-        require_once __DIR__ . '/../../Views/auth/login.php';
+        require_once __DIR__ . '/../Views/auth/login.php';
         $content = ob_get_clean();
-        require __DIR__ . '/../../Views/partials/layout.php';
+        require __DIR__ . '/../Views/partials/layout.php';
     }
 
     public function login()

@@ -1,10 +1,10 @@
 <?php
 use App\Core\Route;
 
-Route::get('/register', 'Auth/RegisterController@formRegister');
-Route::post('/register', 'Auth/RegisterController@register');
+Route::get('/register', 'AuthController@formRegister');
+Route::post('/register', 'AuthController@register');
 
-Route::get('/login', 'Auth/LoginController@formLogin');
-Route::post('/login', 'Auth/LoginController@login');
+Route::get('/login', 'AuthController@formLogin');
+Route::post('/login', 'AuthController@login');
 
 

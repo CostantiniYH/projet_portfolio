@@ -1,8 +1,9 @@
 <div class="container">
     <div class="row">
-        <div class="col-md">
-            
+        <div class="col-md">            
             <h1 class="text-center mb-5" data-aos="flip-down" data-aos-duration="1200">Acutalité cybersécurité</h1>
+            <h5 class="text-center mb-5" data-aos="flip-down" data-aos-duration="1200">Lemondeinformatique.fr</h5>
+
         
             <?php foreach ($feed1 as $news){        
                 $desc = $news['desc'];
@@ -32,7 +33,8 @@
             
             
         <div class="col-md">
-            <h1 class="text-center mb-5" data-aos="flip-down" data-aos-duration="1200">Acutalité cybersécurité 2</h1>
+            <h1 class="text-center mb-5" data-aos="flip-down" data-aos-duration="1200">Autres acutalités</h1>
+            <h5 class="text-center mb-5" data-aos="flip-down" data-aos-duration="1200">cublic.fr</h5>
     
             <?php foreach ($feed2 as $news){        
                 $desc = $news['desc'];
