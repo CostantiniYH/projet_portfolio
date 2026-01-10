@@ -2,7 +2,7 @@
     require_once __DIR__ . '/navbar.php';
 ?>
 
-<div class="mb-5" style="margin-top: 90px;" data-aos="fade-up" data-aos-duration="1000">
+<div class="mb-5" style="margin-top: 90px;">
 
 
     <?php

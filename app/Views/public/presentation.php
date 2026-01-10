@@ -1,43 +1,65 @@
 <div class="container row-gap-5">
-    <div class="row mb-4 shadow-sm rounded">
-        <div class="col-md-12 text-center">
-            <h1>Bienvenue sur ma page de présentation</h1>
-            <p>Cette page permettra de présenter de façon brève et dynamique mon parcours d'étude et professionnel.</p>
-        </div>
-    </div>
+        <h1 class="text-center">Bienvenue</h1>
+        <p>Cette page permettra de présenter de façon brève et dynamique mon parcours d'étude et professionnel.</p>
+       
 
-    <div class="row mb-4 shadow-sm rounded p-3">
-        <div class="col-md-12">
-            <h2 class="text-center">Etudes</h2>
-            <ul>
-                <li><strong>Diplôme : </strong>BTS SIO</li>
-                <li><strong>Établissement : </strong>CFA Ozar Formation</li>
-                <li><strong>Année d'obtention : </strong>2026</li>
+    <div class="row gap-3 mb-4">
+        <div class="col-md shadow-sm rounded p-3">
+            <h2 class="mb-4 text-primary bi bi-mortarboard"> Etudes</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Diplôme : </strong>BTS SIO</li>
+                <li class="list-group-item"><strong>Établissement : </strong>CFA Ozar Formation, Paris 13</li>
+                <li class="list-group-item"><strong>Année d'obtention : </strong>En cours...</li>
             </ul>
         </div>
-    </div>
-     <div class="row mb-4 shadow-sm rounded p-3">
-        <div class="col-md-12">
-            <h2 class="text-center">Expérience Professionnelle</h2>
-            <ul>
-                <li><strong>Expérience Professionnelle :</strong> 2 ans en tant que développeur web chez ABC Corp.</li>
-            </ul>
+        <div class="col-md shadow-sm rounded p-3">
+            <h2 class="mb-4 text-primary bi bi-buildings"> Expérience professionnelle</h2>
+                <p> Alternant analyste commerciale chez Hitecy. </p>
         </div>
-    </div>
-    <div class="row mb-4 shadow-sm rounded p-3">
-        <h2 class="text-center">Compétences Techniques</h2>
-        <div class="col-md-12">
-            
-            <div col-md>
-                <div class="text-center mb-3">
-                    <img src="/assets/images/#" alt="Compétences Techniques" class="img-fluid" style="max-width: 300px;">
-                </div>
-            </div>
-            
-            <ul class="decoration-none">                
-                <li><strong></strong> PHP, JavaScript, HTML, CSS, MySQL, et plus encore.</li>            
+        <div class="col-md shadow-sm rounded p-3">
+            <h2 class="mb-4 text-primary bi bi-person-gear"> Compétences techniques</h2>
+            <ul class="list-group">               
+                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Git
+                    <div class="progress mt-2" style="height: 10px;">
+                        <div class="progress-bar bg-success fs-7" style="width: 25%;"></div>
+                    </div>
+                </li>      
+                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Python            
+                    <div class="progress mt-2" style="height: 10px;">
+                        <div class="progress-bar bg-success" style="width: 15%"></div>
+                    </div>
+                </li>      
+                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Java
+                    <div class="progress mt-2" style="height: 10px;">
+                        <div class="progress-bar bg-success fs-7" style="width: 15%;"></div>
+                    </div>
+                </li>      
+                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> HTML
+                    <div class="progress mt-2" style="height: 10px;">
+                        <div class="progress-bar bg-success fs-7" style="width: 80%;"></div>
+                    </div>
+                </li>
+                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> CSS
+                    <div class="progress mt-2" style="height: 10px;">
+                        <div class="progress-bar bg-success fs-7" style="width: 75%;"></div>
+                    </div>
+                </li>
+                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> JavaScript
+                    <div class="progress mt-2" style="height: 10px;">
+                        <div class="progress-bar bg-success fs-7" style="width: 25%;"></div>
+                    </div>
+                </li>      
+                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> PHP
+                    <div class="progress mt-2" style="height: 10px;">
+                        <div class="progress-bar bg-success fs-7" style="width: 75%;"></div>
+                    </div>
+                </li>      
+                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> MySQL
+                    <div class="progress mt-2" style="height: 10px;">
+                        <div class="progress-bar bg-success fs-7" style="width: 50%;"></div>
+                    </div>
+                </li>      
             </ul>
         </div>
     </div>
 </div>
-<hr>

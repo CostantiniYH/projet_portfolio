@@ -1,20 +1,28 @@
 <?php
 namespace App\Controllers;
-use App\Models\Entites\Veille;
+use App\Models\Entites\RSS;
+
 
 class IndexController 
 {
     private $pdo;
-    private $veilleModel;
+    private $veilleNews;
+    private $cyberNews;
+    private $cyberNews2;
+
     
     public function __construct($pdo)
     {
         $this->pdo = $pdo;
-        $this->veilleModel = new Veille();
+        $this->veilleNews = new RSS();
+        $this->cyberNews = new RSS();
+        $this->cyberNews2 = new RSS();
+
     }
     
     public function index() {
         $titre = "Présentation";
+        $css = "presentation.css";
         ob_start();
         require_once __DIR__ . '/../Views/public/presentation.php';
         $content = ob_get_clean();
@@ -34,6 +42,7 @@ class IndexController
 
      public function projet() {
         $titre = "Projet GdC";
+        $css = "projet.css";
         ob_start();
         require_once __DIR__ . '/../Views/public/projet_1.php';
         $content = ob_get_clean();
@@ -41,7 +50,6 @@ class IndexController
     }
 
      public function realisation() {
-        // Code pour afficher la liste des réalisations
         $titre = "Réalisations Professionnelles";
         ob_start();
         require_once __DIR__ . '/../Views/public/realisations.php';
@@ -50,7 +58,8 @@ class IndexController
     }
 
     public function cybersecurite() {
-        // Code pour afficher la liste des veilles
+        $feed1 = $this->cyberNews->getListNewsCyber();
+        $feed2 = $this->cyberNews2->getListNewsCyber2();    
         $titre = "Cybersécurité";
         ob_start();
         require_once __DIR__ . '/../Views/public/cybersecurite.php';
@@ -59,9 +68,9 @@ class IndexController
     }
 
     public function veille() {
-        // Code pour afficher la liste des veilles
-        $feed = $this->veilleModel->getListNews();
+        $feed = $this->veilleNews->getListNewsVeille();
         $titre = "Veille technologique";
+        $css = "veille.css";
         ob_start();
         require_once __DIR__ . '/../Views/public/veille.php';
         $content = ob_get_clean();

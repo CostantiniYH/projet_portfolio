@@ -1,0 +1,25 @@
+body {
+    position: relative;
+    background-image: linear-gradient(
+  120deg,  #f8f6f4,
+  #ebe6e1,
+  #ffffff,
+  #e9edf2,
+  #f7f8fa
+)
+
+ !important;
+    /* background-size: 800% 800%;
+    animation: myAnimation 16s linear 2s infinite; */
+}
+
+@keyframes myAnimation {
+  0%   {background-position: 0% 25%;}
+  33%  {background-position: 50% 75%;}
+  66% {background-position: 100% 75%;}
+  100% {background-position: 50% 25%;}
+}
+
+.col-md {
+  background-color: white;
+}
