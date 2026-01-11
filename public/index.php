@@ -15,6 +15,6 @@ if ($base !== '' && strpos($uri, $base) === 0) {
 }
 $uri = $uri ?: '/';
 
-require_once __DIR__ . '/../app/init.php';
+require dirname(__DIR__) . '/app/init.php';
 
 ?>

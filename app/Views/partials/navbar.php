@@ -32,12 +32,23 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle hvr-underline-reveal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Parcours Pro</a>
               <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="projet_1">Projets 1</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="projet_2">Projets 2</a>
-                </li>
+                <?php
+                $projets = [];
+                  for ($i = 1; $i <= 3; $i++) {
+                    $link = "projet_$i";
+                    $name = "Projet $i";
+                    $projet = [
+                      'link' => $link,
+                      'name' => $name
+                    ];
+                    $projets[] = $projet;
+                  }
+                  foreach ($projets as $key) {
+                ?>
+                  <li>
+                    <a class="dropdown-item" href="<?= $key['link'] ?>"><?= $key['name'] ?></a>
+                  </li>
+                <?php } ?>
               </ul>
             </li>
             <li class="nav-item">

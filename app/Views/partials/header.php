@@ -2,7 +2,7 @@
     require_once __DIR__ . '/navbar.php';
 ?>
 
-<div class="mb-5" style="margin-top: 90px;">
+<div class="" style="margin-top: 90px;">
 
 
     <?php
@@ -44,7 +44,7 @@
         unset($_SESSION['flash']);
     }?>
 
-    <p class="container p-5">
+    <p class="container p-4">
         <a class="text-dark" href="<?= BASE_URL ?>">Accueil</a>
         <?php if ($currentPage !== 'accueil') : ?>
         / <?= $currentPageLabel ?>

@@ -40,11 +40,20 @@ class IndexController
         require __DIR__ . '/../Views/partials/layout.php';
     }
 
-     public function projet() {
+    public function projet() {
         $titre = "Projet GdC";
         $css = "projet.css";
         ob_start();
         require_once __DIR__ . '/../Views/public/projet_1.php';
+        $content = ob_get_clean();
+        require __DIR__ . '/../Views/partials/layout.php';
+    }
+
+     public function projet2() {
+        $titre = "Projet GdC";
+        $css = "projet.css";
+        ob_start();
+        require_once __DIR__ . '/../Views/public/projet_2.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
     }
