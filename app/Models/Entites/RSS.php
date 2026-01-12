@@ -23,6 +23,13 @@ class RSS {
     public function getListNewsVeille() { return $this->listNewsVeille; }
 
     private function loadNewsCyber() {
+        $cacheFile = __DIR__ . '/cache/rss_lemondeinfo.json';
+        $cacheDuration = 600; // 10 minutes avant rechargement
+
+        if (file_exists($cacheFile) && time() - filemTime($cacheFile) < $cacheDuration) {
+            return json_decode(file_get_contents($cacheFile), true);
+        }
+
         $rss = new DOMDocument();
         $rss->load("https://www.lemondeinformatique.fr/flux-rss/thematique/securite/rss.xml");
 
@@ -43,10 +50,19 @@ class RSS {
             $feed[] = $item;
         }
 
+        file_put_contents($cacheFile, json_encode($feed));
+
         return $feed;
     }
 
     private function loadNewsCyber2() {
+        $cacheFile = __DIR__ . '/cache/rss_clubic.json';
+        $cacheDuration = 600; // 10 minutes avant rechargement
+
+        if (file_exists($cacheFile) && time() - filemTime($cacheFile) < $cacheDuration) {
+            return json_decode(file_get_contents($cacheFile), true);
+        }
+
         $rss = new DOMDocument();
         $rss->load("https://www.clubic.com/feed/rss");
 
@@ -55,6 +71,7 @@ class RSS {
 
         foreach($rss->getElementsByTagName("item") as $key => $node) {
             if ($key >= $limit) break;
+
             $item = [
                 'id' => $key,
                 'title' => $node->getElementsByTagName("title")->item(0)->nodeValue,
@@ -66,11 +83,20 @@ class RSS {
             $feed[] = $item;
         }
 
+        file_put_contents($cacheFile, json_encode($feed));
+
         return $feed;
     }
     
 
     private function loadNewsVeille() {
+        $cacheFile = __DIR__ . '/cache/rss_developpez.json';
+        $cacheDuration = 600; // 10 minutes avant rechargement
+
+        if (file_exists($cacheFile) && time() - filemTime($cacheFile) < $cacheDuration) {
+            return json_decode(file_get_contents($cacheFile), true);
+        }
+
         $rss = new DOMDocument();
         $rss->load("https://www.developpez.com/index/rss");
 
@@ -90,6 +116,8 @@ class RSS {
             ];
             $feed[] = $item;
         }
+
+        file_put_contents($cacheFile, json_encode($feed));
 
         return $feed;
     }
