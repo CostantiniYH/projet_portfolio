@@ -27,7 +27,11 @@ class RSS {
         $rss->load("https://www.lemondeinformatique.fr/flux-rss/thematique/securite/rss.xml");
 
         $feed = array();
+        $limit = 10;
+
         foreach($rss->getElementsByTagName("item") as $key => $node) {
+            if ($key >= $limit) break;
+
             $item = [
                 'id' => $key,
                 'title' => $node->getElementsByTagName("title")->item(0)->nodeValue,
@@ -46,8 +50,11 @@ class RSS {
         $rss = new DOMDocument();
         $rss->load("https://www.clubic.com/feed/rss");
 
-        $feed = array();
+        $feed = [];
+        $limit = 6;
+
         foreach($rss->getElementsByTagName("item") as $key => $node) {
+            if ($key >= $limit) break;
             $item = [
                 'id' => $key,
                 'title' => $node->getElementsByTagName("title")->item(0)->nodeValue,
@@ -68,7 +75,11 @@ class RSS {
         $rss->load("https://www.developpez.com/index/rss");
 
         $feed = array();
+        $limit = 10;
+
         foreach($rss->getElementsByTagName("item") as $key => $node) {
+            if ($key >= $limit) break;
+
             $item = [
                 'id' => $key,
                 'title' => $node->getElementsByTagName("title")->item(0)->nodeValue,
