@@ -23,6 +23,12 @@ class RSS {
     public function getListNewsVeille() { return $this->listNewsVeille; }
 
     private function loadNewsCyber() {
+        $cacheDir = __DIR__ . '/cache';
+
+        if (!is_dir($cacheDir)) {
+            mkdir($cacheDir, 0755, true);
+        }
+        
         $cacheFile = __DIR__ . '/cache/rss_lemondeinfo.json';
         $cacheDuration = 600; // 10 minutes avant rechargement
 
