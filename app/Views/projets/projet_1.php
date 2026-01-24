@@ -1,14 +1,15 @@
+
 <?php require_once dirname(__DIR__) . '/partials/navbar_projet.html'; ?>
-<div class="gradient container">
+<div class=" ">
     <h1 class="mb-5">Projet 1 - Gestionnaire de contacts</h1>
-    <main class="shadow-sm p-4 bg-white rounded-1">
-        <div class="p-3 border border-2 border-primary rounded-1">
+    <main class="shadow-sm p-5 bg-white rounded-1">
+        <div class="p-3">
             <section id="presentation" class="row p-3">
 
             </section>
 
             <section id="cdc" class="row p-3">
-                <h3 class="text-center text-primary mb-3">Expression du besoin</h3>                
+                <h2 class="text-center text-primary mb-5">Expression du besoin</h2>                
                 <article class="col-md text-break border-end">
                     <details>
                         <summary class="fs-5 fw-semibold">Contexte du sujet</summary>
@@ -127,10 +128,13 @@
                         <li>Retrouver rapidement une information</li>
                         <li>Conserver les données entre deux utilisations de l'application</li>
                     </ul>
+                    <p>Pour télécharger le cahier des charges cliquez ici : 
+                        <a href="/ressources/documentation/Projet_1-cahier_des_charges.pdf" target="_blank" class="fs-4 bi bi-download btn btn-primary"></a>
+                    </p>
                 </article>   
             </section>
 
-             <section class="row p-3 text-break">   
+             <!-- <section class="row p-3 text-break">   
                 <hr>          
                 <article class="col-md">
                     <h4 class="text-center"></h4>
@@ -138,26 +142,26 @@
                         <source type="video/mp4" src="/uploads/videos/Enregistrement 2026-01-14 000726.mp4">
                     </video>
                 </article>   
-            </section>
+            </section> -->
         </div> 
         <section id="diagrammes">
-  <h2>Diagrammes & Modélisation</h2>
-  <p>MCD, UML, schéma de base de données...</p>
-</section>
+            <h2 class="text-center text-primary mb-5">Diagrammes & Modélisation</h2>
+            <p>MCD, UML, schéma de base de données...</p>
+        </section>
 
-<section id="dev">
-  <h2>Développement</h2>
-  <p>Technos utilisées, organisation du code...</p>
-</section>
+        <section id="dev">
+            <h2 class="text-center text-primary mb-5">Développement</h2>
+            <p>Technos utilisées, organisation du code...</p>
+        </section>
 
-<section id="tests">
-  <h2>Tests & Validation</h2>
-  <p>Cas de tests, bugs rencontrés, solutions...</p>
-</section>
+        <section id="tests">
+            <h2 class="text-center text-primary mb-5">Tests & Validation</h2>
+            <p>Cas de tests, bugs rencontrés, solutions...</p>
+        </section>
 
-<section id="bilan">
-  <h2>Bilan</h2>
-  <p>Ce que j'ai appris, difficultés, améliorations futures...</p>
-</section>       
+        <section id="bilan">
+            <h2 class="text-center text-primary mb-5">Bilan</h2>
+            <p>Ce que j'ai appris, difficultés, améliorations futures...</p>
+        </section>       
     </main>
 </div>

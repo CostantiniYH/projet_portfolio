@@ -13,3 +13,17 @@ body {
 p * {
     font-weight: normal !important;
 }
+
+.nav-hov:hover * {
+    color: white !important;
+    background-color: rgba(0, 53, 114, 0.826);
+    border-radius: 5px;
+}
+
+.bg-bleu-marine {
+    background-color: #03418d;
+    color: white;
+    padding: 3rem;
+    width: 25%;
+    border-radius: 10px;
+}

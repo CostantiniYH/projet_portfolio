@@ -1,4 +1,7 @@
 <div class="container">
+    <p>Le thème de la veille technologique est choisi par l'étudiant. Le thème doit être choisi selon l'intérêt qu'on porte à un sujet et doit être métrisé par l'étudiant.
+        Utiliser PerlTrees
+    </p>
     <h1 class="text-center mb-5" data-aos="flip-down" data-aos-duration="1200">Acutalité à la une</h1>
     
     <?php foreach ($feed as $news){        
@@ -11,8 +14,9 @@
             <a href="<?= $news['link'] ?>" class="text-decoration-none" target="_blank">
                 <div class="text-justify text-black">
                     <div class="row col-md card-img-top mb-1">
-                        <img src="<?= $news['image'] ?>" class="img-fluid col-md" alt="<?= $news['image'] ?>">
-                        <h5 class="col-md-11"><?= $news['title'] ?></h5>
+                        <img src="<?= $news['image'] ?>" class="img-fluid col" alt="<?= $news['image'] ?>" 
+                        style="max-width: 5rem;">
+                        <h5 class="col-11"><?= $news['title'] ?></h5>
                     </div>
                     <p class=" text-black"><?= $desc ?></p>
                     <small class="bi bi-calendar-event me-2"></small>
