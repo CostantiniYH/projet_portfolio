@@ -1,0 +1,65 @@
+.bg-obj {
+    background-image: linear-gradient(
+        120deg,  
+        #498508c7,
+        #08852588,
+        #088525d2,
+        #08852598,
+        #0885253e
+    );
+    color: white;
+}
+
+.list-group-item:hover {
+    cursor: pointer;
+    scale: calc(1.03);
+
+}
+
+.bg-infra {
+    background-image: linear-gradient(
+        120deg,  
+        #474747,
+        #47474788,
+        #474747d2,
+        #47474798,
+        #4747473e
+    );
+    color: white;
+}
+
+.bg-tech {
+    background-image: linear-gradient(
+        120deg,  
+        #087285c7,
+        #085b85d2,
+        #085b8598,
+        #085b8551,
+        #085b853e
+    );
+    color: white;
+}
+
+.bg-sec {
+    background-image: linear-gradient(
+        120deg,  
+        #852308c7,
+        #85230888,
+        #852308d2,
+        #85230898,
+        #8523083e
+    );
+    color: white;
+}
+
+.bg-test {
+    background-image: linear-gradient(
+        120deg,  
+        #f1ae1d,
+        #f1ae1d88,
+        #f1ae1dd2,
+        #f1ae1d98,
+        #f1ae1d3e
+    );
+    color: white;
+}

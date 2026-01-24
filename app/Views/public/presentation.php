@@ -4,7 +4,7 @@
        
 
     <div class="row gap-3 mb-4">
-        <div class="col-md shadow-sm rounded p-3">
+        <div class="col-md bg-white shadow-sm rounded p-3">
             <h2 class="mb-4 text-primary bi bi-mortarboard"> Etudes</h2>
             <ul class="list-group">
                 <li class="list-group-item"><strong>Diplôme : </strong>BTS SIO</li>
@@ -12,12 +12,22 @@
                 <li class="list-group-item"><strong>Année d'obtention : </strong>En cours...</li>
             </ul>
         </div>
-        <div class="col-md shadow-sm rounded p-3">
+        <div class="col-md bg-white shadow-sm rounded p-3">
             <h2 class="mb-4 text-primary bi bi-buildings"> Expérience professionnelle</h2>
-                <p> Alternant analyste commerciale chez Hitecy. </p>
+            <div class="card"> 
+                <img class="card-img-top img-fluid float-start w-50 " src="uploads\experience\hitecy.png" alt="">
+                <div class="card-body">            
+                    <p>Data analyste chez Hitecy : </p>
+                    <p>Analyse et qualification des données clients</p>
+                </div>
+            </div>
+
+            <picture>
+
+            </picture>
         </div>
-        <div class="col-md shadow-sm rounded p-3">
-            <h2 class="mb-4 text-primary bi bi-person-gear"> Compétences techniques</h2>
+        <div class="col-md bg-white shadow-sm rounded p-3">
+            <h2 class="mb-4 text-primary bi bi-person-gear">Compétences techniques</h2>
             <ul class="list-group">               
                 <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Git
                     <div class="progress mt-2" style="height: 10px;">

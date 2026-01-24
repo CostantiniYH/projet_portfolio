@@ -25,39 +25,6 @@
             <li class="nav-item nav-hov">
               <a class="nav-link " href="projets">Projets</a>
             </li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle " href="activites" role="button" data-bs-toggle="dropdown" aria-expanded="false">Missions</a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item nav-hov" href="activite">Activités Entreprise</a>
-                </li>
-                <li>
-                  <a class="dropdown-item nav-hov" href="activite_2">Activités Ecole</a>
-                </li>
-              </ul>
-            </li> -->
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projets</a>
-              <ul class="dropdown-menu">
-                <?php
-                $projets = [];
-                  for ($i = 1; $i <= 3; $i++) {
-                    $link = "projet_$i";
-                    $name = "Projet $i";
-                    $projet = [
-                      'link' => $link,
-                      'name' => $name
-                    ];
-                    $projets[] = $projet;
-                  }
-                  foreach ($projets as $key) {
-                ?>
-                  <li>
-                    <a class="dropdown-item nav-hov" href="<?= $key['link'] ?>"><?= $key['name'] ?></a>
-                  </li>
-                <?php } ?>
-              </ul>
-            </li> -->
             <li class="nav-item nav-hov">
               <a class="nav-link " href="realisations">Réalisations Pros</a>
             </li>

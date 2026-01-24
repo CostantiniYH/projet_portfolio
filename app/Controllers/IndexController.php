@@ -43,6 +43,7 @@ class IndexController
     public function activite1() {
         // Code pour afficher la liste des activités
         $activites = "";
+        $css = "activite";
         
         $titre = "Activités";
         ob_start();
@@ -54,6 +55,7 @@ class IndexController
     public function activite2() {
         // Code pour afficher la liste des activités
         $activites = "";
+        $css = "activite";
 
         $titre = "Activités";
         ob_start();
@@ -65,7 +67,6 @@ class IndexController
     public function activite3() {
         // Code pour afficher la liste des activités
         $activites = "";
-
         $titre = "Activités";
         ob_start();
         require_once __DIR__ . '/../Views/missions/activite_3.php';
@@ -76,6 +77,7 @@ class IndexController
     public function activite4() {
         // Code pour afficher la liste des activités
         $activites = "";
+        $css = "activite";
 
         $titre = "Activités";
         ob_start();
