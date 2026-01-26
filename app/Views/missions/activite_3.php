@@ -8,7 +8,6 @@
 
         </p>
     </section>
-    <button type="button" onclick="alertBox='coucou'">ccliqer</button>
 
     <section class="row gap-3 p-5 bg-obj" id="objectifs">
         <div class="col-md rounded-1 bg-white text-black p-5">
@@ -22,7 +21,7 @@
             </ul>
         </div>
         <div class="col-md rounded-1 bg-white text-black p-5">
-            <h4 class="text-center mb-4">Compétences utilisées <i class="bi bi-arrow-down-circle-fill"></i></h4>
+            <h4 class="text-center mb-4">Compétences requises <i class="bi bi-arrow-down-circle-fill"></i></h4>
             <ul class="list-group">
                 <?php
                 function stars($n) {
@@ -54,9 +53,9 @@
             
     </section>
 
-    <section class="row gap-3 p-5 bg-infra" id="infra">        
-        <h4>Infrastructure</h4>
-        <div class="bg-white text-black">
+    <section class="row gap-3 p-4 bg-infra" id="infra">        
+        <h4>Solution infrastructure Système & réseau</h4>
+        <div class="bg-white text-black p-4 rounded-1">
             <p>L'architecture se présente de la façon suivante : </p>
             <p>Nous allons utilisé 3 serveurs : un Revrse Proxy, un serveur applicatif, et un serveur BDD</p>
             <p>Un réseau privé entre les 3 serveurs, seul 1 serveur sera exposé au réseau.</p>
@@ -81,25 +80,28 @@
                     <strong class="mb-3">SRV-1 - Proxy</strong>
                     <ul class="list-group">
                         <h6>Services :</h6>
-                        <li class="list-group-item">Proxy</li>
+                        <li class="list-group-item">Proxy : point d'entrée</li>
                         <li class="list-group-item">Nginx</li>
                         <li class="list-group-item">HTTPS</li>
-                        <li class="list-group-item">Point d'entrée</li>                        
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="col-md">
+        <div class="col-md bg-white text-black p-5 rounded">
             <p>
                 Ce serveur permet de sécurisé l'accès en bloquant les entrées non autorisées via le pare-feu (firewell). Les outils et 
                 services utilisés à ce stade sont : 
             </p>
             <ul>
                 
-                <li><strong>ufw :</strong> pare-feu</li>
                 <li><strong>OpenSSH :</strong> connxeion autorisée</li>
+                <li><strong>ufw :</strong> pare-feu</li>
                 <li><strong>fail2ban :</strong> logiciel protection SSH par force brut</li>             
             </ul>
+            <div class="alert alert-warning">
+                Important ! Configurer le fichier <i>/etc/netplane/00-installer-config.yaml</i> pour l'IP du réseau interne, car
+                ce réseau sera contrôlé par SRV-1 (hostname: srv-proxy)
+            </div>
         </div>
         <hr class="mt-5">
 
