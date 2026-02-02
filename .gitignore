@@ -2,3 +2,5 @@
 /app/Models/Entites/cache
 /public/uploads/videos/*.mp4
 *.mp4
+.gitignore
+.env
