@@ -26,3 +26,7 @@ p * {
     width: 25%;
     border-radius: 10px;
 }
+
+.text-justifier {
+    text-align: justify;
+}

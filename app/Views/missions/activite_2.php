@@ -4,7 +4,18 @@
     <section class="row mb-4 p-3 rounded bg-white bg-opacity-50" id="contexte">
         <h4 class="">Contexte</h4>
         <p>
-
+            Créer un qcm
+            Pull de questions données par le formateur
+                 <ul class="list-group">
+            <li class="list-group-item bg-dev">Authentification</li>
+            <li class="list-group-item bg-dev">Récupérer 10 questions aléatoire</li>
+            <li class="list-group-item bg-dev">Afficher les 10 questions avec les 4 réponses par question sous forme de boutons radio</li>
+            <li class="list-group-item bg-dev">Validé le qcm (Formulaire)</li>
+            <li class="list-group-item bg-dev">Afficher résultat (note sur 20)</li>
+            <li class="list-group-item bg-dev">Afficher les erreurs et les réponses correrts</li>
+            <li class="list-group-item bg-dev">Stocker (Enregistrer) les résultats</li>
+            <li class="list-group-item bg-dev"></li>
+        </ul>
         </p>
     </section>
 

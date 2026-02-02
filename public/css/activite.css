@@ -10,9 +10,9 @@
     color: white;
 }
 
-.list-group-item:hover {
+.li-hvr:hover {
     cursor: pointer;
-    scale: calc(1.03);
+    scale: calc(1.01);
 
 }
 

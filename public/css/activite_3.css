@@ -63,3 +63,11 @@
     );
     color: white;
 }
+
+.img-infra {
+    transition: 1s;
+}
+.img-infra:hover {
+    background-color: rgb(255, 255, 255) !important;
+    cursor: pointer;
+}

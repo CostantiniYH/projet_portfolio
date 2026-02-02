@@ -1,7 +1,8 @@
-<div class="container p-5">
-    <div class="row justify-content-center gap-4">
-
-        <h1 class="bg-bleu-marine">Epreuve E6</h1>        
+<div class="container">
+    <section class="row text-justifier gap-3 align-item-stretch mb-4">
+        <div class="col-md-3 bg-bleu-marine">
+            <h3 class="">Epreuve E6</h3>        
+        </div>
         <div class="col-md rounded p-4 shadow-sm bg-white">
             <div class="alert alert-warning">Date butoire 9 avril</div>
             <h4 class="text-center"></h4>
@@ -29,5 +30,23 @@
             <p>Etape 3 : 1h préparation</p>
             <p>Etape 4 : 20 min recette</p>
         </div>
-    </div>
+    </section>
+
+     <section class="row">
+        <div class="form-control">
+            <a class="nav-link dropdown-toggle " href="activites" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sélectionnez un projet</a>
+            <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item nav-hov" href="projet_1">Projet 1 - Site web e-commerce client léger</a>
+                </li>
+                <li>
+                    <a class="dropdown-item nav-hov" href="projet_2">Projet 2 - GdC client lourd</a>
+                </li> 
+                <li>
+                    <a class="dropdown-item nav-hov" href="projet_3">Projet 3 - GdM client léger</a>
+                </li>
+            </ul>
+        </div>
+    </section>
 </div>

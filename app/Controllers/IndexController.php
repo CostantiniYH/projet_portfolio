@@ -89,7 +89,7 @@ class IndexController
 
 
     public function indexProjet() {
-        $titre = "Projet GdC";
+        $titre = "Projets";
         $css = "projet.css";
         ob_start();
         require_once __DIR__ . '/../Views/projets/index.p.php';

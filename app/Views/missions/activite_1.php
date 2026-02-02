@@ -10,16 +10,88 @@
         </p>
     </section>
 
-    <section class="row p-5 bg-obj" id="objectifs">
-        <h4>Objectifs et Compétences</h4>
-        <ul class="list-group">
-            <li class="list-group-item"></li>
-            <li class="list-group-item"></li>
-            <li class="list-group-item"></li>
-            <li class="list-group-item"></li>
-            <li class="list-group-item"></li>
-        </ul>
+    <section class="row p-5 bg-obj gap-4" id="objectifs">
+        <div class="col-md rounded p-4 bg-light text-black">
+            <h4 class="text-center">Objectifs</h4>
+            <ul class="list-group m-5">
+                <li class="list-group-item">
+                    <details>
+                        <summary>Développement d'une application web</summary>
+                            <ul class="list-group mt-3">
+                                <li class="list-group-item bg-dev"><small>Créer une interface utilisateur (front-end)</small></li>
+                                <li class="list-group-item bg-dev"><small>Développer la logique métier (backend)</small></li>
+                                <li class="list-group-item bg-dev"><small>Intégrer une base de données</small></li>
+                            </ul>
+                    </details>
+                </li>
+                <li class="list-group-item">
+                    <details>
+                        <summary>Gestion des données</summary>
+                            <ul class="list-group mt-4">
+                                <li class="list-group-item bg-dev"><small>Concevoir et implémenter une base de données relationnelle</small></li>
+                                <li class="list-group-item bg-dev"><small>Manipuler les données (requêtes SQL)</small></li>
+                                <li class="list-group-item bg-dev"><small>Sécurisé les accès à la BDD</small></li>
 
+                            </ul>
+                    </details>
+                </li>
+                    <li class="list-group-item">
+                    <details>
+                        <summary>Sécurité et protection des données</summary>
+                            <ul class="list-group mt-4">
+                                <li class="list-group-item bg-dev"><small>Protéger les données sensibles</small></li>
+                                <li class="list-group-item bg-dev"><small>Valider et filtrer les entrées utilisateur</small></li>
+                                <li class="list-group-item bg-dev"><small>Mettre en place une authentification sécurisée</small></li>
+
+                            </ul>
+                    </details>
+                </li>
+                    <li class="list-group-item">
+                    <details>
+                        <summary>Interaction utilisateur et UX</summary>
+                            <ul class="list-group mt-4">
+                                <li class="list-group-item bg-dev"><small>Créer une interface intuitive et responsive</small></li>
+                                <li class="list-group-item bg-dev"><small>Implémenter des fonctionnalités en temps réel (rafraichissement auto)</small></li>
+                                <li class="list-group-item bg-dev"><small>Optimiser les performances</small></li>
+
+                            </ul>
+                    </details>
+                </li>
+                    <li class="list-group-item">
+                    <details>
+                        <summary>Collaborations et gestion de projet</summary>
+                            <ul class="list-group mt-4">
+                                <li class="list-group-item bg-dev"><small>Utiliser un outils de versioning (Git)</small></li>
+                                <li class="list-group-item bg-dev"><small>Documenter le code</small></li>
+                                <li class="list-group-item bg-dev"><small>Respecter les bonnes pratiques de développement (modularité, réutilisabilité, maintenabilité)</small></li>
+
+                            </ul>
+                    </details>
+                </li>
+                    <li class="list-group-item">
+                    <details>
+                        <summary>Tests et validation</summary>
+                            <ul class="list-group mt-4">
+                                <li class="list-group-item bg-dev"><small>Tester les fonctionnalités (envoie/réception, gestion des users)</small></li>
+                                <li class="list-group-item bg-dev"><small>Corriger les bugs</small></li>
+                                <li class="list-group-item bg-dev"><small>Valider la conformité aux exigences du besoin</small></li>
+
+                            </ul>
+                    </details>
+                </li>
+                </ul>
+        </div>
+        <div class="col-md rounded p-4 bg-white text-black">
+            <h4 class="text-center">Compétences</h4>
+            <ul class="list-group m-5">
+                <li class="list-group-item"></li>
+                <li class="list-group-item"></li>
+                <li class="list-group-item"></li>
+                <li class="list-group-item"></li>
+                <li class="list-group-item"></li>
+            </ul>
+        </div>
+            
     </section>
 
     <section class="row p-5 bg-modeli" id="modeli">
