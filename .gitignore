@@ -1,4 +1,4 @@
 /cache
 /app/Models/Entites/cache
-/uploads/videos/*mp4
+/public/uploads/videos/*.mp4
 /*.mp4
