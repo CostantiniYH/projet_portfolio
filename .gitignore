@@ -1,5 +1,4 @@
 /cache
 /app/Models/Entites/cache
-/uploads/videos/
-*.mp4
-.gitignore
+/uploads/videos/*mp4
+/*.mp4
