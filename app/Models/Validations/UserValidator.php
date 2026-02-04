@@ -22,8 +22,6 @@ class UserValidator {
 
         if ($data['password'] !== $data['confirm_password']) {
             $errors['password'] = "Les mots de passes ne correspondent pas !";
-            header('Location: /register');
-            exit();            
         }
 
         if (empty($data['role'])) {

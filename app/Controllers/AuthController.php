@@ -35,16 +35,16 @@ class AuthController
 
         if (!empty($errors)) {
             $_SESSION['flash']['error'] = implode('<br>', $errors);
-            header("Location: /register");
+            header("Location: " . BASE_URL . "register");
             exit;
         }
 
         $_SESSION['flash']['success'] = "Inscription réussi !";
         if (!headers_sent()) {
-            header("Location: /login");
+            header("Location: " . BASE_URL . "login");
             exit;
         } else {
-            echo '<script>window.location="/login";</script>';
+            echo '<script>window.location="' . BASE_URL . 'login";</script>';
             exit;
         }
     }
@@ -63,14 +63,14 @@ class AuthController
 
         if (!empty($result['errors'])) {
             $_SESSION['flash']['error'] = $result['errors'];
-            header("Location: /login");
+            header("Location: " . BASE_URL . "login");
             exit;
         }
 
         $_SESSION['user'] = $result['user'];
 
         $_SESSION['flash']['success'] = "Connexion réussi !";
-        header("Location: /");
+        header("Location: " . BASE_URL);
         exit;
     }
 }
