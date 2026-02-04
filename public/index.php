@@ -14,7 +14,7 @@ if (file_exists(__DIR__ . '/../app/Views/partials/navbar.php')) {
     require __DIR__ . '/../app/Views/partials/navbar.php';
 } else {
     echo "Le fichier navbar N'EXISTE PAS !<br>";
-    echo "Chemin cherché : " . __DIR__ . '/../app/Views/partials/navbar.php<br>';
+    echo "Chemin cherché ta mère : " . __DIR__ . '/../app/Views/partials/navbar.php<br>';
 }
 
 // Ton code normal ensuite...
