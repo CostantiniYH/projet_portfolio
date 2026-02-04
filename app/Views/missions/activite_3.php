@@ -68,7 +68,7 @@
             <p>Un réseau privé entre les 3 serveurs, seul 1 serveur sera exposé au réseau.</p>
             <div class="row">
                 <a href="/uploads/activites/infra-reseau-srv.drawio.png" target="_blank">
-                <img class="p-3 rounded-1 shadow col-md-4 d-block img-infra bg-secondary" src="/uploads/activites/infra-reseau-srv.drawio.png" 
+                <img class="p-3 rounded-1 shadow col-md-4 d-block img-infra bg-secondary" src="<?= BASE_URL ?>uploads/activites/infra-reseau-srv.drawio.png" 
                 alt="" ></a>
             </div>
         </div>
@@ -88,7 +88,7 @@
         <div class="card shadow p-3 col-md">
             <div class="row">                
                 <div class="col-md"  style="min-width: 10rem;">
-                    <img class="img-fluid rounded" src="/uploads/activites/ubuntu.png" alt="">
+                    <img class="img-fluid rounded" src="<?= BASE_URL ?>uploads/activites/ubuntu.png" alt="">
                 </div>
                 <div class="col-md">                
                     <strong class="mb-3">SRV-1 - Proxy</strong>
@@ -134,7 +134,7 @@
         <div class="card shadow p-3 col-md">
             <div class="row">                
                 <div class="col-md"  style="min-width: 10rem;">
-                    <img class="img-fluid rounded" src="/uploads/activites/ubuntu.png" alt="">
+                    <img class="img-fluid rounded" src="<?= BASE_URL ?>uploads/activites/ubuntu.png" alt="">
                 </div>
                 <div class="col-md">                
                     <strong class="mb-3">SRV-2 - Applicatif</strong>
@@ -155,7 +155,7 @@
         <div class="card shadow p-3 col-md">
             <div class="row">                
                 <div class="col-md"  style="min-width: 10rem;">
-                    <img class="img-fluid rounded" src="/uploads/activites/ubuntu.png" alt="">
+                    <img class="img-fluid rounded" src="<?= BASE_URL ?>uploads/activites/ubuntu.png" alt="">
                 </div>
                 <div class="col-md">                
                     <strong class="mb-3">SRV-3 - Base de données</strong>
