@@ -9,12 +9,12 @@ echo "DEBUT INDEX<br>";
 var_dump(__DIR__);
 echo "<br>";
 
-if (file_exists(__DIR__ . '/../app/Views/navbar.php')) {
+if (file_exists(__DIR__ . '/../app/Views/partials/navbar.php')) {
     echo "Le fichier navbar existe !<br>";
     require __DIR__ . '/../app/Views/partials/navbar.php';
 } else {
     echo "Le fichier navbar N'EXISTE PAS !<br>";
-    echo "Chemin cherché : " . __DIR__ . '/../app/Views/navbar.php<br>';
+    echo "Chemin cherché : " . __DIR__ . '/../app/Views/partials/navbar.php<br>';
 }
 
 // Ton code normal ensuite...
