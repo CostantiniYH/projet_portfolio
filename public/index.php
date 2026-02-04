@@ -4,6 +4,20 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+// Test temporaire
+echo "DEBUT INDEX<br>";
+var_dump(__DIR__);
+echo "<br>";
+
+if (file_exists(__DIR__ . '/../app/Views/navbar.php')) {
+    echo "Le fichier navbar existe !<br>";
+    require __DIR__ . '/../app/Views/navbar.php';
+} else {
+    echo "Le fichier navbar N'EXISTE PAS !<br>";
+    echo "Chemin cherché : " . __DIR__ . '/../app/Views/navbar.php<br>';
+}
+
+// Ton code normal ensuite...
 session_start();
 require dirname(__DIR__) . '/vendor/autoload.php';
 
