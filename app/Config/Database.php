@@ -20,7 +20,7 @@ class Database {
         $db   = $_ENV['DB_NAME'];
         $user = $_ENV['DB_USER'];
         $pass = $_ENV['DB_PASS'];
-        $dsn = "pgsql:host=$host;dbname=$db";
+        $dsn = "pgsql:host=$host;dbname=$db"; // Avec PostgreSql le dsn ne prend pas charset en paramètres
         $options = [
             PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
