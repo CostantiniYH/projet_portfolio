@@ -1,5 +1,5 @@
 <div class="container">
-    <form action=<?= BASE_URL ?>login" method="post" class="col-md-5 mx-auto shadow-sm p-5">
+    <form action="<?= BASE_URL ?>login" method="post" class="col-md-5 mx-auto shadow-sm p-5">
         <h3 class="text-center mb-3">Connexion</h3>
         <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
