@@ -67,19 +67,21 @@ class AuthController
             exit;
         }
 
-        $_SESSION = [
-            'user' => $result['user'],
-            'user_id' => $result['id'],
-            'nom' => $result['nom'],
-            'prenom' => $result['id'],
-            'email' => $result['email'],
-            'date_naissance' => $result['date_naissance'],
-            'filiere' => $result['filiere'],
-            'niveau' => $result['niveau'],
-            'etablissement' => $result['etablissement'],
-            'image' => $result['image'],
-            'created_at' => $result['id'],
-            'role' => $result['role']
+        // Regénérer l'id par sécurité
+        session_regenerate_id(true);
+
+        $_SESSION['user'] = [
+            'user_id'           => $result['user']['id'],
+            'nom'               => $result['user']['nom'],
+            'prenom'            => $result['user']['prenom'],
+            'email'             => $result['user']['email'],
+            'date_naissance'    => $result['user']['date_naissance'],
+            'filiere'           => $result['user']['filiere'],
+            'niveau'            => $result['user']['niveau'],
+            'etablissement'     => $result['user']['etablissement'],
+            'image'             => $result['user']['image'],
+            'created_at'        => $result['user']['created_at'],
+            'role'              => $result['user']['role']
         ];
 
         $_SESSION['flash']['success'] = "Connexion réussi !";

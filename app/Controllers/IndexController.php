@@ -24,7 +24,6 @@ class IndexController
         $titre = "Présentation";
         $css = "presentation.css";
         ob_start();
-        var_dump($_SESSION['role']);
         require_once __DIR__ . '/../Views/public/presentation.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
