@@ -22,7 +22,7 @@ class IndexController
     
     public function index() {
         $titre = "Présentation";
-        $css = "presentation.css";
+        $css = "presentation";
         ob_start();
         require_once __DIR__ . '/../Views/public/presentation.php';
         $content = ob_get_clean();
