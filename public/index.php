@@ -10,7 +10,8 @@ require dirname(__DIR__) . '/vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
 $dotenv->load();
 
-$uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+require dirname(__DIR__) . '/app/Config/config.php';
+
 
 require dirname(__DIR__) . '/app/init.php';
 

@@ -1,5 +1,6 @@
 <?php
 namespace App\Core;
+use App\Middlewares\AuthMiddleware;
 
 class Router
 {
@@ -18,6 +19,9 @@ class Router
             if ($route['method'] === $method && $route['path'] === $uri) {
                 foreach ($route['middleware'] as $middlewareName) {
                     $middlewareClass = 'App\\Middlewares\\' . ucfirst($middlewareName) . "Middleware";
+                    if (!class_exists($middlewareClass)) {
+                        die("Erreur : Le middleware $middlewareClass n'existe pas.");
+                    }
                     $middleware = new $middlewareClass();
                     $middleware->handle();
                 }

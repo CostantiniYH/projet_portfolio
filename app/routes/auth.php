@@ -1,14 +1,13 @@
 <?php
 use App\Core\Route;
 use App\Middlewares\AuthMiddleware;
+use App\Middlewares\GuestMiddleware;
 
 
-Route::get('/register', 'AuthController@formRegister', ['GuestMiddleware']);
+Route::middleware(['guest'])->get('/register', 'AuthController@formRegister');
 Route::post('/register', 'AuthController@register');
 
 Route::get('/login', 'AuthController@formLogin');
 Route::post('/login', 'AuthController@login');
 
-Route::get("/logout", "AuthController@logout", ["AuthMiddleware"]);
-
-
+Route::middleware(['auth'])->get("/logout", "AuthController@logout");

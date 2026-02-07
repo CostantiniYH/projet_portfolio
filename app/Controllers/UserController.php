@@ -16,16 +16,38 @@ class UserController
     
    
 
-    public function profil()
+    public function index()
     {
         $id = $_GET['id'];
 
     }
 
-    public function dashboard() 
+    public function show($id) 
     {
         $id = $_GET('id');
+    }
 
+    public function create() {
+
+    }
+
+    public function store() {
+        
+    }
+
+    public function edit($id) 
+    {
+        $id = $_GET('id');
+    }
+
+    public function update($id) 
+    {
+        $id = $_GET('id');
+    }
+
+    public function delete($id) 
+    {
+        $id = $_GET('id');
     }
 
 

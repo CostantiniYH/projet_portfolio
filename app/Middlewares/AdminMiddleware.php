@@ -1,7 +1,7 @@
 <?php
 namespace App\Middlewares;
 
-class AuthMiddleware 
+class AdminMiddleware 
 {
     public function handle() {
         if (session_status() === PHP_SESSION_NONE) {
@@ -9,7 +9,6 @@ class AuthMiddleware
         }
         
         if (empty($_SESSION['user']['user_id'])) {
-            $_SESSION['flash']['warning'] = "Veuillez vous connecter.";
             header("Location: " . BASE_URL . "login");
             exit();
         }

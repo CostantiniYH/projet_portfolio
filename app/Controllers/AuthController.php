@@ -83,6 +83,7 @@ class AuthController
             'created_at'        => $result['user']['created_at'],
             'role'              => $result['user']['role']
         ];
+        $_SESSION['logged_in'] = true;
 
         $_SESSION['flash']['success'] = "Connexion réussi !";
         header("Location: " . BASE_URL);

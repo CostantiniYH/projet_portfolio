@@ -1,8 +1,8 @@
 <?php
-namespace App\Middleware;
+namespace App\Middlewares;
 
-class GuestMiddleware {
-    
+class GuestMiddleware 
+{    
     public function handle() {
         if (session_status() === PHP_SESSION_NONE) {
             session_start();
