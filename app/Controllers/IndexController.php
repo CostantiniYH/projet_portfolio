@@ -127,6 +127,7 @@ class IndexController
         $feed1 = $this->cyberNews->getListNewsCyber();
         $feed2 = $this->cyberNews2->getListNewsCyber2();    
         $titre = "Cybersécurité";
+        $css = "cyber";
         ob_start();
         require_once __DIR__ . '/../Views/public/cybersecurite.php';
         $content = ob_get_clean();
