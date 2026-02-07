@@ -1,5 +1,5 @@
 <div class="container">
-    <form action="<?= BASE_URL ?>register" method="post" class="col-md-6 mx-auto shadow-sm p-5 border border-light rounded">
+    <form action="<?= BASE_URL ?>register" method="post" class="col-md-6 mx-auto shadow p-5 border border-light rounded bg-modeli">
         <h3 class="text-center mb-3">Inscription</h3>
         <div class="mb-3">
             <input type="hidden" name="id" id="id" value="<?= htmlspecialchars($_GET['id'] ?? '') ;?>">
@@ -37,4 +37,3 @@
         <button type="submit" class="btn btn-primary">Register</button>
     </form>
 </div>
-<hr>

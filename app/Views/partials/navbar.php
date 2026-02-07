@@ -46,7 +46,7 @@
             </li>
           </ul>
           <ul class="navbar-nav ms-auto">
-            <?php if (isset($_SESSION['user']) && !empty($_SESSION['user'])) : ?>
+            <?php if (isset($_SESSION['user']) && !empty($_SESSION['user']) && $_SESSION['logged_in'] == true) : ?>
               <li class="nav-item nav-hov navbar-collapse">
                 <a class="nav-link bi bi-door-open-fill text-danger" href="logout"></a>
               </li>
