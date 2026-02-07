@@ -35,16 +35,16 @@ class AuthController
 
         if (!empty($errors)) {
             $_SESSION['flash']['error'] = implode('<br>', $errors);
-            header("Location: /register");
+            header("Location: " . BASE_URL . "register");
             exit;
         }
 
         $_SESSION['flash']['success'] = "Inscription réussi !";
         if (!headers_sent()) {
-            header("Location: /login");
+            header("Location: " . BASE_URL . "login");
             exit;
         } else {
-            echo '<script>window.location="/login";</script>';
+            echo '<script>window.location="' . BASE_URL . 'login";</script>';
             exit;
         }
     }
@@ -63,14 +63,47 @@ class AuthController
 
         if (!empty($result['errors'])) {
             $_SESSION['flash']['error'] = $result['errors'];
-            header("Location: /login");
+            header("Location: " . BASE_URL . "login");
             exit;
         }
 
-        $_SESSION['user'] = $result['user'];
+        // Regénérer l'id par sécurité
+        session_regenerate_id(true);
+
+        $_SESSION['user'] = [
+            'user_id'           => $result['user']['id'],
+            'nom'               => $result['user']['nom'],
+            'prenom'            => $result['user']['prenom'],
+            'email'             => $result['user']['email'],
+            'date_naissance'    => $result['user']['date_naissance'],
+            'filiere'           => $result['user']['filiere'],
+            'niveau'            => $result['user']['niveau'],
+            'etablissement'     => $result['user']['etablissement'],
+            'image'             => $result['user']['image'],
+            'created_at'        => $result['user']['created_at'],
+            'role'              => $result['user']['role']
+        ];
 
         $_SESSION['flash']['success'] = "Connexion réussi !";
-        header("Location: /");
+        header("Location: " . BASE_URL);
+        exit;
+    }
+
+    public function logout() {
+        $_SESSION = [];
+
+        if (isset($_COOKIE[session_name()])) {
+            setcookie(
+                session_name(),
+                '',
+                time() - 3600,
+                BASE_URL
+            );
+        }
+
+        session_destroy();
+
+        header("Location: " . BASE_URL . "login");
         exit;
     }
 }

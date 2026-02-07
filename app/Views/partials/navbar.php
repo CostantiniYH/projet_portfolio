@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
       <div class="container-fluid">
         <a class="p-3 rounded navbar-brand  fw-bold hvr-shutter-out-vertical"
-        href="/">
+        href="<?= BASE_URL ?>">
           <img src="<?= BASE_URL ?>assets//icons/portfolio_13.jpg" alt="image_portfolio"
           class="image-fluid rounded-3" style="background-image: none;height:40px; width:40px;">
           YHC
@@ -14,7 +14,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item nav-hov">
-              <a class="nav-link bi bi-house-fill" href="/"></a>
+              <a class="nav-link bi bi-house-fill" href="<?= BASE_URL ?>"></a>
             </li>
             <li class="nav-item nav-hov">
               <a class="nav-link " href="presentation">Présentation</a>
@@ -46,12 +46,18 @@
             </li>
           </ul>
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item nav-hov navbar-collapse">
-              <a class="nav-link" href="register">S'inscrire</a>
-            </li>
-            <li class="navbar-item">
-              <a class="nav-link bi bi-person-circle fs-2" href="login"></a>
-            </li>
+            <?php if (isset($_SESSION['user'])) : ?>
+              <li class="nav-item nav-hov navbar-collapse">
+                <a class="nav-link bi bi-door-open-fill text-danger" href="logout"></a>
+              </li>
+            <?php else: ?>
+              <li class="nav-item nav-hov navbar-collapse">
+                <a class="nav-link" href="register">S'inscrire</a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link bi bi-person-circle fs-2" href="login"></a>
+              </li>
+            <?php endif; ?>
           </ul>
         </div>
       </div>

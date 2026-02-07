@@ -1,7 +1,6 @@
-/cache
-/app/Models/Entites/cache
-/public/uploads/videos/*.mp4
-*.mp4
+cache
+app/Models/Entites/cache/
+# *.mp4
 .gitignore
 .env
 /vendor

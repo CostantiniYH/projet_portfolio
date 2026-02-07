@@ -14,6 +14,16 @@
             de nos travaux, et par conséquent, je pense qu'il est essentiel de les rendre accessible.  J'ai donc décidé de le faire moi-même et d'en faire une activité documentée, ce qui m'a permis d'enrichir mes compétences en systèmes et 
             réseaux et dans le même temps de produire du contenu pour mon portfolio.
         </p>
+        <p class="text-justifier">
+            Résumé : 
+            <pre class="" style="white-space: pre-line;">1. Création de la première VM Ubuntu server, cration d'un user admin (sudo), puis installation des paquets suivants : SSH, UFW, fail2ban, Nginx (Connexion internet via l'hôte grâce la carte réseau en mode bridge).
+2. Clonage de la VM1 en deux exemplaires : VM1 = server-proxy | VM2 = server-applicatif | VM3 = server-database
+3. Configuration des cartes réseaux : 2 cartes pour VM1 => bridge (accès par pont) et interne | 1 carte réseau interne pour VM2 et VM3.
+4. Configuration des IP statiques de chaque VM avec Netplan (fichier .yaml): Réseau 1 (LAN routeur) => 192.168.1.0/24 | Réseau 2 (LAN Serveurs) => 10.10.10.0/32
+5. Test communication interne
+6. Changement des hostnames des VMs : srv-proxy (VM1), srv-app (VM2), srv-db
+            </pre>
+        </p>
     </section>
 
     <section class="row gap-3 p-5 bg-obj" id="objectifs">
@@ -68,7 +78,7 @@
             <p>Un réseau privé entre les 3 serveurs, seul 1 serveur sera exposé au réseau.</p>
             <div class="row">
                 <a href="/uploads/activites/infra-reseau-srv.drawio.png" target="_blank">
-                <img class="p-3 rounded-1 shadow col-md-4 d-block img-infra bg-secondary" src="/uploads/activites/infra-reseau-srv.drawio.png" 
+                <img class="p-3 rounded-1 shadow col-md-4 d-block img-infra bg-secondary" src="<?= BASE_URL ?>uploads/activites/infra-reseau-srv.drawio.png" 
                 alt="" ></a>
             </div>
         </div>
@@ -88,7 +98,7 @@
         <div class="card shadow p-3 col-md">
             <div class="row">                
                 <div class="col-md"  style="min-width: 10rem;">
-                    <img class="img-fluid rounded" src="/uploads/activites/ubuntu.png" alt="">
+                    <img class="img-fluid rounded" src="<?= BASE_URL ?>uploads/activites/ubuntu.png" alt="">
                 </div>
                 <div class="col-md">                
                     <strong class="mb-3">SRV-1 - Proxy</strong>
@@ -134,7 +144,7 @@
         <div class="card shadow p-3 col-md">
             <div class="row">                
                 <div class="col-md"  style="min-width: 10rem;">
-                    <img class="img-fluid rounded" src="/uploads/activites/ubuntu.png" alt="">
+                    <img class="img-fluid rounded" src="<?= BASE_URL ?>uploads/activites/ubuntu.png" alt="">
                 </div>
                 <div class="col-md">                
                     <strong class="mb-3">SRV-2 - Applicatif</strong>
@@ -155,7 +165,7 @@
         <div class="card shadow p-3 col-md">
             <div class="row">                
                 <div class="col-md"  style="min-width: 10rem;">
-                    <img class="img-fluid rounded" src="/uploads/activites/ubuntu.png" alt="">
+                    <img class="img-fluid rounded" src="<?= BASE_URL ?>uploads/activites/ubuntu.png" alt="">
                 </div>
                 <div class="col-md">                
                     <strong class="mb-3">SRV-3 - Base de données</strong>

@@ -47,7 +47,7 @@
         <article class="col-md-4">
             <h4 class="text-center"></h4>
             <video class="col-12" width="" height="auto" controls>
-                <source type="video/mp4" src="/uploads/videos/Enregistrement 2026-01-14 000726.mp4">
+                <source type="video/mp4" src="<?= BASE_URL ?>uploads/videos/Enregistrement 2026-01-14 000726.mp4">
             </video>
         </article>   
     </section>

@@ -110,7 +110,7 @@
         <article class="col-md">
             <h4 class="text-center"></h4>
             <video class="col-12" width="" height="auto" controls>
-                <source type="video/mp4" src="/uploads/videos/bug_doublon.mp4">
+                <source type="video/mp4" src="<?= BASE_URL ?>uploads/videos/bug_doublon.mp4">
             </video>
             <strong>Résolution de bug lié au doublon</strong> - 
             <small>Montée avec Clipchamp</small>

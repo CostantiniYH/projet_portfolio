@@ -27,6 +27,6 @@ class LoginService
             return ['errors' => ['password' => "Le mot de passe est incorrect."]];
         }
 
-        return ['user' => [$user]];        
+        return ['user' => $user];        
     }
 }
