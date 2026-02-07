@@ -21,6 +21,7 @@ class AuthController
 
     public function formRegister() {        
         $titre = "Inscription";
+        $css = "auth";
         ob_start();
         require_once __DIR__ . '/../Views/auth/register.php';
         $content = ob_get_clean();
@@ -51,6 +52,8 @@ class AuthController
 
      public function formLogin() {
         $titre = "Connexion";
+        $css = "auth";
+
         ob_start();
         require_once __DIR__ . '/../Views/auth/login.php';
         $content = ob_get_clean();
