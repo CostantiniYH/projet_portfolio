@@ -23,7 +23,7 @@
               <a class="nav-link " href="projets">Projets</a>
             </li>
             <li class="nav-item nav-hov">
-              <a class="nav-link " href="activites">Missions</a>
+              <a class="nav-link " href="activites">Activités</a>
             </li>
             <li class="nav-item nav-hov">
               <a class="nav-link " href="realisations">Réalisations Pros</a>
