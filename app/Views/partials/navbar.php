@@ -26,16 +26,16 @@
               <a class="nav-link " href="activites">Activités</a>
             </li>
             <li class="nav-item nav-hov">
-              <a class="nav-link " href="realisations">Réalisations Pros</a>
+              <a class="nav-link" href="cybersecurite">Cybersécurité</a>
             </li>
+            <!-- <li class="nav-item nav-hov">
+              <a class="nav-link " href="realisations">Réalisations Pros</a>
+            </li> -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Voir plus
               </a>
               <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item nav-hov" href="cybersecurite">Cybersécurité</a>
-                </li>
                 <li>
                   <a class="dropdown-item nav-hov" href="veille-technologique">Veille Technologique</a>
                 </li>    
