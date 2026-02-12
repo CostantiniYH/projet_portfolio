@@ -18,21 +18,26 @@
     </section>
 
     <section class="row">
-        <div class="col-md">
-            <img src="" alt="">
-            <map name="">
-                <area shape="rect" coords="400, 400, 400, 400" href="" alt="">
+        <div class="col-md card">
+            <h4 class="position-absolute text-white top-50 ">Activité école</h4>
+            <img src="<?= BASE_URL ?>uploads/activites/entreprise.png" alt="" usemap="#workmap">
+            <map name="workmap">
+                <area shape="rect" coords="400, 400, 400, 400" href="#" alt="">
             </map>
         </div>
-        <div class="col-md">
-
+        <div class="col-md card">
+            <h4 class="position-absolute text-white top-50 ">Activité entreprise</h4>
+            <img src="<?= BASE_URL ?>uploads/activites/entreprise.png" alt="" usemap="#ecolemap">
+            <map name="ecolemap">
+                <area shape="rect" coords="400,400,400,400" href="activites" alt="">
+            </map>
         </div>
     </section>
 
     <section class="row">
         <div class="form-control">
             <a class="nav-link dropdown-toggle " href="activites" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Sélectionnez une mission</a>
+                Sélectionnez une mission old</a>
             <ul class="dropdown-menu">
                 <li>
                   <a class="dropdown-item nav-hov" href="activite_1">Acivité 1 - Devsio-Chat</a>
