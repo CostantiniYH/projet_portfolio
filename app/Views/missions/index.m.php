@@ -18,6 +18,18 @@
     </section>
 
     <section class="row">
+        <div class="col-md">
+            <img src="" alt="">
+            <map name="">
+                <area shape="rect" coords="400, 400, 400, 400" href="" alt="">
+            </map>
+        </div>
+        <div class="col-md">
+
+        </div>
+    </section>
+
+    <section class="row">
         <div class="form-control">
             <a class="nav-link dropdown-toggle " href="activites" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Sélectionnez une mission</a>
