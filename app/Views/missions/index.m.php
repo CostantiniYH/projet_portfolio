@@ -17,38 +17,20 @@
         </div>
     </section>
 
-    <section class="row">
-        <div class="col-md card">
-            <h4 class="position-absolute text-white top-50 ">Activité école</h4>
-            <img src="<?= BASE_URL ?>uploads/activites/entreprise.png" alt="" usemap="#workmap">
-            <map name="workmap">
-                <area shape="rect" coords="400, 400, 400, 400" href="#" alt="">
-            </map>
+    <section class="row gap-4">
+        <div class="col-md card position-relative">
+            <img class="img-map" src="<?= BASE_URL ?>uploads/activites/ecole.png" alt="">
+            <div class="position-absolute text-white top-50 start-50 border translate-middle">
+                <h4 class="">Activité école</h4>
+            </div>
+            <a href="activites/ecole" class="stretched-link"></a>
         </div>
-        <div class="col-md card">
-            <h4 class="position-absolute text-white top-50 ">Activité entreprise</h4>
-            <img src="<?= BASE_URL ?>uploads/activites/entreprise.png" alt="" usemap="#ecolemap">
-            <map name="ecolemap">
-                <area shape="rect" coords="400,400,400,400" href="activites" alt="">
-            </map>
-        </div>
-    </section>
-
-    <section class="row">
-        <div class="form-control">
-            <a class="nav-link dropdown-toggle " href="activites" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Sélectionnez une mission old</a>
-            <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item nav-hov" href="activite_1">Acivité 1 - Devsio-Chat</a>
-                </li>
-                <li>
-                    <a class="dropdown-item nav-hov" href="activite_2">Activité 2 - Evaluation QCM</a>
-                </li> 
-                <li>
-                    <a class="dropdown-item nav-hov" href="activite_3">Activité 3 - Server ubuntu</a>
-                </li>
-            </ul>
+        <div class="col-md card position-relative">
+            <img class="img-map w-100" src="<?= BASE_URL ?>uploads/activites/entreprise.png" alt="">
+            <div class="position-absolute text-white top-50 start-50 border translate-middle">
+                <h4 class="">Activité Entreprise</h4>
+            </div>
+            <a href="activites/entreprise" class="stretched-link"></a>
         </div>
     </section>
 </div>

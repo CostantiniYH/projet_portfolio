@@ -63,3 +63,25 @@
     );
     color: white;
 }
+
+.card:hover a {
+    color: #000;
+}
+
+.img-map {
+    filter: grayscale(50%) brightness(60%);
+    transition: 0.5s;
+}
+
+.card:hover .img-map {
+    filter: grayscale(0%) brightness(100%);
+    color: black;
+}
+
+.position-absolute {
+    pointer-events: none;
+}
+
+/* .titre-img:hover {
+    color: #000;
+} */

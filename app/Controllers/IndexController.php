@@ -31,7 +31,7 @@ class IndexController
 
     public function indexActivite() {
         // Code pour afficher la liste des activités
-        $activites = "";
+        $css = "activite";
 
         $titre = "Activités";
         ob_start();
@@ -40,6 +40,30 @@ class IndexController
         require __DIR__ . '/../Views/partials/layout.php';
     }
 
+    public function activiteEcole() {
+        // Code pour afficher la liste des activités
+        $activites = "";
+        $css = "activite";
+        
+        $titre = "Activités";
+        ob_start();
+        require_once __DIR__ . '/../Views/missions/activite_1.php';
+        $content = ob_get_clean();
+        require __DIR__ . '/../Views/partials/layout.php';
+    }
+
+    public function activiteEntreprise() {
+        // Code pour afficher la liste des activités
+        $activites = "";
+        $css = "activite";
+        
+        $titre = "Activités";
+        ob_start();
+        require_once __DIR__ . '/../Views/missions/activite_1.php';
+        $content = ob_get_clean();
+        require __DIR__ . '/../Views/partials/layout.php';
+    }
+    
     public function activite1() {
         // Code pour afficher la liste des activités
         $activites = "";

@@ -5,6 +5,9 @@ Route::get('/', 'IndexController@index');
 Route::get('/presentation', 'IndexController@index');
 Route::get('/realisations', 'IndexController@realisation');
 Route::get('/activites', 'IndexController@IndexActivite');
+Route::get('/activites/ecole', 'IndexController@activiteEcole');
+Route::get('/activites/entreprise', 'IndexController@activiteEntreprise');
+
 Route::get('/activite_1', 'IndexController@activite1');
 Route::get('/activite_2', 'IndexController@activite2');
 Route::get('/activite_3', 'IndexController@activite3');
