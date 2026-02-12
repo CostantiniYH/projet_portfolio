@@ -1,6 +1,6 @@
 <div class="container">
     <section class="row gap-3">
-        <div class="col-md-3 bg-bleu-marine">
+        <div class="col-md-3 col-sm-12 bg-bleu-marine">
             <h3 class="w-100">Epreuve E5</h3>
         </div>
             <div class="col-md bg-white p-3 rounded">
