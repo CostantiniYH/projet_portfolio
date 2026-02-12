@@ -14,10 +14,9 @@
         </div>
         <div class="col-md bg-white shadow-sm rounded p-3">
             <h2 class="mb-4 text-primary bi bi-buildings"> Expérience professionnelle</h2>
-            <div class="card"> 
+            <div class="card border-0"> 
                 <img class="card-img-top img-fluid float-start w-50 " src="uploads\experience\hitecy.png" alt="">
-                <div class="card-body">            
-                    <p>Data analyste chez Hitecy : </p>
+                <div class="card-body"> 
                     <p>Analyse et qualification des données clients</p>
                 </div>
             </div>

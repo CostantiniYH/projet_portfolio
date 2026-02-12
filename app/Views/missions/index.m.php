@@ -1,7 +1,7 @@
 <div class="container">
     <section class="row gap-3">
         <div class="col-md-3 bg-bleu-marine">
-            <h3 class="">Epreuve E5</h3>
+            <h3 class="w-100">Epreuve E5</h3>
         </div>
             <div class="col-md bg-white p-3 rounded">
             <p class="alert alert-warning">Le dépôt du dossier de l'épreuve E5 doit se faire à partir du 17 février jusqu'au maximum le 20 mars (23 à midi).</p>
