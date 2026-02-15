@@ -10,9 +10,9 @@
         // Supprime les 2 premiers <b>...</b> (le titre répété)
         $desc = preg_replace('/^.*?<br><br>/s', '', $desc, 1);
     ?>
-        <div class="p-3 shadow mb-3 hvr-curl-top-right rounded" data-aos="fade-up" data-aos-duration="">
+        <div class="p-3 shadow mb-3 hvr-curl-top-right rounded bg-white" data-aos="fade-up" data-aos-duration="">
             <a href="<?= $news['link'] ?>" class="text-decoration-none" target="_blank">
-                <div class="text-justify text-black">
+                <div class="text-justifier text-black">
                     <div class="row col-md card-img-top mb-1">
                         <img src="<?= $news['image'] ?>" class="img-fluid col" alt="<?= $news['image'] ?>" 
                         style="max-width: 5rem;">
