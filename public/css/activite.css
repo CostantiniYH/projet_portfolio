@@ -64,9 +64,6 @@
     color: white;
 }
 
-.card:hover a {
-    color: #000;
-}
 
 .img-map {
     filter: grayscale(50%) brightness(60%);
@@ -81,7 +78,3 @@
 .position-absolute {
     pointer-events: none;
 }
-
-/* .titre-img:hover {
-    color: #000;
-} */
