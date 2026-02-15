@@ -24,20 +24,34 @@ body {
   background-color: white;
 }
 
-  nav.project {
-      position: sticky;
-      top: 0;
-      background: #f4f4f4;
-      padding: 10px;
-      border-bottom: 1px solid #ccc;
-    }
+nav.project {
+    position: sticky;
+    top: 0;
+    background: #f4f4f4;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
 
-    nav.project a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
+nav.project a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
 
-    /* section { padding: 40px; max-width: 900px; margin: auto; } */
-    h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; }
+/* section { padding: 40px; max-width: 900px; margin: auto; } */
+h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; }
+
+.img-filtre {
+filter: grayscale(50%) brightness(60%);
+transition: 0.5s;
+}
+
+.card:hover .img-filtre {
+    filter: grayscale(0%) brightness(100%);
+    color: black;
+}
+
+.position-absolute {
+    pointer-events: none;
+}

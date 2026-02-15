@@ -65,12 +65,17 @@
 }
 
 
-.img-map {
+.img-filtre {
     filter: grayscale(50%) brightness(60%);
     transition: 0.5s;
 }
 
-.card:hover .img-map {
+.card:hover .img-filtre {
+    filter: grayscale(0%) brightness(100%);
+    color: black;
+}
+
+.img-synthese:hover .img-filtre {
     filter: grayscale(0%) brightness(100%);
     color: black;
 }

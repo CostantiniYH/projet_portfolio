@@ -47,7 +47,7 @@ class IndexController
         
         $titre = "Activités";
         ob_start();
-        require_once __DIR__ . '/../Views/missions/activite_1.php';
+        require_once __DIR__ . '/../Views/missions/activite_ecole.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
     }
@@ -59,7 +59,7 @@ class IndexController
         
         $titre = "Activités";
         ob_start();
-        require_once __DIR__ . '/../Views/missions/activite_1.php';
+        require_once __DIR__ . '/../Views/missions/activite_entreprise.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
     }
@@ -114,7 +114,7 @@ class IndexController
 
     public function indexProjet() {
         $titre = "Projets";
-        $css = "projet.css";
+        $css = "projet";
         ob_start();
         require_once __DIR__ . '/../Views/projets/index.p.php';
         $content = ob_get_clean();
@@ -123,7 +123,7 @@ class IndexController
 
     public function projet1() {
         $titre = "Projet ecom";
-        $css = "projet.css";
+        $css = "projet";
         ob_start();
         require_once __DIR__ . '/../Views/projets/projet_1.php';
         $content = ob_get_clean();
@@ -132,7 +132,7 @@ class IndexController
 
      public function projet2() {
         $titre = "Projet GDM";
-        $css = "projet.css";
+        $css = "projet";
         ob_start();
         require_once __DIR__ . '/../Views/projets/projet_2.php';
         $content = ob_get_clean();

@@ -32,21 +32,20 @@
         </div>
     </section>
 
-     <section class="row">
-        <div class="form-control">
-            <a class="nav-link dropdown-toggle " href="activites" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Sélectionnez un projet</a>
-            <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item nav-hov" href="projet_1">Projet 1 - Site web e-commerce client léger</a>
-                </li>
-                <li>
-                    <a class="dropdown-item nav-hov" href="projet_2">Projet 2 - GdC client lourd</a>
-                </li> 
-                <li>
-                    <a class="dropdown-item nav-hov" href="projet_3">Projet 3 - GdM client léger</a>
-                </li>
-            </ul>
+    <section class="row gap-4">
+        <div class="col-md card p-1 border-0 bg-black position-relative">
+            <img class="img-filtre " src="<?= BASE_URL ?>uploads/activites/ecole.png" alt="">
+            <div class="position-absolute text-white top-50 start-50 translate-middle">
+                <h4 class="">Projet 1</h4>
+            </div>
+            <a href="projet_1" class="stretched-link"></a>
         </div>
-    </section>
+        <div class="col-md card border-0 p-1 bg-black position-relative">
+            <img class="img-filtre w-100" src="<?= BASE_URL ?>uploads/activites/entreprise.png" alt="">
+            <div class="position-absolute text-white top-50 start-50 translate-middle">
+                <h4 class="">Projet 2</h4>
+            </div>
+            <a href="projet_2" class="stretched-link"></a>
+        </div>
+    </section> 
 </div>
