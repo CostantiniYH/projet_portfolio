@@ -18,16 +18,16 @@
     </section>
 
     <section class="row gap-4">
-        <div class="col-md card position-relative">
+        <div class="col-md card border-0 bg-opacity-50 position-relative">
             <img class="img-map" src="<?= BASE_URL ?>uploads/activites/ecole.png" alt="">
-            <div class="position-absolute text-white top-50 start-50 border translate-middle">
+            <div class="position-absolute text-white top-50 start-50 translate-middle">
                 <h4 class="">Activité école</h4>
             </div>
             <a href="activites/ecole" class="stretched-link"></a>
         </div>
-        <div class="col-md card position-relative">
+        <div class="col-md card border-0 bg-opacity-10 position-relative">
             <img class="img-map w-100" src="<?= BASE_URL ?>uploads/activites/entreprise.png" alt="">
-            <div class="position-absolute text-white top-50 start-50 border translate-middle">
+            <div class="position-absolute text-white top-50 start-50 translate-middle">
                 <h4 class="">Activité Entreprise</h4>
             </div>
             <a href="activites/entreprise" class="stretched-link"></a>

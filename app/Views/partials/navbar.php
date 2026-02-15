@@ -14,23 +14,17 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item nav-hov">
-              <a class="nav-link bi bi-house-fill" href="<?= BASE_URL ?>"></a>
+              <a class="nav-link bi bi-house-fill" href="presentation">Présentation</a>
             </li>
             <li class="nav-item nav-hov">
-              <a class="nav-link " href="presentation">Présentation</a>
+              <a class="nav-link " href="activites">Activités Pro</a>
             </li>
             <li class="nav-item nav-hov">
-              <a class="nav-link " href="activites">Activités</a>
-            </li>
-            <li class="nav-item nav-hov">
-              <a class="nav-link " href="projets">Projets</a>
+              <a class="nav-link " href="projets">Réalisations Pro</a>
             </li>
             <li class="nav-item nav-hov">
               <a class="nav-link" href="cybersecurite">Cybersécurité</a>
             </li>
-            <!-- <li class="nav-item nav-hov">
-              <a class="nav-link " href="realisations">Réalisations Pros</a>
-            </li> -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Voir plus
