@@ -70,8 +70,7 @@
     transition: 0.5s;
 }
 
-.card {
-}
+
 .card:hover .img-filtre {
     filter: grayscale(0%) brightness(100%);
     color: black;
