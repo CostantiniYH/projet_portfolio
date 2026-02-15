@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
       <div class="container-fluid">
         <a class="p-3 rounded navbar-brand  fw-bold hvr-shutter-out-vertical"
-        href="<?= BASE_URL ?>">
+        href="presentation">
           <img src="<?= BASE_URL ?>assets//icons/portfolio_13.jpg" alt="image_portfolio"
           class="image-fluid rounded-3" style="background-image: none;height:40px; width:40px;">
           YHC

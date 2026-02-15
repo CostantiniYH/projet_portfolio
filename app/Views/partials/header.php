@@ -24,7 +24,7 @@
         // Mise en forme pour affichage
         $currentPageLabel = ucfirst(str_replace(['-', '_'], ' ', $currentPage)); 
 
-        if ($currentPage) {?>
+        if ($currentPage !== 'presentation') {?>
 
         <div class="text-center position-relative mt-5">
             <img style="height: 300px;" src="<?= BASE_URL ?>assets/divers/futuriste.jpg" alt="photo futuriste" 
@@ -52,11 +52,11 @@
         unset($_SESSION['flash']);
     }?>
 
-    <p class="container p-4">
+    <!-- <p class="container p-4">
         <a class="text-dark" href="<?= BASE_URL ?>">Accueil</a>
         <?php if ($currentPage !== 'accueil') : ?>
         / <?= $currentPageLabel ?>
         <?php endif; ?>
-    </p>
+    </p> -->
 
 </div>

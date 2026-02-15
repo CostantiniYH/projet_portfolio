@@ -1,19 +1,35 @@
-<div class="container row-gap-5">
-        <h1 class="text-center">Bienvenue</h1>
-        <p>Cette page permettra de présenter de façon brève et dynamique mon parcours d'étude et professionnel.</p>
-       
+<header class="bg-blue row text-white p-5 mb-5">
+    <h1>Yaacov Costantini</h1>
+    <p>Développeur polyvalent</p>
+    <p>Etudiant en alternance passioné par la création et la découverte d'expérience numériques</p>
+</header>
 
-    <div class="row gap-3 mb-4">
-        <div class="col-md bg-white shadow-sm rounded p-3">
-            <h2 class="mb-4 text-primary bi bi-mortarboard"> Etudes</h2>
-            <ul class="list-group">
-                <li class="list-group-item"><strong>Diplôme : </strong>BTS SIO</li>
-                <li class="list-group-item"><strong>Établissement : </strong>CFA Ozar Formation, Paris 13</li>
-                <li class="list-group-item"><strong>Année d'obtention : </strong>En cours...</li>
-            </ul>
+<main class="container">
+    <section class="row">
+        <h1 class="text-center">Bienvenue</h1>
+        <p>Cette page permet de présenter de façon brève et dynamique mon parcours d'étude et professionnel. Consulter-la pour en savoir davantage.</p>
+    </section>
+
+    <section class="row gap-3 mb-4">
+        <hr class="text-rouge border-2">
+        <h1 class="mb-4 text-primary bi bi-mortarboard text-black" style="font-size: 3rem"> Etudes</h1>
+        <hr class="text-rouge border-2">
+
+        <div class="bg-white shadow-sm rounded p-5">
+            <h3>BTS SIO Option SLAM [En cours...]</h3>
+            <h5 class="text-rouge">CFA Ozar Formation</h5>
+            <p class="text-justifier">Formation en Services Informatiques aux Organisations, spécialisation Solutions 
+                Logicielles et Applications Métiers. Apprentissage approfondi du développement 
+                web, de la gestion de bases de données et de la méthodologie de projet.</p>
         </div>
-        <div class="col-md bg-white shadow-sm rounded p-3">
-            <h2 class="mb-4 text-primary bi bi-buildings"> Expérience professionnelle</h2>
+    </section>
+
+    
+    <section class="row gap-3 mb-4">
+        <hr class="text-gris border-2">
+        <h1 class="mb-4 text-primary bi bi-buildings text-black" style="font-size: 3rem"> Expérience professionnelle</h1>
+        <hr class="text-gris border-2">
+        <div class="bg-white shadow-sm rounded p-3">
             <div class="card border-0"> 
                 <img class="card-img-top img-fluid float-start w-50 " src="uploads\experience\hitecy.png" alt="">
                 <div class="card-body"> 
@@ -25,8 +41,13 @@
 
             </picture>
         </div>
-        <div class="col-md bg-white shadow-sm rounded p-3">
-            <h2 class="mb-4 text-primary bi bi-person-gear">Compétences techniques</h2>
+    </section>
+
+    <section class="row gap-3 mb-4">
+        <hr class="text-vert border-2">
+        <h1 class="mb-4 text-primary bi bi-person-gear text-black" style="font-size: 3rem"> Compétences techniques</h1>
+        <hr class="text-vert border-2">
+        <div class="bg-white shadow-sm rounded p-3">
             <ul class="list-group">               
                 <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Git
                     <div class="progress mt-2" style="height: 10px;">
@@ -70,5 +91,5 @@
                 </li>      
             </ul>
         </div>
-    </div>
-</div>
+    </section>
+</main>

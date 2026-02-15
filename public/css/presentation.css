@@ -1,3 +1,49 @@
 .col-md {
     background-color: white;
 }
+
+.bg-blue {background-image: linear-gradient(
+    145deg,
+    rgb(0, 47, 100),    
+    rgba(4, 46, 94, 0.904),    
+    rgba(4, 46, 94, 0.719),    
+    rgba(4, 46, 94, 0.795),    
+    rgb(4, 46, 94)
+    );
+}
+.bg-rouge {background-image: linear-gradient(
+    145deg,
+    rgb(206, 0, 0),
+    rgb(206, 0, 0),
+    rgb(206, 0, 0),
+    rgb(206, 0, 0),
+    rgb(206, 0, 0)
+    ) 
+}
+.bg-vert {background-image: linear-gradient(
+    145deg,
+    green,
+    green,
+    green,
+    green,
+    green
+    ) 
+}
+.text-gris {background-image: linear-gradient(
+    145deg,
+    rgb(29, 29, 29),
+    rgba(29, 29, 29, 0.863),
+    rgba(29, 29, 29, 0.493),
+    rgb(29, 29, 29),
+    rgba(29, 29, 29, 0.514),
+    rgba(29, 29, 29, 0.801)
+    );
+}
+
+.text-rouge { color: rgb(201, 41, 68); }
+
+.text-bleu { color: rgb(43, 125, 196); }
+
+.text-vert { color: rgb(32, 158, 0); }
+
+.-gris { color: rgb(146, 146, 146); }

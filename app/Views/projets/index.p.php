@@ -32,7 +32,7 @@
         </div>
     </section>
 
-    <section class="row gap-4">
+    <section class="row gap-4 mt-5">
         <div class="col-md card p-1 border-0 bg-black position-relative">
             <img class="img-filtre " src="<?= BASE_URL ?>uploads/activites/ecole.png" alt="">
             <div class="position-absolute text-white top-50 start-50 translate-middle">
