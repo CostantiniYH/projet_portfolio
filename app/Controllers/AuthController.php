@@ -95,18 +95,12 @@ class AuthController
 
     public function logout() {
         $_SESSION = [];
-
-        if (isset($_COOKIE[session_name()])) {
-            setcookie(
-                session_name(),
-                '',
-                time() - 3600,
-                BASE_URL
-            );
-        }
-
+        session_unset();
         session_destroy();
 
+        session_start();
+
+        $_SESSION['flash']['success'] = "Déconnexion réussi !";
         header("Location: " . BASE_URL . "login");
         exit;
     }

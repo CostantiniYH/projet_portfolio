@@ -37,12 +37,19 @@
     <?php } ?>
 
     <?php if (isset($_SESSION['flash'])) {
-        foreach ($_SESSION['flash'] as $type => $message) { ?>
-            <div class="container alert alert-<?= $type ?>">
-                <?= $message; ?>
+        foreach ($_SESSION['flash'] as $type => $messages):?>
+        <?php 
+            if ($type == "error") {$type = 'danger';}
+            $messagesList = is_array($messages) ? $messages : [$messages];
+            foreach ($messagesList as $message):
+        ?>  
+            <div class="container alert alert-<?= htmlspecialchars($type) ?>">
+                <?= htmlspecialchars($message); ?>
             </div>
-        <?php }
-        // unset($_SESSION['flash']);
+        <?php 
+            endforeach;
+        endforeach;
+        unset($_SESSION['flash']);
     }?>
 
     <p class="container p-4">

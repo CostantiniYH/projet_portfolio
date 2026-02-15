@@ -23,7 +23,7 @@
 <?php require_once __DIR__ . '/header.php'; ?>
 
 <?php if(!empty($_SESSION['user']) && $_SESSION['user']['role'] === 'admin')
-   print_r($_SESSION) ?>
+  //  print_r($_SESSION) ?>
 <div>
   <?= $content ;?>
 </div>

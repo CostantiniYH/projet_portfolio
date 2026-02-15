@@ -14,7 +14,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item nav-hov">
-              <a class="nav-link bi bi-house-fill" href="presentation">Présentation</a>
+              <a class="nav-link bi bi-house-fill" href="presentation"> Présentation</a>
             </li>
             <li class="nav-item nav-hov">
               <a class="nav-link " href="activites">Activités Pro</a>
