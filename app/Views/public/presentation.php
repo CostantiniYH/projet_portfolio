@@ -31,7 +31,7 @@
         <hr class="text-gris border-2">
         <div class="bg-white shadow-sm rounded p-3">
             <div class="card border-0"> 
-                <img class="card-img-top img-fluid float-start w-50 " src="uploads\experience\hitecy.png" alt="">
+                <img class="card-img-top img-fluid float-start w-25 " src="uploads\experience\hitecy.png" alt="">
                 <div class="card-body"> 
                     <p>Analyse et qualification des données clients</p>
                 </div>
@@ -47,49 +47,72 @@
         <hr class="text-vert border-2">
         <h1 class="mb-4 text-primary bi bi-person-gear text-black" style="font-size: 3rem"> Compétences techniques</h1>
         <hr class="text-vert border-2">
-        <div class="bg-white shadow-sm rounded p-3">
+        <div class="bg-white shadow-sm rounded p-3 col-md-4">
             <ul class="list-group">               
                 <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Git
-                    <div class="progress mt-2" style="height: 10px;">
-                        <div class="progress-bar bg-success fs-7" style="width: 25%;"></div>
+                    <div class="progress mt-2" style="height: 15px;">
+                        <div class="progress-bar bg-success fs-7" style="width: 40%;">40%</div>
                     </div>
                 </li>      
                 <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Python            
-                    <div class="progress mt-2" style="height: 10px;">
-                        <div class="progress-bar bg-success" style="width: 15%"></div>
+                    <div class="progress mt-2" style="height: 15px;">
+                        <div class="progress-bar bg-success" style="width: 15%">15%</div>
                     </div>
                 </li>      
                 <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Java
-                    <div class="progress mt-2" style="height: 10px;">
-                        <div class="progress-bar bg-success fs-7" style="width: 15%;"></div>
+                    <div class="progress mt-2" style="height: 15px;">
+                        <div class="progress-bar bg-success fs-7" style="width: 25%;">25%</div>
                     </div>
                 </li>      
                 <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> HTML
-                    <div class="progress mt-2" style="height: 10px;">
-                        <div class="progress-bar bg-success fs-7" style="width: 80%;"></div>
+                    <div class="progress mt-2" style="height: 15px;">
+                        <div class="progress-bar bg-success fs-7" style="width: 85%;">85%</div>
                     </div>
                 </li>
                 <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> CSS
-                    <div class="progress mt-2" style="height: 10px;">
-                        <div class="progress-bar bg-success fs-7" style="width: 75%;"></div>
+                    <div class="progress mt-2" style="height: 15px;">
+                        <div class="progress-bar bg-success fs-7" style="width: 75%;">75%</div>
                     </div>
                 </li>
                 <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> JavaScript
-                    <div class="progress mt-2" style="height: 10px;">
-                        <div class="progress-bar bg-success fs-7" style="width: 25%;"></div>
+                    <div class="progress mt-2" style="height: 15px;">
+                        <div class="progress-bar bg-success fs-7" style="width: 10%;">10%</div>
                     </div>
                 </li>      
                 <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> PHP
-                    <div class="progress mt-2" style="height: 10px;">
-                        <div class="progress-bar bg-success fs-7" style="width: 75%;"></div>
+                    <div class="progress mt-2" style="height: 15px;">
+                        <div class="progress-bar bg-success fs-7" style="width: 75%;">75%</div>
                     </div>
                 </li>      
                 <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> MySQL
-                    <div class="progress mt-2" style="height: 10px;">
-                        <div class="progress-bar bg-success fs-7" style="width: 50%;"></div>
+                    <div class="progress mt-2" style="height: 15px;">
+                        <div class="progress-bar bg-success fs-7" style="width: 50%;">50%</div>
                     </div>
                 </li>      
             </ul>
+        </div>
+        <div class="row gap-3 col-md">
+            <h2>Visitez les sites suivants pour apprécier les compétences apprises :</h2>
+            <div class="col-md-5 mx-auto card p-3 hvr-shadow">
+                <img src="<?= BASE_URL ?>uploads/projets/ecom.png" alt="" class="img-fluid w-100">
+                <h5 class="card-body">Site e-commerce</h5>
+                <a href="https://costantini.freeboxos.fr/projet-ecom/" target="_blank" class="stretched-link"></a>
+            </div>
+            <div class="col-md-5 mx-auto card p-3 hvr-shadow">
+                <img src="<?= BASE_URL ?>uploads/projets/portfolio.png" alt="" class="img-fluid w-100">
+                <h5 class="card-body">Site Porfolio</h5>
+                <a href="https://costantini.freeboxos.fr/portfolio/" target="_blank" class="stretched-link"></a>
+            </div>
+            <div class="col-md-5 mx-auto card p-3 hvr-shadow">
+                <img src="<?= BASE_URL ?>uploads/projets/chat.png" alt="" class="img-fluid w-100">
+                <h5 class="card-body">Site chat instantané</h5>
+                <a href="https://costantini.freeboxos.fr/chat/" target="_blank" class="stretched-link"></a>
+            </div>
+            <div class="col-md-5 mx-auto card p-3 hvr-shadow">
+                <img src="<?= BASE_URL ?>uploads/projets/qcm.png" alt="" class="img-fluid w-100">
+                <h5 class="card-body">Site QCM de recrutement</h5>
+                <a href="https://costantini.freeboxos.fr/qcm/" target="_blank" class="stretched-link"></a>
+            </div>
         </div>
     </section>
 </main>

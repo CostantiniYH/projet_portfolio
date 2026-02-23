@@ -45,9 +45,6 @@
                 <a class="nav-link bi bi-door-open-fill text-danger" href="logout"></a>
               </li>
             <?php else: ?>
-              <li class="nav-item nav-hov navbar-collapse">
-                <a class="nav-link" href="register">S'inscrire</a>
-              </li>
               <li class="navbar-item">
                 <a class="nav-link bi bi-person-circle fs-2" href="login"></a>
               </li>

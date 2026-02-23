@@ -5,13 +5,13 @@ use PDOException;
 
 class Database {
     public static function connect() {
-        $connect = $_ENV['DB_CONNECTION'];
+        $type = $_ENV['DB_TYPE'];
         $host = $_ENV['DB_HOST'];
         $db   = $_ENV['DB_NAME'];
         $user = $_ENV['DB_USER'];
         $pass = $_ENV['DB_PASS'];
 
-        $dsn = "$connect:host=$host;dbname=$db"; // Avec PostgreSql le dsn ne prend pas charset en paramètres
+        $dsn = "$type:host=$host;dbname=$db"; // Avec PostgreSql le dsn ne prend pas charset en paramètres
         $options = [
             PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
