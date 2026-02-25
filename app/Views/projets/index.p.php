@@ -22,7 +22,7 @@
                     <ul class="list-item-group">
                         <li>Présentation personnelle</li>
                         <li>Présentation entreprise</li>
-                        <li>Présentation missions</li>
+                        <li>Présentation activites</li>
                         <li>Thème de la veille</li>
                     </ul>
                 </p>

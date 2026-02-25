@@ -35,7 +35,7 @@ class IndexController
 
         $titre = "Activités";
         ob_start();
-        require_once __DIR__ . '/../Views/missions/index.m.php';
+        require_once __DIR__ . '/../Views/activites/index.m.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
     }
@@ -47,7 +47,7 @@ class IndexController
         
         $titre = "Activités";
         ob_start();
-        require_once __DIR__ . '/../Views/missions/activite_ecole.php';
+        require_once __DIR__ . '/../Views/activites/activite_ecole.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
     }
@@ -59,7 +59,7 @@ class IndexController
         
         $titre = "Activités";
         ob_start();
-        require_once __DIR__ . '/../Views/missions/activite_entreprise.php';
+        require_once __DIR__ . '/../Views/activites/activite_entreprise.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
     }
@@ -71,7 +71,7 @@ class IndexController
         
         $titre = "Activités";
         ob_start();
-        require_once __DIR__ . '/../Views/missions/activite_1.php';
+        require_once __DIR__ . '/../Views/activites/activite_1.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
     }
@@ -83,7 +83,7 @@ class IndexController
 
         $titre = "Activités";
         ob_start();
-        require_once __DIR__ . '/../Views/missions/activite_2.php';
+        require_once __DIR__ . '/../Views/activites/activite_2.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
     }
@@ -93,7 +93,7 @@ class IndexController
         $activites = "";
         $titre = "Activités";
         ob_start();
-        require_once __DIR__ . '/../Views/missions/activite_3.php';
+        require_once __DIR__ . '/../Views/activites/activite_3.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
     }
@@ -105,7 +105,7 @@ class IndexController
 
         $titre = "Activités";
         ob_start();
-        require_once __DIR__ . '/../Views/missions/activite_4.php';
+        require_once __DIR__ . '/../Views/activites/activite_4.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
     }

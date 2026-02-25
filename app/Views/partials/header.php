@@ -27,10 +27,10 @@
         if ($currentPage !== 'presentation') {?>
 
         <div class="text-center position-relative mt-5">
-            <img style="height: 300px;" src="<?= BASE_URL ?>assets/divers/futuriste.jpg" alt="photo futuriste" 
+            <img style="height: 14rem;  filter: brightness(60%);" src="<?= BASE_URL ?>assets/divers/futuriste.jpg" alt="photo futuriste" 
             class="mb-4 w-100 rounded-5 rounded-top-0">
-            <h1 style="top: 150px; height: 300px; padding-top: 100px;" class="position-absolute  start-50 
-            translate-middle w-100 bg-dark bg-opacity-50 text-white rounded-5 rounded-top-0">
+            <h1 style="top: 13rem; height: 15rem; " class="position-absolute start-50 
+            translate-middle text-white rounded-5 rounded-top-0">
                 <?= ucwords($currentPageLabel) ?></h1>
         </div>
 
