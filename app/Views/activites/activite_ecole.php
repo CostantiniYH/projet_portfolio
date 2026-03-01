@@ -17,7 +17,7 @@
         </div>
 
         <div class="col-md-4">
-            <div class="card h-100 w-100">
+            <div class="card h-100">
                 <img src="<?= BASE_URL ?>uploads/activites/virtual_box.png" alt="" 
                 class="card-img-top img-fluid" style="height: 13rem;">
                 <div class="card-body d-flex flex-column">

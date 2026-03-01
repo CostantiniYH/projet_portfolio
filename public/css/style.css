@@ -13,6 +13,10 @@ p * {
     font-weight: normal !important;
 }
 
+.navbar-brand:hover {
+    box-shadow: 2px 2px 5px 2px rgb(28, 105, 177);
+    transition: 1s;
+}
 .nav-hov:hover * {
     color: white !important;
     background-color: rgba(0, 53, 114, 0.826);

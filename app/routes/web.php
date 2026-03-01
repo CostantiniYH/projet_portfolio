@@ -19,4 +19,4 @@ Route::get('/projet_2', 'IndexController@projet2');
 Route::get('/cybersecurite', 'IndexController@cybersecurite');
 Route::get('/veille-technologique', 'IndexController@veille');
 Route::get('/contact', 'IndexController@contact');
-Route::get('/cours', "IndexController@cours");
+Route::get('/a-propos', "IndexController@apropos");

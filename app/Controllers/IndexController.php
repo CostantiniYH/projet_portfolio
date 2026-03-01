@@ -24,20 +24,20 @@ class IndexController
         $titre = "Présentation";
         $css = "presentation";
         ob_start();
-        require_once __DIR__ . '/../Views/public/presentation.php';
+        require dirname(__DIR__) . '/Views/public/presentation.php';
         $content = ob_get_clean();
-        require __DIR__ . '/../Views/partials/layout.php';
+        require dirname(__DIR__) . '/Views/partials/layout.php';
     }
 
     public function indexActivite() {
-        // Code pour afficher la liste des activités
+        // Code pour afficher l'index des activités
         $css = "activite";
 
         $titre = "Activités";
         ob_start();
-        require_once __DIR__ . '/../Views/activites/index.m.php';
+        require dirname(__DIR__) . '/Views/activites/index.a.php';
         $content = ob_get_clean();
-        require __DIR__ . '/../Views/partials/layout.php';
+        require dirname(__DIR__) . '/Views/partials/layout.php';
     }
 
     public function activiteEcole() {
@@ -47,7 +47,7 @@ class IndexController
         
         $titre = "Activités";
         ob_start();
-        require_once __DIR__ . '/../Views/activites/activite_ecole.php';
+        require __DIR__ . '/../Views/activites/activite_ecole.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
     }
@@ -59,7 +59,7 @@ class IndexController
         
         $titre = "Activités";
         ob_start();
-        require_once __DIR__ . '/../Views/activites/activite_entreprise.php';
+        require __DIR__ . '/../Views/activites/activite_entreprise.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
     }
@@ -71,7 +71,7 @@ class IndexController
         
         $titre = "Activités";
         ob_start();
-        require_once __DIR__ . '/../Views/activites/activite_1.php';
+        require __DIR__ . '/../Views/activites/activite_1.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
     }
@@ -83,7 +83,7 @@ class IndexController
 
         $titre = "Activités";
         ob_start();
-        require_once __DIR__ . '/../Views/activites/activite_2.php';
+        require __DIR__ . '/../Views/activites/activite_2.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
     }
@@ -93,58 +93,47 @@ class IndexController
         $activites = "";
         $titre = "Activités";
         ob_start();
-        require_once __DIR__ . '/../Views/activites/activite_3.php';
+        require __DIR__ . '/../Views/activites/activite_3.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
     }
-
-    public function activite4() {
-        // Code pour afficher la liste des activités
-        $activites = "";
-        $css = "activite";
-
-        $titre = "Activités";
-        ob_start();
-        require_once __DIR__ . '/../Views/activites/activite_4.php';
-        $content = ob_get_clean();
-        require __DIR__ . '/../Views/partials/layout.php';
-    }
-
-
 
     public function indexProjet() {
         $titre = "Projets";
         $css = "projet";
         ob_start();
-        require_once __DIR__ . '/../Views/projets/index.p.php';
+        require __DIR__ . '/../Views/projets/index.p.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
     }
 
+
+    // Projet 1 : client léger - Site e-commerce {crud + authentification + affichage dynamique}
     public function projet1() {
         $titre = "Projet ecom";
         $css = "projet";
         ob_start();
-        require_once __DIR__ . '/../Views/projets/projet_1.php';
+        require dirname(__DIR__) . '/Views/projets/projet_1.php';
         $content = ob_get_clean();
-        require __DIR__ . '/../Views/partials/layout.php';
+        require dirname(__DIR__) . '/Views/partials/layout.php';
     }
 
+    // Projet 2 : client lourd - Application bibliothèque Java {}
      public function projet2() {
-        $titre = "Projet GDM";
+        $titre = "Projet bibliothèque";
         $css = "projet";
         ob_start();
-        require_once __DIR__ . '/../Views/projets/projet_2.php';
+        require dirname(__DIR__) . '/Views/projets/projet_2.php';
         $content = ob_get_clean();
-        require __DIR__ . '/../Views/partials/layout.php';
+        require dirname(__DIR__) . '/Views/partials/layout.php';
     }
 
      public function realisation() {
         $titre = "Réalisations Professionnelles";
         ob_start();
-        require_once __DIR__ . '/../Views/public/realisations.php';
+        require dirname(__DIR__) . '/Views/public/realisations.php';
         $content = ob_get_clean();
-        require __DIR__ . '/../Views/partials/layout.php';
+        require dirname(__DIR__) . '/Views/partials/layout.php';
     }
 
     public function cybersecurite() {
@@ -153,9 +142,9 @@ class IndexController
         $titre = "Cybersécurité";
         $css = "cyber";
         ob_start();
-        require_once __DIR__ . '/../Views/public/cybersecurite.php';
+        require dirname(__DIR__) . '/Views/public/cybersecurite.php';
         $content = ob_get_clean();
-        require __DIR__ . '/../Views/partials/layout.php';
+        require dirname(__DIR__) . '/Views/partials/layout.php';
     }
 
     public function veille() {
@@ -163,16 +152,24 @@ class IndexController
         $titre = "Veille technologique";
         $css = "veille.css";
         ob_start();
-        require_once __DIR__ . '/../Views/public/veille.php';
+        require dirname(__DIR__) . '/Views/public/veille.php';
         $content = ob_get_clean();
-        require __DIR__ . '/../Views/partials/layout.php';
+        require dirname(__DIR__) . '/Views/partials/layout.php';
     }
 
     public function contact() {
         $titre = "Contact";
         ob_start();
-        require_once __DIR__ . '/../Views/public/contact.php';
+        require dirname(__DIR__) . '/Views/public/contact.php';
         $content = ob_get_clean();
-        require __DIR__ . '/../Views/partials/layout.php';
+        require dirname(__DIR__) . '/Views/partials/layout.php';
+    }
+
+    public function apropos() {
+        $titre = "A propos";
+        ob_start();
+        require dirname(__DIR__) . '/Views/public/apropos.php';
+        $content = ob_get_clean();
+        require dirname(__DIR__) . '/Views/partials/layout.php';
     }
 }

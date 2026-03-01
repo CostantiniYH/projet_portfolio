@@ -1,9 +1,9 @@
 <header class="fixed-top " data-aos="fade-down" data-aos-duration="1000">
     <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
       <div class="container-fluid">
-        <a class="p-3 rounded navbar-brand  fw-bold hvr-shutter-out-vertical"
-        href="presentation">
-          <img src="<?= BASE_URL ?>assets//icons/portfolio_13.jpg" alt="image_portfolio"
+        <a class="p-3 rounded navbar-brand fw-bold"
+        href="<?= BASE_URL ?>presentation">
+          <img src="<?= BASE_URL ?>assets/icons/spart1.png" alt="image_portfolio"
           class="image-fluid rounded-3" style="background-image: none;height:40px; width:40px;">
           YHC
         </a>
@@ -14,27 +14,30 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item nav-hov">
-              <a class="nav-link bi bi-house-fill" href="presentation"> Présentation</a>
+              <a class="nav-link bi bi-house-fill" href="<?= BASE_URL ?>presentation"> Présentation</a>
             </li>
             <li class="nav-item nav-hov">
-              <a class="nav-link " href="activites">Activités Pro</a>
+              <a class="nav-link " href="<?= BASE_URL ?>activites">Activités Pro</a>
             </li>
             <li class="nav-item nav-hov">
-              <a class="nav-link " href="realistation-pro">Réalisations Pro</a>
+              <a class="nav-link " href="<?= BASE_URL ?>realistation-pro">Réalisations Pro</a>
             </li>
             <li class="nav-item nav-hov">
-              <a class="nav-link" href="cybersecurite">Cybersécurité</a>
+              <a class="nav-link" href="<?= BASE_URL ?>cybersecurite">Cybersécurité</a>
             </li>
+            <li class="nav-item nav-hov">
+              <a class="nav-link nav-hov" href="<?= BASE_URL ?>veille-technologique">Veille Technologique</a>
+            </li>    
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="<?= BASE_URL ?>#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Voir plus
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item nav-hov" href="veille-technologique">Veille Technologique</a>
-                </li>    
+                  <a class="dropdown-item nav-hov" href="<?= BASE_URL ?>a-propos">A propos</a>
+                </li>
                 <li>
-                  <a class="dropdown-item nav-hov" href="contact">Contact</a>
+                  <a class="dropdown-item nav-hov" href="<?= BASE_URL ?>contact">Contact</a>
                 </li>
               </ul>
             </li>
@@ -42,11 +45,11 @@
           <ul class="navbar-nav ms-auto">
             <?php if (isset($_SESSION['user']) && !empty($_SESSION['user']) && $_SESSION['logged_in'] == true) : ?>
               <li class="nav-item nav-hov navbar-collapse">
-                <a class="nav-link bi bi-door-open-fill text-danger" href="logout"></a>
+                <a class="nav-link bi bi-door-open-fill text-danger" href="<?= BASE_URL ?>logout"></a>
               </li>
             <?php else: ?>
               <li class="navbar-item">
-                <a class="nav-link bi bi-person-circle fs-2" href="login"></a>
+                <a class="nav-link bi bi-person-circle fs-2" href="<?= BASE_URL ?>login"></a>
               </li>
             <?php endif; ?>
           </ul>

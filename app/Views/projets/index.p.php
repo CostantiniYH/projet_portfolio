@@ -34,9 +34,10 @@
 
     <section class="row gap-4 mt-5">
         <div class="col-md card p-1 border-0 bg-black position-relative">
-            <img class="img-filtre " src="<?= BASE_URL ?>uploads/activites/ecole.png" alt="">
+            <img class="img-filtre " src="<?= BASE_URL ?>uploads/projets/client_leger.png" alt="">
             <div class="position-absolute text-white top-50 start-50 translate-middle">
                 <h4 class="">Projet 1</h4>
+                <h5>CLient léger PHP</h5>
             </div>
             <a href="projet_1" class="stretched-link"></a>
         </div>
@@ -44,6 +45,7 @@
             <img class="img-filtre w-100" src="<?= BASE_URL ?>uploads/activites/entreprise.png" alt="">
             <div class="position-absolute text-white top-50 start-50 translate-middle">
                 <h4 class="">Projet 2</h4>
+                <h5>Client lourd Java</h5>
             </div>
             <a href="projet_2" class="stretched-link"></a>
         </div>
