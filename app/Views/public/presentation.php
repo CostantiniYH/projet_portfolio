@@ -49,21 +49,6 @@
         <hr class="text-vert border-2">
         <div class="bg-white shadow-sm rounded p-3 col-md-4">
             <ul class="list-group">               
-                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Git
-                    <div class="progress mt-2" style="height: 15px;">
-                        <div class="progress-bar bg-success fs-7" style="width: 40%;">40%</div>
-                    </div>
-                </li>      
-                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Python            
-                    <div class="progress mt-2" style="height: 15px;">
-                        <div class="progress-bar bg-success" style="width: 15%">15%</div>
-                    </div>
-                </li>      
-                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Java
-                    <div class="progress mt-2" style="height: 15px;">
-                        <div class="progress-bar bg-success fs-7" style="width: 25%;">25%</div>
-                    </div>
-                </li>      
                 <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> HTML
                     <div class="progress mt-2" style="height: 15px;">
                         <div class="progress-bar bg-success fs-7" style="width: 85%;">85%</div>
@@ -74,11 +59,6 @@
                         <div class="progress-bar bg-success fs-7" style="width: 75%;">75%</div>
                     </div>
                 </li>
-                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> JavaScript
-                    <div class="progress mt-2" style="height: 15px;">
-                        <div class="progress-bar bg-success fs-7" style="width: 10%;">10%</div>
-                    </div>
-                </li>      
                 <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> PHP
                     <div class="progress mt-2" style="height: 15px;">
                         <div class="progress-bar bg-success fs-7" style="width: 75%;">75%</div>
@@ -87,6 +67,26 @@
                 <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> MySQL
                     <div class="progress mt-2" style="height: 15px;">
                         <div class="progress-bar bg-success fs-7" style="width: 50%;">50%</div>
+                    </div>
+                </li>      
+                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Git
+                <div class="progress mt-2" style="height: 15px;">
+                        <div class="progress-bar bg-success fs-7" style="width: 40%;">40%</div>
+                    </div>
+                </li>      
+                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Java
+                    <div class="progress mt-2" style="height: 15px;">
+                        <div class="progress-bar bg-success fs-7" style="width: 40%;">40%</div>
+                    </div>
+                </li>      
+                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Python            
+                    <div class="progress mt-2" style="height: 15px;">
+                        <div class="progress-bar bg-success" style="width: 30%">30%</div>
+                    </div>
+                </li>      
+                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> JavaScript
+                    <div class="progress mt-2" style="height: 15px;">
+                        <div class="progress-bar bg-success fs-7" style="width: 10%;">10%</div>
                     </div>
                 </li>      
             </ul>
