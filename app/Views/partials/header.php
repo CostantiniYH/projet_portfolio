@@ -19,7 +19,7 @@
         $relativePath = trim($relativePath, '/');
 
         // Si la page s'appelle "expertises", "services", etc.
-        $currentPage = $relativePath ?: 'accueil';
+        $currentPage = $relativePath ?: 'presentation';
 
         // Mise en forme pour affichage
         $currentPageLabel = ucfirst(str_replace(['-', '_'], ' ', $currentPage)); 
