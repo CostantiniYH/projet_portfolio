@@ -1,5 +1,5 @@
 <section class="row mb-5 bg-dev p-5">
-    <h1 class="text-center">Liste des activités</h1>
+    <h1 class="text-center">Liste des activités en Formation</h1>
 </section>
 <main class="container">
     <section class="row g-5">
@@ -23,8 +23,8 @@
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Activité 2 - Virtual Box</h5>
                     <p class="card-text">Créer et installer des machines virtuelles sous Virtual Box</p>
-                    <small class="d-block mb-3">ISOs utilisés : Windows Server, Windows Client, Ubuntu server, 
-                        Ubuntu desktop, Debian 12 desktop, Rocky Linux, Kali Linux, Labtainer</small>
+                    <small class="d-block mb-3">Windows Server, Windows Client, Ubuntu server, 
+                        Ubuntu desktop, Debian 12 desktop, Rocky Linux</small>
                     </div>
                     <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
             </div>
@@ -32,10 +32,10 @@
 
         <div class="col-md-4">
             <div class="card h-100 w-100">
-                <img src="<?= BASE_URL ?>uploads/activites/tuleap_login.jpg" alt="" 
+                <img src="<?= BASE_URL ?>uploads/activites/gestionuglocaux.png" alt="" 
                 class="card-img-top img-fluid" style="height: 13rem;">
                 <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Activité 3 - Logiciel de gestion de projet</h5>
+                    <h5 class="card-title">Activité 3 - Gestion des utilisateurs et des groupes locaux dans un réseau poste-à-poste</h5>
                     <p class="card-text">installation du logiciel Tuleap sur RockyLinux</p>
                 </div>
                 <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
@@ -47,9 +47,8 @@
                 <img src="<?= BASE_URL ?>uploads/activites/MCD.png" alt="" 
                 class="card-img-top img-fluid" style="height: 13rem;">
                 <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Activité 4 - Modélisation BDD</h5>
-                    <p class="card-text">Conception et modélisation de la base de données d'une application 
-                        de chat instantané
+                    <h5 class="card-title">Activité 4 - Partage de fichiers et dossiers entre machine hôte et virtuelle</h5>
+                    <p class="card-text">
                     </p>
                 </div>
                 <a href="<?= BASE_URL ?>ressources/masques/MR-activite2-Modelisation_BDD_chat.pdf" 

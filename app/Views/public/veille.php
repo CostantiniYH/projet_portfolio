@@ -2,6 +2,11 @@
     <p>Le thème de la veille technologique est choisi par l'étudiant. Le thème doit être choisi selon l'intérêt qu'on porte à un sujet et doit être métrisé par l'étudiant.
         Utiliser PerlTrees
     </p>
+    <ul>
+        <li>Organisation générale (Démarche pour la recherche d'information)</li>
+        <li>Thème de spécialisation</li>
+        <li>Flux RSS</li>
+    </ul>
     <h1 class="text-center mb-5" data-aos="flip-down" data-aos-duration="1200">Acutalité à la une</h1>
     
     <?php foreach ($feed as $news){        
