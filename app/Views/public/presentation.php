@@ -1,4 +1,5 @@
-<header class="bg-blue row text-white p-5 mb-5">
+<header class="bg-blue  text-white p-5 mb-5">
+    <a href="" class="cv-brand float-end">CV</a>
     <h1>Yaacov Costantini</h1>
     <p>Développeur polyvalent</p>
     <p>Etudiant en alternance passioné par la création et la découverte d'expérience numériques</p>
@@ -93,6 +94,10 @@
         </div>
         <div class="row gap-3 col-md">
             <h2>Visitez les sites suivants pour apprécier les compétences apprises :</h2>
+            <video class="" style="z-index: 0; opacity: 70%;" autoplay muted>
+                    <source src="<?= BASE_URL ?>uploads/videos/demo_gdm.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas le format de cette vidéo
+            </video>
             <div class="col-md-5 mx-auto card p-3 hvr-shadow">
                 <img src="<?= BASE_URL ?>uploads/projets/ecom.png" alt="" class="img-fluid w-100">
                 <h5 class="card-body">Site e-commerce</h5>
@@ -109,10 +114,34 @@
                 <a href="https://costantini.freeboxos.fr/chat/" target="_blank" class="stretched-link"></a>
             </div>
             <div class="col-md-5 mx-auto card p-3 hvr-shadow">
-                <img src="<?= BASE_URL ?>uploads/projets/qcm.png" alt="" class="img-fluid w-100">
+                <img src="<?= BASE_URL ?>uploads/projets/qcm2.png" alt="" class="img-fluid w-100">
                 <h5 class="card-body">Site QCM de recrutement</h5>
                 <a href="https://costantini.freeboxos.fr/qcm/" target="_blank" class="stretched-link"></a>
+            </div>
+            <div class="col-md-5 mx-auto card p-3 hvr-shadow">
+                <!-- <img src="<?= BASE_URL ?>uploads/projets/gdm1.png" alt="" class="img-fluid w-100"> -->
+                <video id="start" class="card-img" controls>
+                    <source src="<?= BASE_URL ?>uploads/videos/demo_gdm.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas le format de cette vidéo
+                </video>
+                <audio id="audio" src="<?= BASE_URL ?>uploads/audio/skyfall_beats-acies.mp3"></audio>
+                <div id="stop" class="bi bi-play-fill text-danger fs-1" style="cursor: pointer; display: none;"> 
+                    <p class="fs-6">Cliquez sur le bouton play pour arréter la musique</p>
+                </div>
+                <h5 class="card-body">Site QCM de recrutement</h5>
+                <a href="https://costantini.freeboxos.fr/gdm/" target="_blank" class="-link"></a>
             </div>
         </div>
     </section>
 </main>
+
+<script>
+    document.getElementById("start").onclick = () => {
+        document.getElementById("audio").play();
+        document.getElementById("stop").style.display = "block";
+    };
+    document.getElementById("stop").onclick = () => {
+        document.getElementById("audio").pause();
+    };
+
+</script>

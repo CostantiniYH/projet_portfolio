@@ -1,7 +1,3 @@
-.col-md {
-    /* background-color: white; */
-}
-
 .bg-blue {background-image: linear-gradient(
     145deg,
     rgb(0, 47, 100),    
@@ -47,3 +43,34 @@
 .text-vert { color: rgb(32, 158, 0); }
 
 .-gris { color: rgb(146, 146, 146); }
+
+.cv-brand {
+    border-radius: 100px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 3rem;
+    background-color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    transition: background 0.3s ease;
+}
+
+.cv-brand:hover {
+    background-image: linear-gradient(
+        130deg,
+        rgba(151, 151, 151, 0.89),
+        rgba(151, 151, 151, 0.658),
+        rgba(151, 151, 151, 0.836),
+        rgba(151, 151, 151, 0.308),
+        rgba(151, 151, 151, 0.815),
+        rgba(151, 151, 151, 0.301),
+        rgb(151, 151, 151)
+    );
+    border: 2px solid rgb(0, 132, 255);
+}
+
+.cv-brand:focus {
+    border: 2px solid rgb(0, 204, 255);
+}

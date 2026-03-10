@@ -1,5 +1,12 @@
 <div class="container">
-    <section class="row p-5">
+    <?php
+        if (!empty($_SESSION['user']) && $_SESSION['user']['role'] == 'admin') {
+            $display = "";
+        } else {
+            $display = 'd-none';
+        }
+    ?>
+    <section class="row p-5 <?= $display ?>">
         <div class="col-md-3 col-sm-12">
             <div class="h-100 bg-bleu-marine">
                 <h3 class="w-100">Epreuve E5</h3>
@@ -300,15 +307,16 @@
 
 
 
-    <section class="row">
+    <section class="row" style="height: 15rem;">
         <div class="img-synthese border-0 p-0 shadow position-relative">
             <!-- <img class="img-filtre w-100" src="<?= BASE_URL ?>uploads/activites/table_synthese.png" 
             alt="" style="max-height: 8rem;">            
             <div class="position-absolute text-white top-50 start-50 translate-middle">
                 <h3>Tableau de sythèse</h3>
             </div> -->
-            <img class="img-filtre img-fluid float-end" src="<?= BASE_URL ?>uploads/activites/excel2.png" alt="">
-            <h3>Tableau de synthèse</h3>
+            <img class="img-filtre img-fluid float-end" src="<?= BASE_URL ?>uploads/activites/excel2.png" alt=""
+            style="height: 15rem;">
+            <h3 class="position-absolute translate-middle top-50 start-50 ">Tableau de synthèse</h3>
             <a href="" class="stretched-link"></a>
         </div>
     </section>
