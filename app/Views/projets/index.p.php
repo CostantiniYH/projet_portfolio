@@ -1,4 +1,5 @@
 <div class="container">
+    <!-- Condition d'affichage admin -->
     <?php
         if (!empty($_SESSION['user']) && $_SESSION['user']['role'] == 'admin') {
             $display = "";
@@ -6,6 +7,7 @@
             $display = 'd-none';
         }
     ?>
+    <!-- Cette section est concernée par la condition d'affichage -->
     <section class="row text-justifier <?= $display ?>">
         <div class="col-md">
             <div class="h-100 bg-bleu-marine">
@@ -45,25 +47,26 @@
         </div>
     </section>
 
-    <section class="row mt-5">
+
+    <section class="row g-5 mt-5">
         <div class="col-md">
-            <div class="card p-1 border-0 bg-black position-relative">
+            <div class="card p-0 border-0 shadow position-relative">
                 <img class="img-filtre img-fluid" src="<?= BASE_URL ?>uploads/projets/client_leger.png" alt="">
                 <div class="position-absolute text-white top-50 start-50 translate-middle">
                     <h4 class="">Projet 1</h4>
                     <h5>CLient léger PHP</h5>
                 </div>
-                <a href="projet_1" class="stretched-link"></a>
+                <a href="#projet_1" class="stretched-link"></a>
             </div>
         </div>
         <div class="col-md">
-            <div class="card h-100 border-0 p-1 bg-black position-relative">
-                <img class="img-filtre img-fluid" src="<?= BASE_URL ?>uploads/activites/entreprise.png" alt="">
+            <div class="card h-100 border-0 shadow p-0 position-relative">
+                <img class="img-filtre img-fluid" src="<?= BASE_URL ?>uploads/projets/java.png" alt="">
                 <div class="position-absolute text-white top-50 start-50 translate-middle">
                     <h4 class="">Projet 2</h4>
                     <h5>Client lourd Java</h5>
                 </div>
-                <a href="projet_2" class="stretched-link"></a>
+                <a href="#projet_2" class="stretched-link"></a>
             </div>
         </div>
     </section> 

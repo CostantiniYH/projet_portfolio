@@ -1,4 +1,5 @@
 <div class="container">
+    <!-- Condition d'affichage admin -->
     <?php
         if (!empty($_SESSION['user']) && $_SESSION['user']['role'] == 'admin') {
             $display = "";
@@ -6,6 +7,7 @@
             $display = 'd-none';
         }
     ?>
+    <!-- Cette section est concernée par la condition d'affichage -->
     <section class="row p-5 <?= $display ?>">
         <div class="col-md-3 col-sm-12">
             <div class="h-100 bg-bleu-marine">
@@ -26,7 +28,8 @@
         </div>
     </section>
 
-    <section class="row p-5">
+    <!-- Cette section est concernée par la condition d'affichage -->
+    <section class="row p-5 <?= $display ?>">
         <div class="col-md">
             <div class="h-100 card p-0 border-0 shadow position-relative">
                 <img class="img-filtre img-fluid" src="<?= BASE_URL ?>uploads/activites/ecole.png" alt="">
@@ -46,278 +49,283 @@
             </div>
         </div>
     </section>
+</div>
 
-    <section class="row bg-dev p-5">
-        <h1 class="text-center">Liste des activités en Formation</h1>
-    </section>
+<!-- Bandeau titre 1 : activités Formation première et deuxième année -->
+<section class="row bg-dev p-5">
+    <h1 class="text-center">Liste des activités en Formation</h1>
+</section>
 
-    <main class="">
-        <section class="row g-5 p-5">
-            <div class="col-md-4">
-                <div class="card h-100 w-100">
-                    <img src="<?= BASE_URL ?>uploads/activites/setup.png" alt="" 
-                    class="card-img-top img-fluid" style="height: 13rem;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Activité 1 - Setup de développement</h5>
-                        <p class="card-text">Installation d'un Environnement : IDE/ Editeurs, Environnement serveur, 
-                            gestionnaires de versions de paquets</p>
-                        </div>
-                        <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="<?= BASE_URL ?>uploads/activites/virtual_box.png" alt="" 
-                    class="card-img-top img-fluid" style="height: 13rem;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Activité 2 - Virtual Box</h5>
-                        <p class="card-text">Créer et installer des machines virtuelles sous Virtual Box</p>
-                        <small class="d-block mb-3">Windows Server, Windows Client, Ubuntu server, 
-                            Ubuntu desktop, Debian 12 desktop, Rocky Linux</small>
-                        </div>
-                        <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 w-100">
-                    <img src="<?= BASE_URL ?>uploads/activites/gestionuglocaux.png" alt="" 
-                    class="card-img-top img-fluid" style="height: 13rem;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Activité 3 - Gestion des utilisateurs et des groupes locaux dans un réseau poste-à-poste</h5>
-                        <p class="card-text">installation du logiciel Tuleap sur RockyLinux</p>
+<div class="container">
+    <section class="row g-5 p-5">
+        <!-- Première activité -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100">
+                <img src="<?= BASE_URL ?>uploads/activites/virtual_box.png" alt="" 
+                class="card-img-top img-fluid" style="height: 13rem;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Activité 1 - Virtual Box</h5>
+                    <p class="card-text">Créer et installer une machine virtuelle sous Virtual Box</p>
+                    <small class="d-block mb-3"></small>
                     </div>
-                    <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
-                </div>   
+                    <a href="#<?= BASE_URL ?>" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
             </div>
-            
-            <div class="col-md-4">
-                <div class="card h-100 w-100">
-                    <img src="<?= BASE_URL ?>uploads/activites/MCD.png" alt="" 
-                    class="card-img-top img-fluid" style="height: 13rem;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Activité 4 - Partage de fichiers et dossiers entre machine hôte et virtuelle</h5>
-                        <p class="card-text">
-                        </p>
-                    </div>
-                    <a href="<?= BASE_URL ?>ressources/masques/MR-activite2-Modelisation_BDD_chat.pdf" 
-                    class="mt-auto btn btn-activite stretched-link card-footer w-100" target="_blank">Cliquer pour voir le détail</a>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 w-100">
-                    <img src="<?= BASE_URL ?>uploads/activites/ubuntu_install.png" alt="" 
-                    class="card-img-top img-fluid" style="height: 13rem;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Activité 5 - Ubuntu server</h5>
-                        <p class="card-text">Mise en place d'une infrastructure complète pour héberger des applications 
-                            sur Ubuntu server</p>
-                        </div>
-                        <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 w-100">
-                    <img src="<?= BASE_URL ?>uploads/activites/chat_last_version.png" alt="" 
-                    class="card-img-top img-fluid" style="height: 13rem;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Activité 6 - Chat instantané</h5>
-                        <p class="card-text text-justifier">Développement d'un chat instanatané en PHP et MySql</p>
-                    </div>
-                    <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <section class="row mt-5 mb-5 bg-dev p-5">
-        <h1 class="text-center">Réalisation professinonelles première année</h1>
-    </section>
-    <main class="">
-        <section class="row g-5">
-            <div class="col-md-4">
-                <div class="card h-100 w-100">
-                    <img src="<?= BASE_URL ?>uploads/activites/setup.png" alt="" 
-                    class="card-img-top img-fluid" style="height: 13rem;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Activité 1 - Setup de développement</h5>
-                        <p class="card-text">Installation d'un Environnement : IDE/ Editeurs, Environnement serveur, 
-                            gestionnaires de versions de paquets</p>
-                        </div>
-                        <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="<?= BASE_URL ?>uploads/activites/virtual_box.png" alt="" 
-                    class="card-img-top img-fluid" style="height: 13rem;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Activité 2 - Virtual Box</h5>
-                        <p class="card-text">Créer et installer des machines virtuelles sous Virtual Box</p>
-                        <small class="d-block mb-3">ISOs utilisés : Windows Server, Windows Client, Ubuntu server, 
-                            Ubuntu desktop, Debian 12 desktop, Rocky Linux, Kali Linux, Labtainer</small>
-                        </div>
-                        <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 w-100">
-                    <img src="<?= BASE_URL ?>uploads/activites/tuleap_login.jpg" alt="" 
-                    class="card-img-top img-fluid" style="height: 13rem;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Activité 3 - Logiciel de gestion de projet</h5>
-                        <p class="card-text">installation du logiciel Tuleap sur RockyLinux</p>
-                    </div>
-                    <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
-                </div>   
-            </div>
-            
-            <div class="col-md-4">
-                <div class="card h-100 w-100">
-                    <img src="<?= BASE_URL ?>uploads/activites/MCD.png" alt="" 
-                    class="card-img-top img-fluid" style="height: 13rem;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Activité 4 - Modélisation BDD</h5>
-                        <p class="card-text">Conception et modélisation de la base de données d'une application 
-                            de chat instantané
-                        </p>
-                    </div>
-                    <a href="<?= BASE_URL ?>ressources/masques/MR-activite2-Modelisation_BDD_chat.pdf" 
-                    class="mt-auto btn btn-activite stretched-link card-footer w-100" target="_blank">Cliquer pour voir le détail</a>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 w-100">
-                    <img src="<?= BASE_URL ?>uploads/activites/ubuntu_install.png" alt="" 
-                    class="card-img-top img-fluid" style="height: 13rem;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Activité 5 - Ubuntu server</h5>
-                        <p class="card-text">Mise en place d'une infrastructure complète pour héberger des applications 
-                            sur Ubuntu server</p>
-                        </div>
-                        <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 w-100">
-                    <img src="<?= BASE_URL ?>uploads/activites/chat_last_version.png" alt="" 
-                    class="card-img-top img-fluid" style="height: 13rem;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Activité 6 - Chat instantané</h5>
-                        <p class="card-text text-justifier">Développement d'un chat instanatané en PHP et MySql</p>
-                    </div>
-                    <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <section class="row mt-5 mb-5 bg-dev p-5">
-        <h1 class="text-center">Réalisation professinonelles deuxième année</h1>
-    </section>
-    <main class="">
-        <section class="row g-5">
-            <div class="col-md-4">
-                <div class="card h-100 w-100">
-                    <img src="<?= BASE_URL ?>uploads/activites/setup.png" alt="" 
-                    class="card-img-top img-fluid" style="height: 13rem;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Activité 1 - Setup de développement</h5>
-                        <p class="card-text">Installation d'un Environnement : IDE/ Editeurs, Environnement serveur, 
-                            gestionnaires de versions de paquets</p>
-                        </div>
-                        <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="<?= BASE_URL ?>uploads/activites/virtual_box.png" alt="" 
-                    class="card-img-top img-fluid" style="height: 13rem;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Activité 2 - Virtual Box</h5>
-                        <p class="card-text">Créer et installer des machines virtuelles sous Virtual Box</p>
-                        <small class="d-block mb-3">ISOs utilisés : Windows Server, Windows Client, Ubuntu server, 
-                            Ubuntu desktop, Debian 12 desktop, Rocky Linux, Kali Linux, Labtainer</small>
-                        </div>
-                        <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 w-100">
-                    <img src="<?= BASE_URL ?>uploads/activites/tuleap_login.jpg" alt="" 
-                    class="card-img-top img-fluid" style="height: 13rem;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Activité 3 - Logiciel de gestion de projet</h5>
-                        <p class="card-text">installation du logiciel Tuleap sur RockyLinux</p>
-                    </div>
-                    <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
-                </div>   
-            </div>
-            
-            <div class="col-md-4">
-                <div class="card h-100 w-100">
-                    <img src="<?= BASE_URL ?>uploads/activites/MCD.png" alt="" 
-                    class="card-img-top img-fluid" style="height: 13rem;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Activité 4 - Modélisation BDD</h5>
-                        <p class="card-text">Conception et modélisation de la base de données d'une application 
-                            de chat instantané
-                        </p>
-                    </div>
-                    <a href="<?= BASE_URL ?>ressources/masques/MR-activite2-Modelisation_BDD_chat.pdf" 
-                    class="mt-auto btn btn-activite stretched-link card-footer w-100" target="_blank">Cliquer pour voir le détail</a>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 w-100">
-                    <img src="<?= BASE_URL ?>uploads/activites/ubuntu_install.png" alt="" 
-                    class="card-img-top img-fluid" style="height: 13rem;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Activité 5 - Ubuntu server</h5>
-                        <p class="card-text">Mise en place d'une infrastructure complète pour héberger des applications 
-                            sur Ubuntu server</p>
-                        </div>
-                        <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 w-100">
-                    <img src="<?= BASE_URL ?>uploads/activites/chat_last_version.png" alt="" 
-                    class="card-img-top img-fluid" style="height: 13rem;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Activité 6 - Chat instantané</h5>
-                        <p class="card-text text-justifier">Développement d'un chat instanatané en PHP et MySql</p>
-                    </div>
-                    <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-
-
-    <section class="row" style="height: 15rem;">
-        <div class="img-synthese border-0 p-0 shadow position-relative">
-            <!-- <img class="img-filtre w-100" src="<?= BASE_URL ?>uploads/activites/table_synthese.png" 
-            alt="" style="max-height: 8rem;">            
-            <div class="position-absolute text-white top-50 start-50 translate-middle">
-                <h3>Tableau de sythèse</h3>
-            </div> -->
-            <img class="img-filtre img-fluid float-end" src="<?= BASE_URL ?>uploads/activites/excel2.png" alt=""
-            style="height: 15rem;">
-            <h3 class="position-absolute translate-middle top-50 start-50 ">Tableau de synthèse</h3>
-            <a href="" class="stretched-link"></a>
         </div>
+
+        <!-- Deuxième activité -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 w-100">
+                <img src="<?= BASE_URL ?>uploads/activites/gestionuglocaux.png" alt="" 
+                class="card-img-top img-fluid" style="height: 13rem;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Activité 2 - Gestion des utilisateurs et des groupes locaux dans un réseau poste-à-poste</h5>
+                    <p class="card-text"></p>
+                </div>
+                <a href="#<?= BASE_URL ?>" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
+            </div>   
+        </div>
+        
+        <!-- Troisième activité -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 w-100">
+                <img src="<?= BASE_URL ?>uploads/activites/partage.png" alt="" 
+                class="card-img-top img-fluid" style="height: 13rem;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Activité 3 - Partage de fichiers et dossiers entre machine hôte et virtuelle</h5>
+                    <p class="card-text">
+                    </p>
+                </div>
+                <a href="#<?= BASE_URL ?>ressources/masques/.pdf" 
+                class="mt-auto btn btn-activite stretched-link card-footer w-100" target="_blank">Cliquer pour voir le détail</a>
+            </div>
+        </div>
+
+        <!-- Quatrième activité -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 w-100">
+                <img src="<?= BASE_URL ?>uploads/activites/.png" alt="" 
+                class="card-img-top img-fluid" style="height: 13rem;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Activité 4 - Affichage d'un CV en HTML / CSS</h5>
+                    <p class="card-text"></p>
+                    </div>
+                    <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
+            </div>
+        </div>
+
+        <!-- Cinquième activité -->
+         <div class="col-lg-4 col-md-6">
+            <div class="card h-100 w-100">
+                <img src="<?= BASE_URL ?>uploads/projets/portfolio.png" alt="" 
+                class="card-img-top img-fluid" style="height: 13rem;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Activité 5 - Développer un site portfolio</h5>
+                    <p class="card-text text-justifier">
+                        Créer un site vitrine professionnel pour développer et promouvoir son image
+                    </p>
+                </div>
+                <a href="#<?= BASE_URL ?>ressources/masques/" 
+                class="mt-auto btn btn-activite stretched-link card-footer w-100" target="_blank">Cliquer pour voir le détail</a>
+            </div>
+        </div>
+
+        <!-- Sixième activité -->
+         <div class="col-lg-4 col-md-6">
+            <div class="card h-100 w-100">
+                <img src="<?= BASE_URL ?>uploads/activites/UML.png" alt="" 
+                class="card-img-top img-fluid" style="height: 13rem;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Activité 6 - Modélisation BDD</h5>
+                    <p class="card-text">
+                        Conception et modélisation de la base de données d'un chat instantané
+                    </p>
+                </div>
+                <a href="<?= BASE_URL ?>ressources/masques/MR-activite2-Modelisation_BDD_chat.pdf" 
+                class="mt-auto btn btn-activite stretched-link card-footer w-100" target="_blank">Cliquer pour voir le détail</a>
+            </div>
+        </div>
+
+        <!-- Septième activité -->
+         <div class="col-lg-4 col-md-6">
+            <div class="card h-100 w-100">
+                <img src="<?= BASE_URL ?>uploads/projets/gdm1.png" alt="" 
+                class="card-img-top img-fluid" style="height: 13rem;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Activité 7 - Développer un site des matières SIO</h5>
+                    <p class="card-text text-justifier">
+                        Création personnelle pour rendre plus attractif l'accès aux contenu des matières 
+                    </p>
+                </div>
+                <a href="#<?= BASE_URL ?>ressources/masques/" 
+                class="mt-auto btn btn-activite stretched-link card-footer w-100" target="_blank">Cliquer pour voir le détail</a>
+            </div>
+        </div>
+
+        <!-- Huitième activité -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 w-100">
+                <img src="<?= BASE_URL ?>uploads/activites/ubuntu_install.png" alt="" 
+                class="card-img-top img-fluid" style="height: 13rem;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Activité 8 - Hébergement server</h5>
+                    <p class="card-text text-justifier">Mise en place d'une solution pour héberger des applications 
+                        sur Ubuntu server</p>
+                    </div>
+                    <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
+            </div>
+        </div>
+
+        <!-- Neuvième activité -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 w-100">
+                <img src="<?= BASE_URL ?>uploads/activites/chatv1_5.jpg" alt="" 
+                class="card-img-top img-fluid" style="height: 13rem;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Activité 9 - Développer un chat instantané en PHP / MySQL</h5>
+                    <p class="card-text text-justifier">Mode procédural et mysqli</p>
+                </div>
+                <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
+            </div>
+        </div>
+
+        <!-- Dixième activité -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 w-100">
+                <img src="<?= BASE_URL ?>uploads/activites/gitGithub.png" alt="" 
+                class="card-img-top img-fluid" style="height: 13rem;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Activité 10 - Mise en place d’un workflow Git/GitHub</h5>
+                    <p class="card-text text-justifier">
+                        Démarche organisée pour enregistrer, versionner et déployer ses travaux
+                    </p>
+                </div>
+                <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
+            </div>
+        </div>
+        
+        <!-- Onzième activité -->
+        <div class="col-lg-4 col-md-6">
+           <div class="card h-100 w-100">
+               <img src="<?= BASE_URL ?>uploads/activites/chat_last_version.png" alt="" 
+               class="card-img-top img-fluid" style="height: 13rem;">
+               <div class="card-body d-flex flex-column">
+                   <h5 class="card-title">Activité 11 - Migration MVC</h5>
+                   <p class="card-text text-justifier">
+                    Effectuer une migration d'un code en mode procédural vers une architecture MVC et
+                     remplacer mysqli par PDO (Sécurité SQL)
+                    </p>
+                   </div>
+                   <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
+           </div>
+       </div>
     </section>
+</div>
+
+<section class="row mt-5 mb-5 bg-dev p-5">
+    <h1 class="text-center">Réalisation professinonelles première année</h1>
+</section>
+
+<div class="container">
+    <main class="mb-4">
+        <section class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 w-100">
+                    <img src="<?= BASE_URL ?>uploads/activites/.png" alt="" 
+                    class="card-img-top img-fluid" style="height: 13rem;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Activité 1 - </h5>
+                        <p class="card-text"></p>
+                        </div>
+                        <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="<?= BASE_URL ?>uploads/activites/.png" alt="" 
+                    class="card-img-top img-fluid" style="height: 13rem;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Activité 2 - </h5>
+                        <p class="card-text"></p>
+                        <small class="d-block mb-3"></small>
+                        </div>
+                        <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 w-100">
+                    <img src="<?= BASE_URL ?>uploads/activites/.jpg" alt="" 
+                    class="card-img-top img-fluid" style="height: 13rem;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Activité 3 - </h5>
+                        <p class="card-text"></p>
+                    </div>
+                    <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
+                </div>   
+            </div>
+        </section>
+    </main>
+</div>
+
+<section class="row mt-5 mb-5 bg-dev p-5">
+    <h1 class="text-center">Réalisation professinonelles deuxième année</h1>
+</section>
+
+<div class="container">
+    <main class="">
+        <section class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 w-100">
+                    <img src="<?= BASE_URL ?>uploads/activites/.png" alt="" 
+                    class="card-img-top img-fluid" style="height: 13rem;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Activité 1 - </h5>
+                        <p class="card-text"></p>
+                        </div>
+                        <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="<?= BASE_URL ?>uploads/activites/.png" alt="" 
+                    class="card-img-top img-fluid" style="height: 13rem;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Activité 2 - </h5>
+                        <p class="card-text"></p>
+                        <small class="d-block mb-3"></small>
+                        </div>
+                        <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 w-100">
+                    <img src="<?= BASE_URL ?>uploads/activites/.jpg" alt="" 
+                    class="card-img-top img-fluid" style="height: 13rem;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Activité 3 - </h5>
+                        <p class="card-text"></p>
+                    </div>
+                    <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
+                </div>   
+            </div>
+            
+        
+        </section>
+    </main>
+
+
+    <div class="container">
+        <section class="mt-5 row" style="height: 15rem;">
+            <div class="bg-ts position-relative p-0">
+                <img class="img-ts img-fluid float-end" src="<?= BASE_URL ?>uploads/activites/excel2.png"
+                 alt="" style="height: 15rem;">
+                <h3 class="position-absolute translate-middle top-50 start-50 p-2 rounded shadow btn-ts">
+                    Tableau de synthèse</h3>
+                <a href="" class="stretched-link"></a>
+            </div>
+        </section>
+    </div>
 </div>

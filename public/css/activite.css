@@ -67,7 +67,7 @@
 
 .img-filtre {
     filter: grayscale(50%) brightness(60%);
-    transition: 0.5s;
+    /* transition: 5s; */
 }
 
 
@@ -76,14 +76,6 @@
     color: black;
 }
 
-.img-filtre {
-    overflow: hidden;
-    background-size: cover;
-}
-.img-synthese:hover .img-filtre {
-    filter: grayscale(0%) brightness(100%);
-    color: black;
-}
 
 .position-absolute {
     pointer-events: none;
@@ -99,3 +91,29 @@
     background-color: rgb(0, 153, 255);
     color: white;
 }
+
+.bg-ts {
+    background-image: url("../uploads/activites/them1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large !important;
+}
+
+.bg-ts, .bg-ts .img-ts {
+    filter: grayscale(30%) brightness(80%);
+    transition: 0.5s;
+}
+
+.bg-ts:hover, .bg-ts:hover .img-ts {
+    filter: grayscale(0%) brightness(100%);
+}
+
+.btn-ts {
+    background-color: #122a47;
+}
+
+
+

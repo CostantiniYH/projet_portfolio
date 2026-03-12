@@ -40,13 +40,17 @@ nav.project a {
 h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; }
 
 .img-filtre {
-filter: grayscale(50%) brightness(60%);
-transition: 0.5s;
+  filter: grayscale(50%) brightness(60%);
+  transition: 0.5s;
 }
 
 .card:hover .img-filtre {
-    filter: grayscale(0%) brightness(100%);
-    color: black;
+  filter: grayscale(0%) brightness(100%);
+}
+
+.card:hover .text-white {
+  color: rgb(14, 81, 121) !important;  
+  text-transform: uppercase;
 }
 
 .position-absolute {
