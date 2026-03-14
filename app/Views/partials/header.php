@@ -43,8 +43,9 @@
             $messagesList = is_array($messages) ? $messages : [$messages];
             foreach ($messagesList as $message):
         ?>  
-            <div class="container alert alert-<?= htmlspecialchars($type) ?>">
+            <div class="container alert alert-<?= htmlspecialchars($type) ?> alert-dismissible fade show">
                 <?= htmlspecialchars($message); ?>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         <?php 
             endforeach;

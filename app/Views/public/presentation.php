@@ -8,7 +8,6 @@
 <main class="container">
     <section class="row">
         <h1 class="text-center">Bienvenue</h1>
-        <p>Cette page permet de présenter de façon brève et dynamique mon parcours d'étude et professionnel. Consulter-la pour en savoir davantage.</p>
     </section>
 
     <section class="row gap-3 mb-4">
@@ -100,7 +99,7 @@
             </video>
             <div class="col-md-5 mx-auto card p-3 hvr-shadow">
                 <img src="<?= BASE_URL ?>uploads/projets/ecom.png" alt="" class="img-fluid w-100">
-                <h5 class="card-body">Site e-commerce</h5>
+                <h5 class="card-body">PPE 1 - Site e-commerce</h5>
                 <a href="https://costantini.freeboxos.fr/projet-ecom/" target="_blank" class="stretched-link"></a>
             </div>
             <div class="col-md-5 mx-auto card p-3 hvr-shadow">
@@ -118,9 +117,9 @@
                 <h5 class="card-body">Site QCM de recrutement</h5>
                 <a href="https://costantini.freeboxos.fr/qcm/" target="_blank" class="stretched-link"></a>
             </div>
-            <div class="col-md-5 mx-auto card p-3 hvr-shadow">
+            <div id="sio" class="col-md-5 mx-auto card p-3 hvr-shadow">
                 <!-- <img src="<?= BASE_URL ?>uploads/projets/gdm1.png" alt="" class="img-fluid w-100"> -->
-                <video id="start" class="card-img" controls>
+                <video id="start" class="card-img" autoplay muted>
                     <source src="<?= BASE_URL ?>uploads/videos/demo_gdm.mp4" type="video/mp4">
                     Votre navigateur ne supporte pas le format de cette vidéo
                 </video>
@@ -128,7 +127,7 @@
                 <div id="stop" class="bi bi-play-fill text-danger fs-1" style="cursor: pointer; display: none;"> 
                     <p class="fs-6">Cliquez sur le bouton play pour arréter la musique</p>
                 </div>
-                <h5 class="card-body">Site QCM de recrutement</h5>
+                <h5 class="card-body">Site des matières SIO</h5>
                 <a href="https://costantini.freeboxos.fr/gdm/" target="_blank" class="-link"></a>
             </div>
         </div>
@@ -138,10 +137,11 @@
 <script>
     document.getElementById("start").onclick = () => {
         document.getElementById("audio").play();
-        document.getElementById("stop").style.display = "block";
+        // document.getElementById("stop").style.display = "";
     };
-    document.getElementById("stop").onclick = () => {
+    document.getElementById("sio").onclick = () => {
         document.getElementById("audio").pause();
+        // document.getElementById("stop").style.display = "none";
     };
 
 </script>

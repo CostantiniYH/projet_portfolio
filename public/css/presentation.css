@@ -1,30 +1,3 @@
-.bg-blue {background-image: linear-gradient(
-    145deg,
-    rgb(0, 47, 100),    
-    rgba(4, 46, 94, 0.904),    
-    rgba(4, 46, 94, 0.719),    
-    rgba(4, 46, 94, 0.795),    
-    rgb(4, 46, 94)
-    );
-}
-.bg-rouge {background-image: linear-gradient(
-    145deg,
-    rgb(206, 0, 0),
-    rgb(206, 0, 0),
-    rgb(206, 0, 0),
-    rgb(206, 0, 0),
-    rgb(206, 0, 0)
-    ) 
-}
-.bg-vert {background-image: linear-gradient(
-    145deg,
-    green,
-    green,
-    green,
-    green,
-    green
-    ) 
-}
 .text-gris {background-image: linear-gradient(
     145deg,
     rgb(29, 29, 29),

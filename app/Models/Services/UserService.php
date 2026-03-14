@@ -25,7 +25,7 @@ class UserService {
 
     public function registerUser($data) {
 
-        // (1)
+        // (1) Vérifier si les entrées sont conformes aux contraintes de validateRegistration()
         $errors = $this->validator->validateRegistration($data);
         if (!empty($errors)) {
             return $errors;

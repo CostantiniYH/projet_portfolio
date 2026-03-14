@@ -47,8 +47,18 @@
         </div>
     </section>
 
+    <section class="row mb-3 <?= $display ?>">
+        <div class="col-md">
+            <div class="bg-sec p-3 border border-2 border-danger">
+                <h4>Ressources officielles de la Maison des examens</h4>
+                <a href="https://siec.education.fr/candidats/docutheque/bts-services-informatiques-aux-organisations-sio-session-2026"
+                class="stretched-link" target="_blank"></a>
+            </div>
+        </div>
+    </section>
 
-    <section class="row g-5 mt-5">
+
+    <section class="row g-5">
         <div class="col-md">
             <div class="card p-0 border-0 shadow position-relative">
                 <img class="img-filtre img-fluid" src="<?= BASE_URL ?>uploads/projets/client_leger.png" alt="">
