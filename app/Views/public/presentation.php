@@ -47,52 +47,35 @@
         <hr class="text-vert border-2">
         <h1 class="mb-4 text-primary bi bi-person-gear text-black" style="font-size: 3rem"> Compétences techniques</h1>
         <hr class="text-vert border-2">
-        <div class="bg-white shadow-sm rounded p-3 col-md-4">
-            <ul class="list-group">               
-                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> HTML
-                    <div class="progress mt-2" style="height: 15px;">
-                        <div class="progress-bar bg-success fs-7" style="width: 85%;">85%</div>
-                    </div>
-                </li>
-                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> CSS
-                    <div class="progress mt-2" style="height: 15px;">
-                        <div class="progress-bar bg-success fs-7" style="width: 75%;">75%</div>
-                    </div>
-                </li>
-                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> PHP
-                    <div class="progress mt-2" style="height: 15px;">
-                        <div class="progress-bar bg-success fs-7" style="width: 75%;">75%</div>
-                    </div>
-                </li>      
-                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> MySQL
-                    <div class="progress mt-2" style="height: 15px;">
-                        <div class="progress-bar bg-success fs-7" style="width: 50%;">50%</div>
-                    </div>
-                </li>      
-                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Git
-                <div class="progress mt-2" style="height: 15px;">
-                        <div class="progress-bar bg-success fs-7" style="width: 40%;">40%</div>
-                    </div>
-                </li>      
-                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Java
-                    <div class="progress mt-2" style="height: 15px;">
-                        <div class="progress-bar bg-success fs-7" style="width: 40%;">40%</div>
-                    </div>
-                </li>      
-                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Python            
-                    <div class="progress mt-2" style="height: 15px;">
-                        <div class="progress-bar bg-success" style="width: 30%">30%</div>
-                    </div>
-                </li>      
-                <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> JavaScript
-                    <div class="progress mt-2" style="height: 15px;">
-                        <div class="progress-bar bg-success fs-7" style="width: 10%;">10%</div>
-                    </div>
-                </li>      
-            </ul>
+        <h2>Visitez les sites suivants pour apprécier les compétences apprises :</h2>
+        <div class="bg-gris shadow-sm rounded p-3 col-md-4 row g-4">
+            <h4>Compétences utilisées</h4>
+            <div class="tech-stack">
+                <h1 class="devicon-html5-plain colored"> HTML</h1>
+            </div>    
+            <div class="">
+                <h1 class="devicon-css3-plain colored"> CSS</h1>
+            </div>    
+            <div class="">
+                <h1 class="devicon-php-plain colored"> PHP</h1>
+            </div> 
+
+<i class="devicon-javascript-plain colored"></i>
+<i class="devicon-python-plain colored"></i>
+<i class="devicon-java-plain colored"></i>
+<i class="devicon-csharp-plain colored"></i>
+<i class="devicon-docker-plain colored"></i>
+<i class="devicon-git-plain colored"></i>
+<i class="devicon-linux-plain colored"></i>
         </div>
-        <div class="row gap-3 col-md">
-            <h2>Visitez les sites suivants pour apprécier les compétences apprises :</h2>
+        <div class="row col-md">
+            <div class=" mx-auto  p-3 hvr-shadow">
+                <img src="<?= BASE_URL ?>uploads/projets/portfolio.png" alt="" class="img-fluid w-100">
+                <h5 class="card-body">Site Porfolio</h5>
+                <a href="https://costantini.freeboxos.fr/portfolio/" target="_blank" class="stretched-link"></a>
+            </div>
+        </div>
+        <div class="row gap-3 ">
             <video class="" style="z-index: 0; opacity: 70%;" autoplay muted>
                     <source src="<?= BASE_URL ?>uploads/videos/demo_gdm.mp4" type="video/mp4">
                     Votre navigateur ne supporte pas le format de cette vidéo
@@ -119,7 +102,7 @@
             </div>
             <div id="sio" class="col-md-5 mx-auto card p-3 hvr-shadow">
                 <!-- <img src="<?= BASE_URL ?>uploads/projets/gdm1.png" alt="" class="img-fluid w-100"> -->
-                <video id="start" class="card-img" autoplay muted>
+                <video class="card-img" autoplay muted>
                     <source src="<?= BASE_URL ?>uploads/videos/demo_gdm.mp4" type="video/mp4">
                     Votre navigateur ne supporte pas le format de cette vidéo
                 </video>
@@ -128,7 +111,7 @@
                     <p class="fs-6">Cliquez sur le bouton play pour arréter la musique</p>
                 </div>
                 <h5 class="card-body">Site des matières SIO</h5>
-                <a href="https://costantini.freeboxos.fr/gdm/" target="_blank" class="-link"></a>
+                <a id="start" href="https://costantini.freeboxos.fr/gdm/" target="_blank" class="stretched-link"></a>
             </div>
         </div>
     </section>
@@ -136,12 +119,57 @@
 
 <script>
     document.getElementById("start").onclick = () => {
-        document.getElementById("audio").play();
+        // document.getElementById("audio").play();
         // document.getElementById("stop").style.display = "";
     };
-    document.getElementById("sio").onclick = () => {
+    document.getElementById("stop").onclick = () => {
         document.getElementById("audio").pause();
         // document.getElementById("stop").style.display = "none";
     };
 
 </script>
+
+
+
+<!-- <ul class="list-group">               
+    <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> HTML
+        <div class="progress mt-2" style="height: 15px;">
+            <div class="progress-bar bg-success fs-7" style="width: 85%;">85%</div>
+        </div>
+    </li>
+    <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> CSS
+        <div class="progress mt-2" style="height: 15px;">
+            <div class="progress-bar bg-success fs-7" style="width: 75%;">75%</div>
+        </div>
+    </li>
+    <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> PHP
+        <div class="progress mt-2" style="height: 15px;">
+            <div class="progress-bar bg-success fs-7" style="width: 75%;">75%</div>
+        </div>
+    </li>      
+    <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> MySQL
+        <div class="progress mt-2" style="height: 15px;">
+            <div class="progress-bar bg-success fs-7" style="width: 50%;">50%</div>
+        </div>
+    </li>      
+    <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Git
+    <div class="progress mt-2" style="height: 15px;">
+            <div class="progress-bar bg-success fs-7" style="width: 40%;">40%</div>
+        </div>
+    </li>      
+    <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Java
+        <div class="progress mt-2" style="height: 15px;">
+            <div class="progress-bar bg-success fs-7" style="width: 40%;">40%</div>
+        </div>
+    </li>      
+    <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> Python            
+        <div class="progress mt-2" style="height: 15px;">
+            <div class="progress-bar bg-success" style="width: 30%">30%</div>
+        </div>
+    </li>      
+    <li class="list-group-item"><i class="bi bi-check-circle text-success"></i> JavaScript
+        <div class="progress mt-2" style="height: 15px;">
+            <div class="progress-bar bg-success fs-7" style="width: 10%;">10%</div>
+        </div>
+    </li>      
+</ul> -->

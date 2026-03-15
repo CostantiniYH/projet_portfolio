@@ -34,6 +34,12 @@ p * {
     text-align: justify;
 }
 
+.li-hvr:hover {
+    cursor: pointer;
+    scale: calc(1.01);
+
+}
+
 /* Background dégradé */
 /* 1 */
 .bg-obj {
