@@ -136,7 +136,7 @@
 
                 <!-- Ligne QCM -->
                 <div class="col-md-6">
-                    <h5 class="">Site QCM de recrutement</h5>
+                    <h5 class="">Site QCM</h5>
                     <p></p>
                     <div class="tech-stack">
                         <span class="devicon-html5-plain colored bg-white shadow-sm border p-2 rounded"> HTML</span>           
