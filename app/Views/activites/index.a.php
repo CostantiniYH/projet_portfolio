@@ -52,7 +52,7 @@
 </div>
 
 <!-- Bandeau titre 1 : activités Formation première et deuxième année -->
-<section class="row bg-dev p-5">
+<section class=" bg-dev p-5">
     <h1 class="text-center">Liste des activités en Formation</h1>
 </section>
 
@@ -217,11 +217,29 @@
                    </div>
                    <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
            </div>
+        </div>
+
+        <!-- 12e activité -->
+        <div class="col-lg-4 col-md-6">
+           <div class="card h-100 w-100">
+               <video class="card-img img-fluid" autoplay muted style="height: 13rem; width: 100%; overflow: hidden; background-size: cover;">
+                    <source src="<?= BASE_URL ?>uploads/videos/Screen_Recording_Windows_App.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas le format de cette vidéo
+                </video>
+               <div class="card-body d-flex flex-column">
+                   <h5 class="card-title">Activité 12 - Gestion d'incident avec connexion bureau à distance sur mobile</h5>
+                   <p class="card-text text-justifier">
+                    Activer la connexion bureau à distance de Windows, créer la connexion mobile en WAN et résoudre l'incident
+                    </p>
+                   </div>
+                   <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
+           </div>
        </div>
     </section>
 </div>
 
-<section class="row mt-5 mb-5 bg-dev p-5">
+<!-- Activités professinonelles (En entreprise) 1 -->
+<section class=" mt-5 mb-5 bg-dev p-5">
     <h1 class="text-center">Réalisation professinonelles première année</h1>
 </section>
 
@@ -268,12 +286,12 @@
     </main>
 </div>
 
-<section class="row mt-5 mb-5 bg-dev p-5">
+<!-- Activités professinonelles (En entreprise) 2 -->
+<section class=" mt-5 mb-5 bg-dev p-5">
     <h1 class="text-center">Réalisation professinonelles deuxième année</h1>
 </section>
 
 <div class="container">
-    <main class="">
         <section class="row g-5">
             <div class="col-lg-4 col-md-6">
                 <div class="card h-100 w-100">
@@ -314,10 +332,8 @@
             
         
         </section>
-    </main>
 
 
-    <div class="container">
         <section class="mt-5 row" style="height: 15rem;">
             <div class="bg-ts position-relative p-0">
                 <img class="img-ts img-fluid float-end" src="<?= BASE_URL ?>uploads/activites/excel2.png"

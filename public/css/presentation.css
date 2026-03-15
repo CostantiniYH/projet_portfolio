@@ -47,3 +47,28 @@
 .cv-brand:focus {
     border: 2px solid rgb(0, 204, 255);
 }
+
+.row.align-items-center > div{
+margin-bottom:30px;
+}
+
+
+.projet {
+    opacity: 80%;
+    transition: 0.6s;
+}
+
+.projet:hover {
+    opacity: 100%;
+    transform: scale(1.03);
+}
+
+.tech-stack span {
+    display: inline-block;
+    transition: 0.8s;
+}
+
+.tech-stack span:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
