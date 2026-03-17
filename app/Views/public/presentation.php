@@ -66,7 +66,7 @@
         </section>
     </div>
         
-    <!-- Titre -->
+    <!-- Titre Compétences-->
         <section class="bg-projet-1">
         <hr class="text-vert border-2">
         <h1 class="p-4 text-black" style="font-size: 3rem">Compétences techniques
@@ -74,15 +74,16 @@
         <hr class="text-vert border-2">
     </section>
     
+    <!-- Contenu Compétences -->
     <main class="container">
-        <!-- Section Compétences -->
-        <section class="row g-5 flex-md-row-reverse p-">
-            <h1 class="py-5">Visitez les projets ci-dessous pour découvrir les technologies utilisées</h1>
-            <!-- Ligne Portdolio -->
+        <h1 class="py-5">Visitez les projets ci-dessous pour découvrir les technologies utilisées</h1>
+
+        <!-- Ligne Portdolio (Reverse) -->
+        <section class="row g-5 py-5 flex-md-row-reverse bg-projet-2">
             <div class="col-md-6">
                 <h3>Site vitrine</h3>
                 <h5>Portfolio de compétences</h5>
-                <p>Présentation, réalisations professionnelles (Activités, projets, etc.), veille technologique et sécurité (Recherche, thème, et articles pertinents)</p>
+                <p class="text-justifier">Présentation (CV, formation, expérience, compétences), réalisations professionnelles (Activités, projets, etc.), veille technologique et sécurité (Recherche, thème, et articles pertinents)</p>
                 <div class="tech-stack">
                     <span class="devicon-html5-plain colored bg-white shadow-sm border p-2 rounded m-1"> HTML</span>           
                     <span class="devicon-css3-plain colored bg-white shadow-sm border p-2 rounded m-1"> CSS</span>             
@@ -97,8 +98,23 @@
                     </a>
                 </div>
             </div>
+        </section>
 
-            <!-- Ligne GDM -->            
+            <!-- Ligne GDM -->     
+        <section class="row g-5 py-5 bg-projet-3">             
+            <div class="col-md-6">
+                <h3 class="">CMS pédagogique</h3>
+                <h5>Gestion de contenu</h5>
+                <p class="text-justifier">Il s'agit d'une application web permettant de créer, organiser, modifier et structurer du contenu pédagogique hiérarchisé.
+                    Ce site a été conçu sur la base du programme du BTS SIO.
+                </p>
+                <div class="tech-stack">
+                    <span class="devicon-html5-plain colored bg-white shadow-sm border p-2 rounded m-1"> HTML</span>           
+                    <span class="devicon-css3-plain colored bg-white shadow-sm border p-2 rounded m-1"> CSS</span>             
+                    <span class="devicon-php-plain colored bg-white shadow-sm border p-2 rounded m-1"> PHP</span>
+                    <span class="devicon-git-plain colored bg-white shadow-sm border p-2 rounded m-1"> Git</span>
+                </div> 
+            </div>       
             <div class="col-md-6">
                 <a id="start" href="https://costantini.freeboxos.fr/gdm/" target="_blank" class="">
                     <video class="img-fluid projet shadow rounded-4" autoplay muted loop playsinline>
@@ -111,19 +127,52 @@
                     <p class="fs-6">Cliquez pour arréter le son</p>
                 </div>
             </div>
+        </section>
+
+
+        <!-- Ligne Chat (Reverse) -->
+        <section class="row g-5 py-5 flex-md-row-reverse bg-projet-4">
             <div class="col-md-6">
-                <h3 class="">CMS pédagogique</h3>
-                <h5>Gestion de contenu de cours SIO</h5>
-                <p>Il s'agit d'un site web permettant de créer, organiser, modifier et structurer du contenu pédagogique hiérarchisé</p>
+                <h3>Application de messagerie instantanée</h3>
+                <h5>Application web - Chat</h5>
+                <p></p>
                 <div class="tech-stack">
                     <span class="devicon-html5-plain colored bg-white shadow-sm border p-2 rounded m-1"> HTML</span>           
                     <span class="devicon-css3-plain colored bg-white shadow-sm border p-2 rounded m-1"> CSS</span>             
                     <span class="devicon-php-plain colored bg-white shadow-sm border p-2 rounded m-1"> PHP</span>
+                    <span class="devicon-mysql-plain colored bg-white shadow-sm border p-2 rounded m-1"> MySQL</span>
                     <span class="devicon-git-plain colored bg-white shadow-sm border p-2 rounded m-1"> Git</span>
-                </div> 
+                </div>
+            </div>              
+            <div class="col-md-6">
+                <a href="https://costantini.freeboxos.fr/chat/" target="_blank" class="">    
+                    <img src="<?= BASE_URL ?>uploads/projets/chat.png" alt="" class="img-fluid projet shadow rounded-4">
+                </a>
+            </div>            
+        </section>
+       
+        <!-- Ligne QCM -->
+        <section class="row g-5 py-5 bg-projet-3">        
+            <div class="col-md-6">
+                <h3 class="">Application de QCM en ligne</h3>
+                <p></p>
+                <div class="tech-stack">
+                    <span class="devicon-html5-plain colored bg-white shadow-sm border p-2 rounded m-1"> HTML</span>           
+                    <span class="devicon-css3-plain colored bg-white shadow-sm border p-2 rounded m-1"> CSS</span>             
+                    <span class="devicon-php-plain colored bg-white shadow-sm border p-2 rounded m-1"> PHP</span>
+                    <span class="devicon-mysql-plain colored bg-white shadow-sm border p-2 rounded m-1"> MySQL</span>
+                    <span class="devicon-git-plain colored bg-white shadow-sm border p-2 rounded m-1"> Git</span>
+                </div>
             </div>
-
-            <!-- Ligne e-commerce -->   
+            <div class="col-md-6">
+                <a href="https://costantini.freeboxos.fr/qcm/" target="_blank" class="">    
+                    <img src="<?= BASE_URL ?>uploads/projets/qcm2.png" alt="" class="img-fluid projet shadow rounded-4">
+                </a>
+            </div>     
+        </section>
+        
+        <!-- Ligne e-commerce (reverse) -->   
+        <section class="row g-5 py-5 flex-md-row-reverse bg-projet-5">        
             <div class="col-md-6">
                 <h3 class="">PPE 1 - Site e-commerce</h3>
                 <p></p>
@@ -140,42 +189,6 @@
                     <img src="<?= BASE_URL ?>uploads/projets/ecom.png" alt="" class="img-fluid projet shadow rounded-4">
                 </a>
             </div>
-
-            <!-- Ligne Chat -->
-            <div class="col-md-6">
-                <a href="https://costantini.freeboxos.fr/chat/" target="_blank" class="">    
-                    <img src="<?= BASE_URL ?>uploads/projets/chat.png" alt="" class="img-fluid projet shadow rounded-4">
-                </a>
-            </div>
-            <div class="col-md-6">
-                <h3>Site chat instantané</h3>
-                <p></p>
-                <div class="tech-stack">
-                    <span class="devicon-html5-plain colored bg-white shadow-sm border p-2 rounded m-1"> HTML</span>           
-                    <span class="devicon-css3-plain colored bg-white shadow-sm border p-2 rounded m-1"> CSS</span>             
-                    <span class="devicon-php-plain colored bg-white shadow-sm border p-2 rounded m-1"> PHP</span>
-                    <span class="devicon-mysql-plain colored bg-white shadow-sm border p-2 rounded m-1"> MySQL</span>
-                    <span class="devicon-git-plain colored bg-white shadow-sm border p-2 rounded m-1"> Git</span>
-                </div>
-            </div>
-
-            <!-- Ligne QCM -->
-            <div class="col-md-6">
-                <h3 class="">Site QCM</h3>
-                <p></p>
-                <div class="tech-stack">
-                    <span class="devicon-html5-plain colored bg-white shadow-sm border p-2 rounded m-1"> HTML</span>           
-                    <span class="devicon-css3-plain colored bg-white shadow-sm border p-2 rounded m-1"> CSS</span>             
-                    <span class="devicon-php-plain colored bg-white shadow-sm border p-2 rounded m-1"> PHP</span>
-                    <span class="devicon-mysql-plain colored bg-white shadow-sm border p-2 rounded m-1"> MySQL</span>
-                    <span class="devicon-git-plain colored bg-white shadow-sm border p-2 rounded m-1"> Git</span>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <a href="https://costantini.freeboxos.fr/qcm/" target="_blank" class="">    
-                    <img src="<?= BASE_URL ?>uploads/projets/qcm2.png" alt="" class="img-fluid projet shadow rounded-4">
-                </a>
-            </div>     
         </section>
     </main>
 </div>

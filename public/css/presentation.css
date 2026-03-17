@@ -72,7 +72,31 @@ margin-bottom:30px;
         #EDE5D5 60%, 
         #DDD0B8 100%
     );
-    /* clip-path: polygon(0 0, 100% 0); */
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+}
+
+.bg-projet-2 {
+    background: linear-gradient(108deg, #FFFFFF 0%, #F0F4F8 20%, #D8E4EF 50%, #A8BDD4 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    margin-bottom: 1rem;
+}
+
+.bg-projet-3 {
+    background: linear-gradient(108deg, #FFFFFF 0%, #F0F4F8 20%, #D8E4EF 50%, #A8BDD4 100%);
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0 90%);
+    margin-bottom: 1rem;
+}
+
+.bg-projet-4 {
+    background: linear-gradient(108deg, #FFFFFF 0%, #F0F4F8 20%, #D8E4EF 50%, #A8BDD4 100%);
+    clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0 100%);
+    margin-bottom: 1rem;
+}
+
+.bg-projet-5 {
+    background: linear-gradient(108deg, #FFFFFF 0%, #F0F4F8 20%, #D8E4EF 50%, #A8BDD4 100%);
+    clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0 100%);
+    margin-bottom: 1rem;
 }
 
 .tech-stack span {
