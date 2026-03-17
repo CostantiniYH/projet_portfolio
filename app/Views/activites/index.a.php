@@ -151,9 +151,10 @@
                 <img src="<?= BASE_URL ?>uploads/projets/gdm1.png" alt="" 
                 class="card-img-top img-fluid" style="height: 13rem;">
                 <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Activité 7 - Développer un site des matières SIO</h5>
+                    <h5 class="card-title">Activité 7 - Mise-à-jour PHP et déploiement serveur</h5>
                     <p class="card-text text-justifier">
-                        Création personnelle pour rendre plus attractif l'accès aux contenu des matières 
+                        Effectuer une mise-à-jour pour afficher dynamiquement une quantité de données à partir
+                        d'une base de données, et la déployer sur serveur
                     </p>
                 </div>
                 <a href="#<?= BASE_URL ?>ressources/masques/" 
