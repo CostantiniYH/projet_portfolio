@@ -36,21 +36,28 @@ nav.project a {
   font-weight: bold;
 }
 
+.bg-projet-1 {
+  /* Blanc → gris perle moderne */  
+  background: linear-gradient(110deg, #ffffff, #f0f0f0, #d9d9d9);
+  border-top: 2px solid #364757;
+  border-bottom: 2px solid #365736;
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+}
+
 /* section { padding: 40px; max-width: 900px; margin: auto; } */
-h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; }
+/* h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; } */
 
 .img-filtre {
   filter: grayscale(50%) brightness(60%);
   transition: 0.5s;
 }
 
-.card:hover .img-filtre {
+.hover-card-img:hover .img-filtre {
   filter: grayscale(0%) brightness(100%);
 }
 
-.card:hover .text-white {
-  color: rgb(14, 81, 121) !important;  
-  text-transform: uppercase;
+.hover-card-img:hover .text-white {
+  transform: translateX(30px);
 }
 
 .position-absolute {

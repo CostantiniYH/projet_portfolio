@@ -29,7 +29,7 @@ class IndexController
         require dirname(__DIR__) . '/Views/partials/layout.php';
     }
 
-    public function indexActivite() {
+    public function activites() {
         // Code pour afficher l'index des activités
         $css = "activite";
 
@@ -40,73 +40,23 @@ class IndexController
         require dirname(__DIR__) . '/Views/partials/layout.php';
     }
 
-    public function activiteEcole() {
-        // Code pour afficher la liste des activités
-        $activites = "";
-        $css = "activite";
-        
-        $titre = "Activités";
-        ob_start();
-        require __DIR__ . '/../Views/activites/activite_ecole.php';
-        $content = ob_get_clean();
-        require __DIR__ . '/../Views/partials/layout.php';
-    }
-
-    public function activiteEntreprise() {
-        // Code pour afficher la liste des activités
-        $activites = "";
-        $css = "activite";
-        
-        $titre = "Activités";
-        ob_start();
-        require __DIR__ . '/../Views/activites/activite_entreprise.php';
-        $content = ob_get_clean();
-        require __DIR__ . '/../Views/partials/layout.php';
-    }
-    
-    public function activite1() {
-        // Code pour afficher la liste des activités
-        $activites = "";
-        $css = "activite";
-        
-        $titre = "Activités";
-        ob_start();
-        require __DIR__ . '/../Views/activites/activite_1.php';
-        $content = ob_get_clean();
-        require __DIR__ . '/../Views/partials/layout.php';
-    }
-        
-    public function activite2() {
-        // Code pour afficher la liste des activités
-        $activites = "";
-        $css = "activite";
-
-        $titre = "Activités";
-        ob_start();
-        require __DIR__ . '/../Views/activites/activite_2.php';
-        $content = ob_get_clean();
-        require __DIR__ . '/../Views/partials/layout.php';
-    }
-
-    public function activite3() {
-        // Code pour afficher la liste des activités
-        $activites = "";
-        $titre = "Activités";
-        ob_start();
-        require __DIR__ . '/../Views/activites/activite_3.php';
-        $content = ob_get_clean();
-        require __DIR__ . '/../Views/partials/layout.php';
-    }
-
-    public function indexProjet() {
-        $titre = "Projets";
+    public function E5() {
+        $titre = "Projets E5";
         $css = "projet";
         ob_start();
-        require __DIR__ . '/../Views/projets/index.p.php';
+        require __DIR__ . '/../Views/activites/E5.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
     }
 
+    public function E6() {
+        $titre = "Projets E6";
+        $css = "projet";
+        ob_start();
+        require __DIR__ . '/../Views/projets/E6.php';
+        $content = ob_get_clean();
+        require __DIR__ . '/../Views/partials/layout.php';
+    }
 
     // Projet 1 : client léger - Site e-commerce {crud + authentification + affichage dynamique}
     public function projet1() {
@@ -128,7 +78,7 @@ class IndexController
         require dirname(__DIR__) . '/Views/partials/layout.php';
     }
 
-     public function realisation() {
+     public function realisations() {
         $titre = "Réalisations Professionnelles";
         ob_start();
         require dirname(__DIR__) . '/Views/public/realisations.php';
@@ -173,3 +123,30 @@ class IndexController
         require dirname(__DIR__) . '/Views/partials/layout.php';
     }
 }
+
+
+
+    // public function activiteEcole() {
+    //     // Code pour afficher la liste des activités
+    //     $activites = "";
+    //     $css = "activite";
+        
+    //     $titre = "Activités";
+    //     ob_start();
+    //     require __DIR__ . '/../Views/activites/activite_ecole.php';
+    //     $content = ob_get_clean();
+    //     require __DIR__ . '/../Views/partials/layout.php';
+    // }
+
+    // public function activiteEntreprise() {
+    //     // Code pour afficher la liste des activités
+    //     $activites = "";
+    //     $css = "activite";
+        
+    //     $titre = "Activités";
+    //     ob_start();
+    //     require __DIR__ . '/../Views/activites/activite_entreprise.php';
+    //     $content = ob_get_clean();
+    //     require __DIR__ . '/../Views/partials/layout.php';
+    // }
+     

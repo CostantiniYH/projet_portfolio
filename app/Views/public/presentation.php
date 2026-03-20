@@ -15,9 +15,9 @@
     
     <!-- Titre Formation -->
      <div class="drop-shadow">
-        <section class="bg-projet-1 rounded-4">
+        <section class="bg-projet-1">
             <hr class="text-rouge border-2">
-            <h1 class="ext-black p-4" style="font-size: 3rem">Formation
+            <h1 class="text-black p-4" style="font-size: 3rem">Formation
                 <i class="bi bi-mortarboard"></i>
             </h1>
             <hr class="text-rouge border-2">
@@ -38,7 +38,7 @@
 
     <!-- Titre Expérience Pro -->
      <div class="drop-shadow">
-        <section class="bg-projet-1 rounded-4">
+        <section class="bg-projet-1">
             <hr class="text-gris border-2">
             <h1 class="p-4 text-black" style="font-size: 3rem">Expérience professionnelle
                 <i class="bi bi-building"></i>
@@ -72,7 +72,7 @@
         
     <!-- Titre Compétences-->
      <div class="drop-shadow">
-         <section class="bg-projet-1 rounded-4">
+         <section class="bg-projet-1">
              <hr class="text-vert border-2">
              <h1 class="p-4 text-black" style="font-size: 3rem">Compétences techniques
                  <i class="bi-laptop"></i></h1>

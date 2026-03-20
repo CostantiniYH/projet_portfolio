@@ -17,7 +17,7 @@
               <a class="nav-link bi bi-house-fill" href="<?= BASE_URL ?>presentation"> Présentation</a>
             </li>
             <li class="nav-item nav-hov">
-              <a class="nav-link " href="<?= BASE_URL ?>realistation-pro">Réalisations</a>
+              <a class="nav-link " href="<?= BASE_URL ?>realisations">Réalisations</a>
             </li>
             <li class="nav-item nav-hov">
               <a class="nav-link " href="<?= BASE_URL ?>E5">E5</a>
