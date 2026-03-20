@@ -14,14 +14,16 @@
     </section>
     
     <!-- Titre Formation -->
-     <div class="cotainer-fluid drop-shadow">
-        <section class="bg-projet-1">
-            <hr class="text-rouge border-2">
-            <h1 class="text-black p-4" style="font-size: 3rem">Formation
-                <i class="bi bi-mortarboard"></i>
-            </h1>
-            <hr class="text-rouge border-2">
-        </section>
+     <div class="container-fluid">
+         <div class="row drop-shadow">
+             <section class="bg-projet-1">
+                 <hr class="text-rouge border-2">
+                 <h1 class="text-black p-4" style="font-size: 3rem">Formation
+                     <i class="bi bi-mortarboard"></i>
+                </h1>
+                <hr class="text-rouge border-2">
+            </section>
+        </div>
     </div>
 
     <main class="container">
@@ -37,14 +39,16 @@
     </main>
 
     <!-- Titre Expérience Pro -->
-     <div class="cotainer-fluid drop-shadow">
-        <section class="bg-projet-1">
-            <hr class="text-gris border-2">
-            <h1 class="p-4 text-black" style="font-size: 3rem">Expérience professionnelle
-                <i class="bi bi-building"></i>
-            </h1>
-            <hr class="text-gris border-2">
-        </section>
+     <div class="container-fluid">
+         <div class="row drop-shadow">
+             <section class="bg-projet-1">
+                 <hr class="text-gris border-2">
+                 <h1 class="p-4 text-black" style="font-size: 3rem">Expérience professionnelle
+                     <i class="bi bi-building"></i>
+                </h1>
+                <hr class="text-gris border-2">
+            </section>
+        </div>
     </div>
     
     <!-- Contenu expérience pro -->
@@ -71,13 +75,15 @@
     </div>
         
     <!-- Titre Compétences-->
-     <div class="cotainer-fluid drop-shadow">
-         <section class="bg-projet-1">
-             <hr class="text-vert border-2">
-             <h1 class="p-4 text-black" style="font-size: 3rem">Compétences techniques
-                 <i class="bi-laptop"></i></h1>
-            <hr class="text-vert border-2">
-        </section>
+     <div class="container-fluid">
+         <div class="row drop-shadow">
+             <section class="bg-projet-1">
+                <hr class="text-vert border-2">
+                <h1 class="p-4 text-black" style="font-size: 3rem">Compétences techniques
+                     <i class="bi-laptop"></i></h1>
+                <hr class="text-vert border-2">
+            </section>
+        </div>
     </div>
     
     <!-- Contenu Compétences -->
