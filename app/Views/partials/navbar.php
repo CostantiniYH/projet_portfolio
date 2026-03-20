@@ -17,10 +17,13 @@
               <a class="nav-link bi bi-house-fill" href="<?= BASE_URL ?>presentation"> Présentation</a>
             </li>
             <li class="nav-item nav-hov">
-              <a class="nav-link " href="<?= BASE_URL ?>activites">Activités Pro</a>
+              <a class="nav-link " href="<?= BASE_URL ?>realistation-pro">Réalisations</a>
             </li>
             <li class="nav-item nav-hov">
-              <a class="nav-link " href="<?= BASE_URL ?>realistation-pro">Réalisations Pro</a>
+              <a class="nav-link " href="<?= BASE_URL ?>E5">E5</a>
+            </li>
+            <li class="nav-item nav-hov">
+              <a class="nav-link " href="<?= BASE_URL ?>E6">E6</a>
             </li>
             <li class="nav-item nav-hov">
               <a class="nav-link" href="<?= BASE_URL ?>cybersecurite">Cybersécurité</a>

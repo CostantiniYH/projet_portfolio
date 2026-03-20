@@ -72,6 +72,8 @@ margin-bottom:30px;
         #EDE5D5 60%, 
         #DDD0B8 100%
     );
+    border-top: 2px solid #364757;
+    border-bottom: 2px solid #365736;
     clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
 }
 

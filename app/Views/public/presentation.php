@@ -14,17 +14,19 @@
     </section>
     
     <!-- Titre Formation -->
-    <section class="bg-projet-1">
-        <hr class="text-rouge border-2">
-        <h1 class="ext-black p-4" style="font-size: 3rem">Formation
-            <i class="bi bi-mortarboard"></i>
-        </h1>
-        <hr class="text-rouge border-2">
-    </section>
+     <div class="drop-shadow">
+        <section class="bg-projet-1 rounded-4">
+            <hr class="text-rouge border-2">
+            <h1 class="ext-black p-4" style="font-size: 3rem">Formation
+                <i class="bi bi-mortarboard"></i>
+            </h1>
+            <hr class="text-rouge border-2">
+        </section>
+    </div>
 
     <main class="container">
         <section class="row g-3 p-4">
-            <div class="bg-white shadow-sm rounded p-5">
+            <div class="border border bg-white shadow-sm rounded p-5">
                 <h3>BTS SIO Option SLAM [En cours...]</h3>
                 <h5 class="text-rouge">CFA Ozar Formation</h5>
                 <p class="text-justifier">Formation en Services Informatiques aux Organisations, spécialisation Solutions 
@@ -35,20 +37,22 @@
     </main>
 
     <!-- Titre Expérience Pro -->
-    <section class="bg-projet-1">
-        <hr class="text-gris border-2">
-        <h1 class="p-4 text-black" style="font-size: 3rem">Expérience professionnelle
-            <i class="bi bi-building"></i>
-        </h1>
-        <hr class="text-gris border-2">
-    </section>
+     <div class="drop-shadow">
+        <section class="bg-projet-1 rounded-4">
+            <hr class="text-gris border-2">
+            <h1 class="p-4 text-black" style="font-size: 3rem">Expérience professionnelle
+                <i class="bi bi-building"></i>
+            </h1>
+            <hr class="text-gris border-2">
+        </section>
+    </div>
     
     <!-- Contenu expérience pro -->
     <div class="container">        
         <section class="row g-3 p-4">            
             <div class="col-md-3">
-                <div class="card rounded-4  shadow-sm "> 
-                    <img class="img-fluid border p-4" src="uploads\experience\hitecy.png" alt="">
+                <div class="card rounded-4 shadow-sm "> 
+                    <img class="img-fluid border-bottom p-4" src="uploads\experience\hitecy.png" alt="">
                     <div class="card-body">
                         <h5 class="card-title">DVI d'Orange</h5>
                         <p>Analyse et qualification des données clients</p>
@@ -67,12 +71,14 @@
     </div>
         
     <!-- Titre Compétences-->
-        <section class="bg-projet-1">
-        <hr class="text-vert border-2">
-        <h1 class="p-4 text-black" style="font-size: 3rem">Compétences techniques
-            <i class="bi-laptop"></i></h1>
-        <hr class="text-vert border-2">
-    </section>
+     <div class="drop-shadow">
+         <section class="bg-projet-1 rounded-4">
+             <hr class="text-vert border-2">
+             <h1 class="p-4 text-black" style="font-size: 3rem">Compétences techniques
+                 <i class="bi-laptop"></i></h1>
+            <hr class="text-vert border-2">
+        </section>
+    </div>
     
     <!-- Contenu Compétences -->
     <main class="container">
