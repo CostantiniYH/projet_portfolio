@@ -133,6 +133,6 @@ p * {
 }
 
 .drop-shadow {
-     filter: drop-shadow(0.4px 3px 5px rgba(0, 0, 0, 0.2));
+     /* filter: drop-shadow(0.4px 3px 5px rgba(0, 0, 0, 0.2)); */
   /* pas de background, pas de padding, pas de border */
 }
