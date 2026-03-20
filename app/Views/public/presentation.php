@@ -1,4 +1,4 @@
-<header class="bg-blue  text-white p-5 mb-5">
+<header class="bg-blue text-white p-5 mb-5">
     <a href="" class="cv-brand float-end">CV</a>
     <h1>Yaacov Costantini</h1>
     <p>Développeur polyvalent</p>
@@ -14,7 +14,7 @@
     </section>
     
     <!-- Titre Formation -->
-     <div class="container-fluid">
+     <div class="container">
          <div class="row drop-shadow">
              <section class="bg-projet-1">
                  <hr class="text-rouge border-2">
@@ -39,7 +39,7 @@
     </main>
 
     <!-- Titre Expérience Pro -->
-     <div class="container-fluid">
+     <div class="container">
          <div class="row drop-shadow">
              <section class="bg-projet-1">
                  <hr class="text-gris border-2">
@@ -75,7 +75,7 @@
     </div>
         
     <!-- Titre Compétences-->
-     <div class="container-fluid">
+     <div class="container">
          <div class="row drop-shadow">
              <section class="bg-projet-1">
                 <hr class="text-vert border-2">
