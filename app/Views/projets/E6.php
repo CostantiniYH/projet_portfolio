@@ -83,12 +83,21 @@
                     <h5>Application Web de vente en ligne</h5>
                     <p class="text-justifier">Développement d'une plateforme marchande incluant une interface client dynamique, un espace 
                         d'administration des ventes (Produit/ catégorie), la gestion du panier, et la validation de commande.
-
+                    </p>
+                    <strong>Langages :</strong>
+                    <p>
+                        <div class="tech-stack">
+                            <span class="devicon-html5-plain colored bg-white shadow-sm border p-2 rounded m-1"> HTML</span>           
+                            <span class="devicon-css3-plain colored bg-white shadow-sm border p-2 rounded m-1"> CSS</span>             
+                            <span class="devicon-php-plain colored bg-white shadow-sm border p-2 rounded m-1"> PHP</span>
+                            <span class="devicon-mysql-plain colored bg-white shadow-sm border p-2 rounded m-1"> MySQL</span>
+                            <span class="devicon-git-plain colored bg-white shadow-sm border p-2 rounded m-1"> Git</span>
+                        </div>
                     </p>
                     Ressources téléchargeables :
                     <div class="row p-2">
                         <a role="button" href="<?= BASE_URL ?>ressources/documentation/" class="btn btn-outline-success mb-1 shadow-sm text-start">
-                            Diagramme de Gantt du projet <i class="bi bi-file-earmark-arrow-down-fill float-end"></i>
+                            Diagramme de Gantt du projet <i class="bi bi-diagram-3-fill float-end"></i>
                         </a>
                         <a role="button" href="<?= BASE_URL ?>ressources/documentation/" class="btn btn-outline-success mb-1 shadow-sm text-start">
                             Cahier des charges <i class="bi bi-file-earmark-arrow-down-fill float-end"></i>
@@ -101,6 +110,9 @@
                         </a>
                         <a role="button" href="<?= BASE_URL ?>ressources/documentation/" class="btn btn-outline-success mb-1 shadow-sm text-start">
                             Documentation technique <i class="bi bi-file-earmark-arrow-down-fill float-end"></i>
+                        </a>
+                        <a role="button" href="https://github.com/CostantiniYH/projet_ecom" target="_blank" class="btn btn-outline-success mb-1 shadow-sm text-start">
+                            Code source <i class="bi bi-github float-end"></i>
                         </a>
                     </div>
                 </div>
@@ -140,6 +152,9 @@
                         </a>
                         <a role="button" href="<?= BASE_URL ?>ressources/documentation/" class="btn btn-outline-success mb-1 shadow-sm text-start">
                             Documentation technique <i class="bi bi-file-earmark-arrow-down-fill float-end"></i>
+                        </a>
+                        <a role="button" href="https://github.com/CostantiniYH/projet_java" target="_blank" class="btn btn-outline-success mb-1 shadow-sm text-start">
+                            Code source <i class="bi bi-github float-end"></i>
                         </a>
                     </div>
                 </div>

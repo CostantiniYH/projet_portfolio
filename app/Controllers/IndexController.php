@@ -29,26 +29,28 @@ class IndexController
         require dirname(__DIR__) . '/Views/partials/layout.php';
     }
 
-    public function activites() {
-        // Code pour afficher l'index des activités
-        $css = "activite";
-
-        $titre = "Activités";
-        ob_start();
-        require dirname(__DIR__) . '/Views/activites/index.a.php';
-        $content = ob_get_clean();
-        require dirname(__DIR__) . '/Views/partials/layout.php';
+    // Réalisations Professionnelles (ensemble de toutes les réalisations)
+    public function realisations() {
+    $titre = "Réalisations Professionnelles";
+    ob_start();
+    // require dirname(__DIR__) . '/Views/activites/activite_ecole.php';
+    // require dirname(__DIR__) . '/Views/activites/activite_entreprise.php';
+    require dirname(__DIR__) . '/Views/activites/index.a.php';
+    $content = ob_get_clean();
+    require dirname(__DIR__) . '/Views/partials/layout.php';
     }
 
+    // Page Epreuve E5 (Tableau de synthèse et attestation de présence en entreprise)
     public function E5() {
-        $titre = "Projets E5";
-        $css = "projet";
+        $titre = "Epreuve E5";
+        $css = "realisations";
         ob_start();
         require __DIR__ . '/../Views/activites/E5.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
     }
 
+    // Adresse des ressources des projets sélectionnés pour l'épreuve E6 (Diagrammes, doc, lien GitHub, )
     public function E6() {
         $titre = "Projets E6";
         $css = "projet";
@@ -74,14 +76,6 @@ class IndexController
         $css = "projet";
         ob_start();
         require dirname(__DIR__) . '/Views/projets/projet_2.php';
-        $content = ob_get_clean();
-        require dirname(__DIR__) . '/Views/partials/layout.php';
-    }
-
-     public function realisations() {
-        $titre = "Réalisations Professionnelles";
-        ob_start();
-        require dirname(__DIR__) . '/Views/public/realisations.php';
         $content = ob_get_clean();
         require dirname(__DIR__) . '/Views/partials/layout.php';
     }
