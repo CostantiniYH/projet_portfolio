@@ -69,9 +69,9 @@
 
     <!-- Carte projet 1 : client léger e-commerce -->
     <section class="card mb-5 rounded-4">
-        <div class="row p-2">
+        <div class="row p-">
             <div class="col-md position-relative hover-card-img card-img">
-                <img class="img-fluid h-100 rounded-4 img-filtre" src="<?= BASE_URL ?>uploads/projets/ecom.png" alt="">
+                <img class="img-fluid h-100 rounded-4 img-filtre" src="<?= BASE_URL ?>uploads/projets/ecom1.png" alt="">
                 <div class=" position-absolute text-white top-50 start-50 translate-middle">
                     <h4>Cliquez pour atteindre le site <i class="fs- bi bi-arrow-right hvr-forward"></i></h4>
                 </div>
@@ -124,7 +124,7 @@
     <section class="card mb-3 rounded-4">
         <div class="row flex-md-row-reverse">
             <div class="col-md position-relative">
-                <img class="img-filtre img-fluid h-100 rounded-4" src="<?= BASE_URL ?>uploads/projets/.png" alt="">
+                <!-- <img class="img-filtre img-fluid h-100 rounded-4" src="<?= BASE_URL ?>uploads/projets/" alt=""> -->
                 <div class=" position-absolute text-white top-50 start-50 translate-middle">
                     
                 </div>
@@ -139,7 +139,7 @@
                         Ressources téléchargeables :
                         <div class="row p-2">
                         <a role="button" href="<?= BASE_URL ?>ressources/documentation/" class="btn btn-outline-success mb-1 shadow-sm text-start">
-                            Diagramme de Gantt du projet <i class="bi bi-file-earmark-arrow-down-fill float-end"></i>
+                            Diagramme de Gantt du projet <i class="bi bi-diagram-3-fill float-end"></i>
                         </a>
                         <a role="button" href="<?= BASE_URL ?>ressources/documentation/" class="btn btn-outline-success mb-1 shadow-sm text-start">
                             Cahier des charges <i class="bi bi-file-earmark-arrow-down-fill float-end"></i>

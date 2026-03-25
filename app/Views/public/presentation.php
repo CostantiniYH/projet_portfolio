@@ -12,6 +12,7 @@
             <h1 class="text-center">Bienvenue</h1>
         </div>
     </section>
+    <?= $_SESSION["user"] ?? '' ?>
     
     <!-- Titre Formation -->
      <div class="container-fluid">
@@ -198,7 +199,7 @@
             </div>      
             <div class="col-md-6">
                 <a href="https://costantini.freeboxos.fr/projet-ecom/" target="_blank" class="">    
-                    <img src="<?= BASE_URL ?>uploads/projets/ecom.png" alt="" class="img-fluid projet shadow rounded-4">
+                    <img src="<?= BASE_URL ?>uploads/projets/ecom1.png" alt="" class="img-fluid projet shadow rounded-4">
                 </a>
             </div>
         </section>

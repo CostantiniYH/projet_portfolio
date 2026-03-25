@@ -48,16 +48,18 @@ nav.project a {
 /* h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; } */
 
 .img-filtre {
-  filter: grayscale(50%) brightness(60%);
+  filter: grayscale(70%) brightness(80%);
   transition: 0.5s;
 }
 
 .hover-card-img:hover .img-filtre {
   filter: grayscale(0%) brightness(100%);
+  color: black !important;
 }
 
 .hover-card-img:hover .text-white {
   transform: translateX(30px);
+  color: black;
 }
 
 .position-absolute {
