@@ -1,7 +1,60 @@
+<div class="container">
+    <!-- Condition d'affichage admin -->
+    <?php
+        if (!empty($_SESSION['user']) && $_SESSION['user']['role'] == 'admin') {
+            $display = "";
+        } else {
+            $display = 'd-none';
+        }
+    ?>
+    <!-- Cette section est concernée par la condition d'affichage -->
+    <section class="row p-5 <?= $display ?>">
+        <div class="col-md-3 col-sm-12">
+            <div class="h-100 bg-bleu-marine">
+                <h3 class="w-100">Epreuve E5</h3>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class=" bg-white p-3 rounded">
+                <p class="alert alert-warning">Le dépôt du dossier de l'épreuve E5 doit se faire à partir du 17 
+                    février jusqu'au le 20 mars (23 à midi) maximum.</p>
+                <p>Documents à avoir le jour de l'épreuve :</p>
+                <ul>
+                    <li>Son portfolio</li>
+                    <li>Le tableau de synthèse</li>
+                    <li>Attestation de présence en entreprise</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cette section est concernée par la condition d'affichage -->
+    <section class="row p-5 <?= $display ?>">
+        <div class="col-md">
+            <div class="h-100 card p-0 border-0 shadow position-relative">
+                <img class="img-filtre img-fluid" src="<?= BASE_URL ?>uploads/activites/ecole.png" alt="">
+                <div class="position-absolute text-white top-50 start-50 translate-middle">
+                    <h4 class="">Activité école</h4>
+                </div>
+                <a href="activites-ecole" class="stretched-link"></a>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="h-100 card border-0 p-0 shadow position-relative">
+                <img class="img-filtre img-fluid" src="<?= BASE_URL ?>uploads/activites/entreprise.png" alt="">
+                <div class="position-absolute text-white top-50 start-50 translate-middle">
+                    <h4 class="">Activité Entreprise</h4>
+                </div>
+                <a href="activites-entreprise" class="stretched-link"></a>
+            </div>
+        </div>
+    </section>
+</div>
+
 <!-- Bandeau titre 1 : activités Formation première et deuxième année -->
-<section class=" bg-dev p-5">
+<!-- <section class=" bg-dev p-5">
     <h1 class="text-center">Liste des activités en Formation</h1>
-</section>
+</section> -->
 
 <div class="container">
     <section class="row g-5 p-5">
@@ -84,10 +137,10 @@
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Activité 6 - Modélisation BDD</h5>
                     <p class="card-text">
-                        Conception et modélisation de la base de données d'un chat instantané
+                        Modélisation de la base de données d'un chat instantané
                     </p>
                 </div>
-                <a href="<?= BASE_URL ?>ressources/masques/MR-activite2-Modelisation_BDD_chat.pdf" 
+                <a href="<?= BASE_URL ?>ressources/masques/rapport-activite-modeli_chat-slam.pdf" 
                 class="mt-auto btn btn-activite stretched-link card-footer w-100" target="_blank">Cliquer pour voir le détail</a>
             </div>
         </div>
@@ -129,10 +182,12 @@
                 <img src="<?= BASE_URL ?>uploads/activites/chatv1_5.jpg" alt="" 
                 class="card-img-top img-fluid" style="height: 13rem;">
                 <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Activité 9 - Développer un chat instantané en PHP / MySQL</h5>
+                    <h5 class="card-title">Activité 9 - Développer un chat instantané en PHP/ MySQL</h5>
                     <p class="card-text text-justifier">Mode procédural et mysqli</p>
                 </div>
-                <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
+                <a href="<?= BASE_URL ?>ressources/masques/rapport-activite-dev_chat-slam.pdf" target="_blank" 
+                class="mt-auto btn btn-activite stretched-link card-footer w-100">
+                Cliquer pour voir le détail</a>
             </div>
         </div>
 
@@ -184,4 +239,7 @@
            </div>
        </div>
     </section>
+
+    
 </div>
+

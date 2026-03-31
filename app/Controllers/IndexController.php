@@ -35,7 +35,7 @@ class IndexController
     ob_start();
     // require dirname(__DIR__) . '/Views/activites/activite_ecole.php';
     // require dirname(__DIR__) . '/Views/activites/activite_entreprise.php';
-    require dirname(__DIR__) . '/Views/activites/index.a.php';
+    require dirname(__DIR__) . '/Views/realisations/index.r.php';
     $content = ob_get_clean();
     require dirname(__DIR__) . '/Views/partials/layout.php';
     }
@@ -45,7 +45,7 @@ class IndexController
         $titre = "Epreuve E5";
         $css = "realisations";
         ob_start();
-        require __DIR__ . '/../Views/activites/E5.php';
+        require __DIR__ . '/../Views/realisations/E5.php';
         $content = ob_get_clean();
         require __DIR__ . '/../Views/partials/layout.php';
     }

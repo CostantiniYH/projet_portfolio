@@ -5,7 +5,8 @@
                 alt="" style="height: 15rem;">
             <h3 class="position-absolute translate-middle top-50 start-50 p-2 rounded shadow btn-ts">
                 Tableau de synthèse</h3>
-            <a href="<?= BASE_URL ?>ressources/documentation/" class="stretched-link"></a>
+            <a href="<?= BASE_URL ?>ressources/masques/TABLEAU_DE_SYNTHESE-YHC-BTS_SIO_2026.pdf" class="stretched-link"
+            target="_blank"></a>
         </div>
     </section>
 </div>
