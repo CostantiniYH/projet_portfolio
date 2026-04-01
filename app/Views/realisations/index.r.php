@@ -64,11 +64,11 @@
                 <img src="<?= BASE_URL ?>uploads/activites/virtual_box.png" alt="" 
                 class="card-img-top img-fluid" style="height: 13rem;">
                 <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Activité 1 - Virtual Box</h5>
-                    <p class="card-text">Créer et installer une machine virtuelle sous Virtual Box</p>
+                    <h5 class="card-title">Activité 1 - Création, configuration et clonage d’une machine virtuelle</h5>
+                    <p class="card-text">Il s'agit d'une virtualisation infrastructure et réseau avec Ubuntu Server 24.04 LTS sous Virtual Box</p>
                     <small class="d-block mb-3"></small>
                     </div>
-                    <a href="#<?= BASE_URL ?>" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
+                    <a href="<?= BASE_URL ?>ressources/masques/RA-virtualisation_infra_reseau_vbox.pdf" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
             </div>
         </div>
 

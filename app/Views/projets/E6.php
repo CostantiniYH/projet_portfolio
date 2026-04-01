@@ -72,7 +72,7 @@
         <div class="row p-">
             <div class="col-md position-relative hover-card-img card-img">
                 <img class="img-fluid h-100 rounded-4 img-filtre" src="<?= BASE_URL ?>uploads/projets/ecom1.png" alt="">
-                <div class=" position-absolute text-white top-50 start-50 translate-middle">
+                <div class="position-absolute titre-projet text-white top-50 start-50 translate-middle">
                     <h4>Cliquez pour atteindre le site <i class="fs- bi bi-arrow-right hvr-forward"></i></h4>
                 </div>
                 <a href="https://costantini.freeboxos.fr/projet-ecom" target="_blank" class="stretched-link"></a>

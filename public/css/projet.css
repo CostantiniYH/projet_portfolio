@@ -48,18 +48,21 @@ nav.project a {
 /* h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; } */
 
 .img-filtre {
-  filter: grayscale(70%) brightness(80%);
+  filter: grayscale(0%) brightness(100%);
   transition: 0.5s;
+}
+.titre-projet {
+  display: none;
 }
 
 .hover-card-img:hover .img-filtre {
-  filter: grayscale(0%) brightness(100%);
-  color: black !important;
+  filter: grayscale(50%) brightness(50%);
+  display: block;
 }
 
 .hover-card-img:hover .text-white {
   transform: translateX(30px);
-  color: black;
+  display: block;
 }
 
 .position-absolute {
