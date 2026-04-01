@@ -68,7 +68,8 @@
                     <p class="card-text">Il s'agit d'une virtualisation infrastructure et réseau avec Ubuntu Server 24.04 LTS sous Virtual Box</p>
                     <small class="d-block mb-3"></small>
                     </div>
-                    <a href="<?= BASE_URL ?>ressources/masques/RA-virtualisation_infra_reseau_vbox.pdf" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
+                    <a href="<?= BASE_URL ?>ressources/masques/RA-virtualisation_infra_reseau_vbox.pdf" class="mt-auto btn btn-activite stretched-link card-footer w-100"
+                    target="_blank">Cliquer pour voir le détail</a>
             </div>
         </div>
 
