@@ -90,10 +90,10 @@
         <!-- Troisième activité -->
         <div class="col-lg-4 col-md-6">
             <div class="card h-100 w-100">
-                <img src="<?= BASE_URL ?>uploads/activites/partage.png" alt="" 
+                <img src="<?= BASE_URL ?>uploads/activites/ad_csv.png" alt="" 
                 class="card-img-top img-fluid" style="height: 13rem;">
                 <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Activité 3 - Partage de fichiers et dossiers entre machine hôte et virtuelle</h5>
+                    <h5 class="card-title">Activité 3 - Créer des utilisateurs dans l'AD à partir d'un fichier CSV</h5>
                     <p class="card-text">
                     </p>
                 </div>
@@ -116,12 +116,12 @@
         </div>
 
         <!-- Cinquième activité -->
-         <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6">
             <div class="card h-100 w-100">
                 <img src="<?= BASE_URL ?>uploads/projets/portfolio.png" alt="" 
                 class="card-img-top img-fluid" style="height: 13rem;">
                 <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Activité 5 - Développer un site portfolio</h5>
+                    <h5 class="card-title">Activité 5 - Création d'une calculatrice en HTML/ JavaScript</h5>
                     <p class="card-text text-justifier">
                         Créer un site vitrine professionnel pour développer et promouvoir son image
                     </p>
@@ -130,9 +130,9 @@
                 class="mt-auto btn btn-activite stretched-link card-footer w-100" target="#_blank">Cliquer pour voir le détail</a>
             </div>
         </div>
-
+         
         <!-- Sixième activité -->
-         <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6">
             <div class="card h-100 w-100">
                 <img src="<?= BASE_URL ?>uploads/activites/UML.png" alt="" 
                 class="card-img-top img-fluid" style="height: 13rem;">
@@ -148,7 +148,7 @@
         </div>
 
         <!-- Septième activité -->
-         <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6">
             <div class="card h-100 w-100">
                 <img src="<?= BASE_URL ?>uploads/projets/gdm1.png" alt="" 
                 class="card-img-top img-fluid" style="height: 13rem;">
@@ -180,6 +180,21 @@
         </div>
 
         <!-- Neuvième activité -->
+         <div class="col-lg-4 col-md-6">
+            <div class="card h-100 w-100">
+                <img src="<?= BASE_URL ?>uploads/projets/portfolio.png" alt="" 
+                class="card-img-top img-fluid" style="height: 13rem;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Activité 5 - Développer un site portfolio</h5>
+                    <p class="card-text text-justifier">
+                        Créer un site vitrine professionnel pour développer et promouvoir son image
+                    </p>
+                </div>
+                <a href="#<?= BASE_URL ?>ressources/masques/" 
+                class="mt-auto btn btn-activite stretched-link card-footer w-100" target="#_blank">Cliquer pour voir le détail</a>
+            </div>
+        </div>
+
         <div class="col-lg-4 col-md-6">
             <div class="card h-100 w-100">
                 <img src="<?= BASE_URL ?>uploads/activites/chatv1_5.jpg" alt="" 
