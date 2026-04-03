@@ -82,7 +82,7 @@
                     <h5 class="card-title">Activité 2 - Gestion des utilisateurs et des groupes locaux dans un réseau poste-à-poste</h5>
                     <p class="card-text"></p>
                 </div>
-                <a href="<?= BASE_URL ?>resspurces/masques/RA-gestion_users.pdf" class="mt-auto btn btn-activite stretched-link card-footer w-100"
+                <a href="<?= BASE_URL ?>ressources/masques/RA-gestion_users.pdf" class="mt-auto btn btn-activite stretched-link card-footer w-100"
                 target="_blank">Cliquer pour voir le détail</a>
             </div>   
         </div>
