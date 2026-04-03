@@ -68,7 +68,7 @@
                     <p class="card-text">Il s'agit d'une virtualisation infrastructure et réseau avec Ubuntu Server 24.04 LTS sous Virtual Box</p>
                     <small class="d-block mb-3"></small>
                     </div>
-                    <a href="<?= BASE_URL ?>ressources/masques/RA-virtualisation_infra_reseau_vbox.pdf" class="mt-auto btn btn-activite stretched-link card-footer w-100"
+                    <a href="<?= BASE_URL ?>ressources/masques/RA-creation_config_clonage_vms_vbox.pdf" class="mt-auto btn btn-activite stretched-link card-footer w-100"
                     target="_blank">Cliquer pour voir le détail</a>
             </div>
         </div>
@@ -98,7 +98,7 @@
                     </p>
                 </div>
                 <a href="#<?= BASE_URL ?>ressources/masques/.pdf" class="mt-auto btn btn-activite stretched-link card-footer w-100" 
-                target="_blank">Cliquer pour voir le détail</a>
+                target="#_blank">Cliquer pour voir le détail</a>
             </div>
         </div>
 
@@ -127,7 +127,7 @@
                     </p>
                 </div>
                 <a href="#<?= BASE_URL ?>ressources/masques/" 
-                class="mt-auto btn btn-activite stretched-link card-footer w-100" target="_blank">Cliquer pour voir le détail</a>
+                class="mt-auto btn btn-activite stretched-link card-footer w-100" target="#_blank">Cliquer pour voir le détail</a>
             </div>
         </div>
 
@@ -143,7 +143,7 @@
                     </p>
                 </div>
                 <a href="<?= BASE_URL ?>ressources/masques/rapport-activite-modeli_chat-slam.pdf" 
-                class="mt-auto btn btn-activite stretched-link card-footer w-100" target="_blank">Cliquer pour voir le détail</a>
+                class="mt-auto btn btn-activite stretched-link card-footer w-100" target="#_blank">Cliquer pour voir le détail</a>
             </div>
         </div>
 
@@ -160,7 +160,7 @@
                     </p>
                 </div>
                 <a href="#<?= BASE_URL ?>ressources/masques/" 
-                class="mt-auto btn btn-activite stretched-link card-footer w-100" target="_blank">Cliquer pour voir le détail</a>
+                class="mt-auto btn btn-activite stretched-link card-footer w-100" target="#_blank">Cliquer pour voir le détail</a>
             </div>
         </div>
 
@@ -174,7 +174,8 @@
                     <p class="card-text text-justifier">Mise en place d'une solution pour héberger des applications 
                         sur Ubuntu server</p>
                     </div>
-                    <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
+                    <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100"
+                    >Cliquer pour voir le détail</a>
             </div>
         </div>
 
@@ -187,7 +188,7 @@
                     <h5 class="card-title">Activité 9 - Développer un chat instantané en PHP/ MySQL</h5>
                     <p class="card-text text-justifier">Mode procédural et mysqli</p>
                 </div>
-                <a href="<?= BASE_URL ?>ressources/masques/rapport-activite-dev_chat-slam.pdf" target="_blank" 
+                <a href="<?= BASE_URL ?>ressources/masques/rapport-activite-dev_chat-slam.pdf" target="#_blank" 
                 class="mt-auto btn btn-activite stretched-link card-footer w-100">
                 Cliquer pour voir le détail</a>
             </div>
