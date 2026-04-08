@@ -97,7 +97,7 @@
                     <p class="card-text">
                     </p>
                 </div>
-                <a href="#<?= BASE_URL ?>ressources/masques/.pdf" class="mt-auto btn btn-activite stretched-link card-footer w-100" 
+                <a href="#<?= BASE_URL ?>ressources/masques/RA-creation_utilisateurs_dossiers_partages_fichier_CSV.pdf" class="mt-auto btn btn-activite stretched-link card-footer w-100" 
                 target="#_blank">Cliquer pour voir le détail</a>
             </div>
         </div>

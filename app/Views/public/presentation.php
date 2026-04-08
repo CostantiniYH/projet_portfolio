@@ -1,5 +1,5 @@
 <header class="bg-blue text-white p-5 mb-5">
-    <a href="" class="cv-brand float-end">CV</a>
+    <a href="#<?= BASE_URL ?>" class="cv-brand float-end">CV</a>
     <h1>Yaacov Costantini</h1>
     <p>Développeur polyvalent</p>
     <p>Etudiant en alternance passioné par la création et la découverte d'expérience numériques</p>
