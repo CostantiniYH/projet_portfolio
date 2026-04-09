@@ -68,7 +68,7 @@
                     </a>
                         <div class="card-body">
                             <h5 class="card-title">
-                                <a href="https://pro.orange.fr/p/distributeurs/hitecy" class="nav-link">
+                                <a href="https://pro.orange.fr/p/distributeurs/hitecy" class="nav-link" target="_blank">
                                     Distributeur Orange</a>
                             </h5>
                             <p class="text-justifier">Hitecy group est un expert certifié Orange et est habilité à conseiller des clients et vendre des produits Orange.</p>

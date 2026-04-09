@@ -159,7 +159,7 @@
                         d'une base de données
                     </p>
                 </div>
-                <a href="#<?= BASE_URL ?>ressources/masques/RA-effectuer_une_maj_php_cms_sio.pdf" 
+                <a href="<?= BASE_URL ?>ressources/masques/RA-effectuer_une_maj_php_cms_sio.pdf" 
                 class="mt-auto btn btn-activite stretched-link card-footer w-100" target="#_blank">Cliquer pour voir le détail</a>
             </div>
         </div>
