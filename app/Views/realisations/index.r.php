@@ -118,7 +118,7 @@
         <!-- Cinquième activité -->
         <div class="col-lg-4 col-md-6">
             <div class="card h-100 w-100">
-                <img src="<?= BASE_URL ?>uploads/projets/portfolio.png" alt="" 
+                <img src="<?= BASE_URL ?>uploads/projets/.png" alt="" 
                 class="card-img-top img-fluid" style="height: 13rem;">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Activité 5 - Création d'une calculatrice en HTML/ JavaScript</h5>

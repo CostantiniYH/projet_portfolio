@@ -30,11 +30,17 @@
     <main class="container">
         <section class="row g-3 p-4">
             <div class="border border bg-white shadow-sm rounded p-5">
-                <h3>BTS SIO Option SLAM [En cours...]</h3>
-                <h5 class="text-rouge">CFA Ozar Formation</h5>
-                <p class="text-justifier">Formation en Services Informatiques aux Organisations, spécialisation Solutions 
-                    Logicielles et Applications Métiers. Apprentissage approfondi du développement 
-                    web, de la gestion de bases de données et de la méthodologie de projet.</p>
+                <a href="https://ozarhatorah.com/services-informatiques-aux-organisations/" target="_blank">
+                    <img src="<?= BASE_URL ?>uploads/experience/logo_ozar_formation_concept_cinematique_3.jpg" 
+                    alt="Photo logo Ozar Formation" class="img-fluid float-end ms-2 shadow-sm rounded-1" width="400rem">
+                </a>
+                <div>
+                    <h3>BTS SIO Option SLAM [En cours...]</h3>
+                    <h5 class="text-rouge">CFA Ozar Formation</h5>
+                    <p class="text-justifier">Formation en Services Informatiques aux Organisations, spécialisation Solutions 
+                        Logicielles et Applications Métiers. Apprentissage approfondi du développement 
+                        web, de la gestion de bases de données et de la méthodologie de projet.</p>
+                </div>
             </div>
         </section>
     </main>
@@ -57,11 +63,18 @@
         <section class="row g-3 p-4">            
             <div class="col-md-3">
                 <div class="card rounded-4 shadow-sm "> 
-                    <img class="img-fluid border-bottom p-4" src="uploads\experience\hitecy.png" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">DVI d'Orange</h5>
-                        <p>Analyse et qualification des données clients</p>
-                    </div>
+                    <a href="https://hitecy.launchrock.com" target="_blank">
+                        <img class="img-fluid border-bottom p-4" src="uploads\experience\hitecy.png" alt="">
+                    </a>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="https://pro.orange.fr/p/distributeurs/hitecy" class="nav-link">
+                                    Distributeur Orange</a>
+                            </h5>
+                            <p class="text-justifier">Hitecy group est un expert certifié Orange et est habilité à conseiller des clients et vendre des produits Orange.</p>
+                            <p class="text-justifier">
+                                Mon rôle consiste à analyser, répertorier et qualifier des données clients pour fidéliser ou identifier des prospects</p>
+                        </div>
                 </div>
             </div>
             <!-- <div class="col-md-3">
