@@ -96,7 +96,7 @@
                     </p>
                     Ressources téléchargeables :
                     <div class="row p-2">
-                        <a role="button" href="<?= BASE_URL ?>ressources/documentation/" class="btn btn-outline-success mb-1 shadow-sm text-start">
+                        <!-- <a role="button" href="<?= BASE_URL ?>ressources/documentation/" class="btn btn-outline-success mb-1 shadow-sm text-start">
                             Diagramme de Gantt du projet <i class="bi bi-diagram-3-fill float-end"></i>
                         </a>
                         <a role="button" href="<?= BASE_URL ?>ressources/documentation/" class="btn btn-outline-success mb-1 shadow-sm text-start">
@@ -110,7 +110,7 @@
                         </a>
                         <a role="button" href="<?= BASE_URL ?>ressources/documentation/" class="btn btn-outline-success mb-1 shadow-sm text-start">
                             Documentation technique <i class="bi bi-file-earmark-arrow-down-fill float-end"></i>
-                        </a>
+                        </a> -->
                         <a role="button" href="https://github.com/CostantiniYH/projet_ecom" target="_blank" class="btn btn-outline-success mb-1 shadow-sm text-start">
                             Code source <i class="bi bi-github float-end"></i>
                         </a>
@@ -138,7 +138,7 @@
                         catalogue de bibliothèque, la gestion des adhérents et des flux d'emprunts.</p>
                         Ressources téléchargeables :
                         <div class="row p-2">
-                        <a role="button" href="<?= BASE_URL ?>ressources/documentation/" class="btn btn-outline-success mb-1 shadow-sm text-start">
+                        <!-- <a role="button" href="<?= BASE_URL ?>ressources/documentation/" class="btn btn-outline-success mb-1 shadow-sm text-start">
                             Diagramme de Gantt du projet <i class="bi bi-diagram-3-fill float-end"></i>
                         </a>
                         <a role="button" href="<?= BASE_URL ?>ressources/documentation/" class="btn btn-outline-success mb-1 shadow-sm text-start">
@@ -152,7 +152,7 @@
                         </a>
                         <a role="button" href="<?= BASE_URL ?>ressources/documentation/" class="btn btn-outline-success mb-1 shadow-sm text-start">
                             Documentation technique <i class="bi bi-file-earmark-arrow-down-fill float-end"></i>
-                        </a>
+                        </a> -->
                         <a role="button" href="https://github.com/CostantiniYH/projet_java" target="_blank" class="btn btn-outline-success mb-1 shadow-sm text-start">
                             Code source <i class="bi bi-github float-end"></i>
                         </a>

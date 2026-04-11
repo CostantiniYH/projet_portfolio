@@ -110,3 +110,7 @@ margin-bottom:30px;
     transform: scale(1.1);
     cursor: pointer;
 }
+
+.card:hover {
+    filter: grayscale(20%) brightness(95%);
+}

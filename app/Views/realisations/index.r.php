@@ -51,12 +51,12 @@
     </section>
 </div>
 
-<!-- Bandeau titre 1 : activités Formation première et deuxième année -->
-<!-- <section class=" bg-dev p-5">
-    <h1 class="text-center">Liste des activités en Formation</h1>
-</section> -->
 
 <div class="container">
+    <!-- Bandeau titre 1 : activités Formation première et deuxième année -->
+    <section class=" bg-dev p-5">
+        <h1 class="text-center">Activités</h1>
+    </section>
     <section class="row g-5 p-5">
         <!-- Première activité -->
         <div class="col-lg-4 col-md-6">
@@ -256,6 +256,14 @@
                    <a href="#" class="mt-auto btn btn-activite stretched-link card-footer w-100">Cliquer pour voir le détail</a>
            </div>
        </div>
+    </section>
+<hr>
+<!-- Bandeau titre 2 : Projets -->
+<section class=" bg-dev p-5">
+    <h1 class="text-center">Projets</h1>
+</section>
+    <section>
+
     </section>
 
     
