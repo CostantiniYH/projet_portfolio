@@ -4,6 +4,9 @@ use App\Core\Route;
 Route::get('/', 'IndexController@index');
 Route::get('/presentation', 'IndexController@index');
 
+Route::get('/curriculum', 'IndexController@cv');
+
+
 Route::get('/realisations', 'IndexController@realisations');
 Route::get('/activites', 'IndexController@IndexActivite');
 Route::get('/activites-ecole', 'IndexController@activiteEcole');

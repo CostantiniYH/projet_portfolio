@@ -17,31 +17,26 @@
 
 .-gris { color: rgb(146, 146, 146); }
 
+/* PASTILLE CV */
 .cv-brand {
-    border-radius: 100px;
-    border: 2px solid rgb(0, 0, 0);
-    padding: 3rem;
-    background-color: aliceblue;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: x-large;
-    font-weight: bold;
+    border-radius: 50px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 0.8rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
     text-decoration: none;
-    color: black;
+    letter-spacing: 2px;
     transition: background 0.3s ease;
 }
 
 .cv-brand:hover {
-    background-image: linear-gradient(
-        130deg,
-        rgba(151, 151, 151, 0.89),
-        rgba(151, 151, 151, 0.658),
-        rgba(151, 151, 151, 0.836),
-        rgba(151, 151, 151, 0.308),
-        rgba(151, 151, 151, 0.815),
-        rgba(151, 151, 151, 0.301),
-        rgb(151, 151, 151)
-    );
-    border: 2px solid rgb(0, 132, 255);
+    background-color: white;
+    color: #03418d;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .cv-brand:focus {

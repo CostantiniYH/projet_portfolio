@@ -29,6 +29,10 @@ class IndexController
         require dirname(__DIR__) . '/Views/partials/layout.php';
     }
 
+    public function cv() {
+        require dirname(__DIR__) . 'Views/public/cv.php';
+    }
+
     // Réalisations Professionnelles (ensemble de toutes les réalisations)
     public function realisations() {
     $titre = "Réalisations Professionnelles";

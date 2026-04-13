@@ -1,0 +1,133 @@
+/* Intégration d'une police plus moderne */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.bandeau-entete {
+    /* Dégradé plus fluide et moderne */
+    background: linear-gradient(135deg, #004781 0%, #206196 100%);
+    color: white;
+    border-radius: 0 0 15px 15px; /* Optionnel : arrondir le bas du bandeau */
+}
+
+/* Image de profil plus nette */
+.img-profil {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Style des "Badges" de compétences */
+.bg-2 {
+    background-color: #e9ecef;
+    border: none !important;
+    color: #495057;
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+.bg-2:hover {
+    background-color: #004781;
+    color: white;
+}
+
+/* Titres */
+h5 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+/* Petite barre d'accentuation sous les titres de section */
+h5::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #c24130;
+    margin-top: 5px;
+}
+
+@media print {
+    @page {
+        margin: 0;
+    }
+    body {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        -webkit-print-color-adjust: exact !important; /* Force les couleurs de fond */
+        print-color-adjust: exact !important;
+    }
+
+    /* Réduction globale intelligente sans sacrifier la lisibilité */
+    html {
+        font-size: 14px; /* Au lieu de 16px par défaut */
+    }
+
+    .container-fluid {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    /* Réduire un peu les espaces entre les sections pour gagner de la place verticalement */
+    
+    .p-5 { padding: 1.5rem !important; } /* Réduit le padding du <main> */
+}
+
+/* Style des badges de compétences */
+.badge-skill {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: #f0f2f5;
+    color: #495057;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap; /* Empêche le texte de revenir à la ligne à l'intérieur du badge */
+    transition: all 0.2s ease;
+}
+
+.badge-skill:hover {
+    background-color: #004781;
+    color: white;
+    border-color: #004781;
+    transform: translateY(-1px);
+}
+
+/* Ajustement des titres de catégories */
+.title-left-2 {
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.text-justifie {
+    text-align: justify;
+}
+
+
+/* Style pour la ligne verticale des formations (Timeline) */
+.border-start.border-2 {
+    border-color: #dee2e6 !important;
+}
+
+/* Style des barres de progression langues */
+.progress {
+    background-color: #e9ecef;
+    border-radius: 10px;
+}
+.progress-bar {
+    background-color: #004781 !important; /* On reprend ton bleu */
+}
