@@ -1,5 +1,5 @@
 <header class="bg-blue text-white p-5 mb-5 shadow">
-    <div class="container d-flex justify-content-between align-items-center">
+    <div class="d-flex justify-content-between align-items-center">
         <div>
             <h1 class="display-4 fw-bold">Yaacov Costantini</h1>
             <p class="lead mb-0">Développeur Applications & Solutions Logicielles</p>
