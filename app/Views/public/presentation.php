@@ -7,8 +7,8 @@
         </div>
         <div class="text-center">            
             <a href="<?= BASE_URL ?>assets/cv.html" class="cv-brand bi bi-eye-fill d-block mb-3" target="_blank"> CV</a>
-            <a href="<?= BASE_URL ?>ressources/cv/CV-YHC-fs14-ech85.pdf" download="CV_Yaacov_Costantini.pdf" class="cv-brand small">
-                <i class="bi bi-download"></i> PDF
+            <a href="<?= BASE_URL ?>ressources/cv/CV-YHC-fs14-ech85.pdf" download="CV_Yaacov_Costantini.pdf" class="cv-brand small bi bi-download">
+                 PDF
             </a>
         </div>
     </div>
