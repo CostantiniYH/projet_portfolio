@@ -52,3 +52,20 @@
     filter: grayscale(20%) brightness(95%);
 }
 
+.bg-ts2 {
+    background-color: rgb(231, 235, 236);
+    border-left: 3px solid rgb(24, 66, 114);
+}
+
+.btn-ts2 {
+    background-color: #0855b4;
+    color: white;
+    padding: 1rem;
+    font-size: large;
+    text-decoration: none;
+}
+
+.btn-ts2:hover {
+    background-color: #122a47;
+}
+
