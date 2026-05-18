@@ -15,4 +15,3 @@ require dirname(__DIR__) . '/app/Config/config.php';
 
 require dirname(__DIR__) . '/app/init.php';
 
-?>

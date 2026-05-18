@@ -3,11 +3,11 @@
         <div>
             <h1 class="display-4 fw-bold">Yaacov Costantini</h1>
             <p class="lead mb-0">Développeur Applications & Solutions Logicielles</p>
-            <p class="small opacity-75">Étudiant en alternance passionné par les expériences numériques.</p>
+            <p class="small opacity-75">Étudiant en alternance investit dans la création numérique.</p>
         </div>
         <div class="text-center">            
             <a href="<?= BASE_URL ?>assets/cv.html" class="cv-brand bi bi-eye-fill d-block mb-3" target="_blank"> CV</a>
-            <a href="<?= BASE_URL ?>ressources/cv/CV-YHC-fs14-ech85.pdf" download="CV_Yaacov_Costantini.pdf" class="cv-brand small bi bi-download">
+            <a href="<?= BASE_URL ?>ressources/cv/CV_Yaacov_Costantini.pdf" class="cv-brand small bi bi-download" target="_blank">
                  PDF
             </a>
         </div>
@@ -224,7 +224,7 @@
                 </a>
             </div>
         </section>
-        <a href="<?= BASE_URL ?>ressources/cv/CV-YHC-fs14-ech85.pdf" download="CV_Yaacov_Costantini.pdf" 
+        <a href="<?= BASE_URL ?>ressources/cv/CV_Yaacov_Costantini.pdf" target="_blank"
         class="text-dark small text-decoration-none border border-dark border-2 rounded-1 p-2 bg-tertiary hvr-glow">
             <i class="bi bi-download"></i> Télécharger le CV en PDF
         </a>

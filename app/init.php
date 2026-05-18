@@ -24,4 +24,3 @@ $pdo = Database::connect();
 $router = new App\Core\Router($pdo);
 $router->run();
 
-?>

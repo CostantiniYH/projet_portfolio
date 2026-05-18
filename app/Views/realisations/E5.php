@@ -11,7 +11,7 @@
     </section>
 </div> -->
 <div class="container">
-     <section class="mt-5 row" style="">
+     <section class="mt-5 row">
         <div class="bg-ts2 p-4 shadow">
             <h3 class="">Tableau de synthèse</h3>
             <div class="mb-5">
