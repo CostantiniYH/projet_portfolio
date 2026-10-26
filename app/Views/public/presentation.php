@@ -7,7 +7,7 @@
         </div>
         <div class="text-center">            
             <a href="<?= BASE_URL ?>assets/cv.html" class="cv-brand bi bi-eye-fill d-block mb-3" target="_blank"> CV</a>
-            <a href="<?= BASE_URL ?>ressources/cv/CV_Yaacov_Costantini.pdf" class="cv-brand small bi bi-download" target="_blank">
+            <a href="<?= BASE_URL ?>ressources/cv/CV-Yaacov_Costantini.pdf" class="cv-brand small bi bi-download" target="_blank">
                  PDF
             </a>
         </div>
@@ -224,7 +224,7 @@
                 </a>
             </div>
         </section>
-        <a href="<?= BASE_URL ?>ressources/cv/CV_Yaacov_Costantini.pdf" target="_blank"
+        <a href="<?= BASE_URL ?>ressources/cv/CV-Yaacov_Costantini.pdf" target="_blank"
         class="text-dark small text-decoration-none border border-dark border-2 rounded-1 p-2 bg-tertiary hvr-glow">
             <i class="bi bi-download"></i> Télécharger le CV en PDF
         </a>

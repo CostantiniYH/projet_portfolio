@@ -100,10 +100,17 @@ h5::after {
 }
 
 .badge-skill:hover {
+    cursor: pointer;
     background-color: #004781;
     color: white;
     border-color: #004781;
     transform: translateY(-1px);
+}
+
+.badge:hover {
+    cursor: pointer;
+    background-color: #812900 !important;
+    color: white !important;
 }
 
 /* Ajustement des titres de catégories */
@@ -131,3 +138,4 @@ h5::after {
 .progress-bar {
     background-color: #004781 !important; /* On reprend ton bleu */
 }
+
